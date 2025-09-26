@@ -23,14 +23,14 @@ latex:
 # Information about where the book exists on the we
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/kundan-kumarr/data-analysis   # your repo
+  url: https://github.com/kundan-kumarr/ai-analysis   # your repo
   branch: main
 
 # Add GitHub buttons & correct base path for project pages
 html:
   use_issues_button: true
   use_repository_button: true
-  baseurl: /data-analysis/   # <-- critical for GitHub Project Pages
+  baseurl: /ai-analysis/   # <-- critical for GitHub Project Pages
 
 
 # Add GitHub buttons to your book
