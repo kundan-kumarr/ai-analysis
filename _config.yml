@@ -20,13 +20,18 @@ latex:
   latex_documents:
     targetname: book.tex
 
+# Information about where the book exists on the we
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/uwdata/visualization-curriculum # Online location of your book
-  branch: master  # Which branch of the repository should be used when creating links (optional)
+  url: https://github.com/kundan-kumarr/data-analysis   # your repo
+  branch: main
 
-# Add GitHub buttons to your book
-# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+# Add GitHub buttons & correct base path for project pages
 html:
   use_issues_button: true
   use_repository_button: true
+  baseurl: /data-analysis/   # <-- critical for GitHub Project Pages
+
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
