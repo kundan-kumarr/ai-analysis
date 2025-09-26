@@ -1,31 +1,32 @@
-name: Quarto Publish
+name: Deploy Jupyter Book
 
 on:
   push:
-    branches: [ main ]     # change if your default branch is different
+    branches: [ main ]     # or your default branch
   workflow_dispatch:
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pages: write
-      id-token: write
     steps:
-      - uses: actions/checkout@v4
-      - uses: quarto-dev/quarto-actions/setup@v2
-      - uses: actions/setup-python@v5
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Install Python deps (optional)
+
+      - name: Install deps
         run: |
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      - name: Render site
-        run: quarto render
+          python -m pip install --upgrade pip
+          pip install jupyter-book ghp-import
+          # optional: if you have a requirements.txt, use that instead:
+          # pip install -r requirements.txt
+
+      - name: Build book
+        run: jupyter-book build .
+
       - name: Publish to gh-pages
-        uses: quarto-dev/quarto-actions/publish@v2
-        with:
-          target: gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: ghp-import -n -p -f _build/html
+
