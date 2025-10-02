@@ -11,6 +11,8 @@ parts:
   - file: altair_view_composition
   - file: altair_interaction
   - file: altair_cartographic
+  - file: introduction-to-prompting-for-llm-reasoning-and-planning
+  - file: model-selection
 - caption: Support
   chapters:
   - file: altair_debugging
