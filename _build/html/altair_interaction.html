@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>6. Interaction &#8212; AI with Data analysis</title>
+    <title>3. Interaction &#8212; AI with Data analysis</title>
   
   
   
@@ -61,8 +61,8 @@
     <link rel="canonical" href="/ai-analysis/altair_interaction.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="7. Cartographic Visualization" href="altair_cartographic.html" />
-    <link rel="prev" title="5. Multi-View Composition" href="altair_view_composition.html" />
+    <link rel="next" title="4. Cartographic Visualization" href="altair_cartographic.html" />
+    <link rel="prev" title="2. Multi-View Composition" href="altair_view_composition.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -181,14 +181,18 @@
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Curriculum</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="altair_introduction.html">1. Introduction to Altair</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Curriculum1</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="altair_introduction.html">1. Introduction to Altair</a></li>
-<li class="toctree-l1"><a class="reference internal" href="altair_marks_encoding.html">2. Data Types, Graphical Marks, and Visual Encoding Channels</a></li>
-<li class="toctree-l1"><a class="reference internal" href="altair_data_transformation.html">3. Data Transformation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="altair_scales_axes_legends.html">4. Scales, Axes, and Legends</a></li>
-<li class="toctree-l1"><a class="reference internal" href="altair_view_composition.html">5. Multi-View Composition</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">6. Interaction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="altair_cartographic.html">7. Cartographic Visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="altair_view_composition.html">2. Multi-View Composition</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Interaction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="altair_cartographic.html">4. Cartographic Visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction-to-prompting-for-llm-reasoning-and-planning.html">5. Pre-Lesson Exercise: Organize Your Workspace Space Kick-Off</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model-selection.html">6. Organize Your Workspace Space</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Support</span></p>
 <ul class="nav bd-sidenav">
@@ -419,22 +423,22 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">6.1. Datasets</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introducing-selections">6.2. Introducing Selections</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamic-queries">6.3. Dynamic Queries</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#binding-selections-to-multiple-inputs">6.3.1. Binding Selections to Multiple Inputs</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-visualizations-as-dynamic-queries">6.3.2. Using Visualizations as Dynamic Queries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">3.1. Datasets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introducing-selections">3.2. Introducing Selections</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamic-queries">3.3. Dynamic Queries</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#binding-selections-to-multiple-inputs">3.3.1. Binding Selections to Multiple Inputs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-visualizations-as-dynamic-queries">3.3.2. Using Visualizations as Dynamic Queries</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#panning-zooming">6.4. Panning &amp; Zooming</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#navigation-overview-detail">6.5. Navigation: Overview + Detail</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#details-on-demand">6.6. Details on Demand</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brushing-linking-revisited">6.7. Brushing &amp; Linking, Revisited</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-filtering">6.7.1. Cross-Filtering</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#panning-zooming">3.4. Panning &amp; Zooming</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#navigation-overview-detail">3.5. Navigation: Overview + Detail</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#details-on-demand">3.6. Details on Demand</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brushing-linking-revisited">3.7. Brushing &amp; Linking, Revisited</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-filtering">3.7.1. Cross-Filtering</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">6.8. Summary</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#appendix-on-the-representation-of-time">6.8.1. Appendix: On The Representation of Time</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">3.8. Summary</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#appendix-on-the-representation-of-time">3.8.1. Appendix: On The Representation of Time</a></li>
 </ul>
 </li>
 </ul>
@@ -449,7 +453,7 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="interaction">
-<h1><span class="section-number">6. </span>Interaction<a class="headerlink" href="#interaction" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">3. </span>Interaction<a class="headerlink" href="#interaction" title="Link to this heading">#</a></h1>
 <p><em>“A graphic is not ‘drawn’ once and for all; it is ‘constructed’ and reconstructed until it reveals all the relationships constituted by the interplay of the data. The best graphic operations are those carried out by the decision-maker themself.”</em> — <a class="reference external" href="https://books.google.com/books?id=csqX_xnm4tcC">Jacques Bertin</a></p>
 <p>Visualization provides a powerful means of making sense of data. A single image, however, typically provides answers to, at best, a handful of questions. Through <em>interaction</em> we can transform static images into tools for exploration: highlighting points of interest, zooming in to reveal finer-grained patterns, and linking across multiple views to reason about multi-dimensional relationships.</p>
 <p>At the core of interaction is the notion of a <em>selection</em>: a means of indicating to the computer which elements or regions we are interested in. For example, we might hover the mouse over a point, click multiple marks, or draw a bounding box around a region to highlight subsets of the data for further scrutiny.</p>
@@ -470,7 +474,7 @@ document.write(`
 </div>
 </div>
 <section id="datasets">
-<h2><span class="section-number">6.1. </span>Datasets<a class="headerlink" href="#datasets" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">3.1. </span>Datasets<a class="headerlink" href="#datasets" title="Link to this heading">#</a></h2>
 <p>We will visualize a variety of datasets from the <a class="reference external" href="https://github.com/vega/vega-datasets">vega-datasets</a> collection:</p>
 <ul class="simple">
 <li><p>A dataset of <code class="docutils literal notranslate"><span class="pre">cars</span></code> from the 1970s and early 1980s,</p></li>
@@ -492,7 +496,7 @@ document.write(`
 </div>
 </section>
 <section id="introducing-selections">
-<h2><span class="section-number">6.2. </span>Introducing Selections<a class="headerlink" href="#introducing-selections" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">3.2. </span>Introducing Selections<a class="headerlink" href="#introducing-selections" title="Link to this heading">#</a></h2>
 <p>Let’s start with a basic selection: simply clicking a point to highlight it. Using the <code class="docutils literal notranslate"><span class="pre">cars</span></code> dataset, we’ll start with a scatter plot of horsepower versus miles per gallon, with a color encoding for the number cylinders in the car engine.</p>
 <p>In addition, we’ll create a selection instance by calling <code class="docutils literal notranslate"><span class="pre">alt.selection_single()</span></code>, indicating we want a selection defined over a <em>single value</em>. By default, the selection uses a mouse click to determine the selected value. To register a selection with a chart, we must add it using the <code class="docutils literal notranslate"><span class="pre">.add_selection()</span></code> method.</p>
 <p>Once our selection has been defined, we can use it as a parameter for <em>conditional encodings</em>, which apply a different encoding depending on whether a data record lies in or out of the selection. For example, consider the following code:</p>
@@ -517,33 +521,33 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_97229/2101507836.py:1: AltairDeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_52912/2101507836.py:1: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   selection = alt.selection_single();
-/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_97229/2101507836.py:3: AltairDeprecationWarning: 
+/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_52912/2101507836.py:3: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use add_params instead.
   alt.Chart(cars).mark_circle().add_selection(
 </pre></div>
 </div>
 <div class="output text_html">
 <style>
-  #altair-viz-bb5580207ac04880b736e0759667a088.vega-embed {
+  #altair-viz-1d933654592849a488422386c9c712c2.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-bb5580207ac04880b736e0759667a088.vega-embed details,
-  #altair-viz-bb5580207ac04880b736e0759667a088.vega-embed details summary {
+  #altair-viz-1d933654592849a488422386c9c712c2.vega-embed details,
+  #altair-viz-1d933654592849a488422386c9c712c2.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-bb5580207ac04880b736e0759667a088"></div>
+<div id="altair-viz-1d933654592849a488422386c9c712c2"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-bb5580207ac04880b736e0759667a088") {
-      outputDiv = document.getElementById("altair-viz-bb5580207ac04880b736e0759667a088");
+    if (outputDiv.id !== "altair-viz-1d933654592849a488422386c9c712c2") {
+      outputDiv = document.getElementById("altair-viz-1d933654592849a488422386c9c712c2");
     }
 
     const paths = {
@@ -633,36 +637,36 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_97229/2299552586.py:2: AltairDeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_52912/2299552586.py:2: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   plot(alt.selection_single()).properties(title=&#39;Single (Click)&#39;),
-/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_97229/1277325702.py:2: AltairDeprecationWarning: 
+/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_52912/1277325702.py:2: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use add_params instead.
   return alt.Chart(cars).mark_circle().add_selection(
-/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_97229/2299552586.py:3: AltairDeprecationWarning: 
+/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_52912/2299552586.py:3: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   plot(alt.selection_multi()).properties(title=&#39;Multi (Shift-Click)&#39;),
 </pre></div>
 </div>
 <div class="output text_html">
 <style>
-  #altair-viz-342a0a62059b4f1a8352f892bf31e93c.vega-embed {
+  #altair-viz-fd13a7a509c546a58d41e97021b934cf.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-342a0a62059b4f1a8352f892bf31e93c.vega-embed details,
-  #altair-viz-342a0a62059b4f1a8352f892bf31e93c.vega-embed details summary {
+  #altair-viz-fd13a7a509c546a58d41e97021b934cf.vega-embed details,
+  #altair-viz-fd13a7a509c546a58d41e97021b934cf.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-342a0a62059b4f1a8352f892bf31e93c"></div>
+<div id="altair-viz-fd13a7a509c546a58d41e97021b934cf"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-342a0a62059b4f1a8352f892bf31e93c") {
-      outputDiv = document.getElementById("altair-viz-342a0a62059b4f1a8352f892bf31e93c");
+    if (outputDiv.id !== "altair-viz-fd13a7a509c546a58d41e97021b934cf") {
+      outputDiv = document.getElementById("altair-viz-fd13a7a509c546a58d41e97021b934cf");
     }
 
     const paths = {
@@ -725,36 +729,36 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_97229/861132474.py:2: AltairDeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_52912/861132474.py:2: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   plot(alt.selection_single(on=&#39;mouseover&#39;)).properties(title=&#39;Single (Mouseover)&#39;),
-/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_97229/1277325702.py:2: AltairDeprecationWarning: 
+/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_52912/1277325702.py:2: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use add_params instead.
   return alt.Chart(cars).mark_circle().add_selection(
-/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_97229/861132474.py:3: AltairDeprecationWarning: 
+/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_52912/861132474.py:3: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   plot(alt.selection_multi(on=&#39;mouseover&#39;)).properties(title=&#39;Multi (Shift-Mouseover)&#39;)
 </pre></div>
 </div>
 <div class="output text_html">
 <style>
-  #altair-viz-dbdd80f71f0944b5bff21ae4dd8d3f32.vega-embed {
+  #altair-viz-8407938bc8954e76840ce0633b4ece2b.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-dbdd80f71f0944b5bff21ae4dd8d3f32.vega-embed details,
-  #altair-viz-dbdd80f71f0944b5bff21ae4dd8d3f32.vega-embed details summary {
+  #altair-viz-8407938bc8954e76840ce0633b4ece2b.vega-embed details,
+  #altair-viz-8407938bc8954e76840ce0633b4ece2b.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-dbdd80f71f0944b5bff21ae4dd8d3f32"></div>
+<div id="altair-viz-8407938bc8954e76840ce0633b4ece2b"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-dbdd80f71f0944b5bff21ae4dd8d3f32") {
-      outputDiv = document.getElementById("altair-viz-dbdd80f71f0944b5bff21ae4dd8d3f32");
+    if (outputDiv.id !== "altair-viz-8407938bc8954e76840ce0633b4ece2b") {
+      outputDiv = document.getElementById("altair-viz-8407938bc8954e76840ce0633b4ece2b");
     }
 
     const paths = {
@@ -808,7 +812,7 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <p>Now that we’ve covered the basics of Altair selections, let’s take a tour through the various interaction techniques they enable!</p>
 </section>
 <section id="dynamic-queries">
-<h2><span class="section-number">6.3. </span>Dynamic Queries<a class="headerlink" href="#dynamic-queries" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">3.3. </span>Dynamic Queries<a class="headerlink" href="#dynamic-queries" title="Link to this heading">#</a></h2>
 <p><em>Dynamic queries</em> enables rapid, reversible exploration of data to isolate patterns of interest. As defined by <a class="reference external" href="https://www.cs.umd.edu/~ben/papers/Ahlberg1992Dynamic.pdf">Ahlberg, Williamson, &amp; Shneiderman</a>, a dynamic query:</p>
 <ul class="simple">
 <li><p>represents a query graphically,</p></li>
@@ -861,7 +865,7 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_97229/2770894913.py:1: AltairDeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_52912/2770894913.py:1: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   selectGenre = alt.selection_single(
 </pre></div>
@@ -922,7 +926,7 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <li><p>As before, we then use a conditional encoding to control the opacity channel.</p></li>
 </ul>
 <section id="binding-selections-to-multiple-inputs">
-<h3><span class="section-number">6.3.1. </span>Binding Selections to Multiple Inputs<a class="headerlink" href="#binding-selections-to-multiple-inputs" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">3.3.1. </span>Binding Selections to Multiple Inputs<a class="headerlink" href="#binding-selections-to-multiple-inputs" title="Link to this heading">#</a></h3>
 <p>One selection instance can be bound to <em>multiple</em> dynamic query widgets. Let’s modify the example above to provide filters for <em>both</em> <code class="docutils literal notranslate"><span class="pre">Major_Genre</span></code> and <code class="docutils literal notranslate"><span class="pre">MPAA_Rating</span></code>, using radio buttons instead of a menu. Our <code class="docutils literal notranslate"><span class="pre">single</span></code> selection is now defined over a single <em>pair</em> of genre and MPAA rating values</p>
 <p><em>Look for surprising conjunctions of genre and rating. Are there any G or PG-rated horror films?</em></p>
 <div class="cell docutils container">
@@ -949,7 +953,7 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_97229/2722943247.py:3: AltairDeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_52912/2722943247.py:3: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   selection = alt.selection_single(
 </pre></div>
@@ -1007,7 +1011,7 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <p><em>Fun facts: The PG-13 rating didn’t exist when the movies <a class="reference external" href="https://www.imdb.com/title/tt0073195/">Jaws</a> and <a class="reference external" href="https://www.imdb.com/title/tt0077766/">Jaws 2</a> were released. The first film to receive a PG-13 rating was 1984’s <a class="reference external" href="https://www.imdb.com/title/tt0087985/">Red Dawn</a>.</em></p>
 </section>
 <section id="using-visualizations-as-dynamic-queries">
-<h3><span class="section-number">6.3.2. </span>Using Visualizations as Dynamic Queries<a class="headerlink" href="#using-visualizations-as-dynamic-queries" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">3.3.2. </span>Using Visualizations as Dynamic Queries<a class="headerlink" href="#using-visualizations-as-dynamic-queries" title="Link to this heading">#</a></h3>
 <p>Though standard interface widgets show the <em>possible</em> query parameter values, they do not visualize the <em>distribution</em> of those values. We might also wish to use richer interactions, such as multi-value or interval selections, rather than input widgets that select only a single value at a time.</p>
 <p>To address these issues, we can author additional charts to both visualize data and support dynamic queries. Let’s add a histogram of the count of films per year and use an interval selection to dynamically highlight films over selected time periods.</p>
 <p><em>Interact with the year histogram to explore films from different time periods. Do you seen any evidence of <a class="reference external" href="https://en.wikipedia.org/wiki/Sampling_bias">sampling bias</a> across the years? (How do year and critics’ ratings relate?)</em></p>
@@ -1045,30 +1049,30 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_97229/2755245571.py:6: AltairDeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_52912/2755245571.py:6: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use add_params instead.
   years = alt.Chart(movies).mark_bar().add_selection(
 </pre></div>
 </div>
 <div class="output text_html">
 <style>
-  #altair-viz-3b9bacca45164088bf1e4081a5e74b39.vega-embed {
+  #altair-viz-94c4dfe4dfee40528ec829d2c0fb1d74.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-3b9bacca45164088bf1e4081a5e74b39.vega-embed details,
-  #altair-viz-3b9bacca45164088bf1e4081a5e74b39.vega-embed details summary {
+  #altair-viz-94c4dfe4dfee40528ec829d2c0fb1d74.vega-embed details,
+  #altair-viz-94c4dfe4dfee40528ec829d2c0fb1d74.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-3b9bacca45164088bf1e4081a5e74b39"></div>
+<div id="altair-viz-94c4dfe4dfee40528ec829d2c0fb1d74"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-3b9bacca45164088bf1e4081a5e74b39") {
-      outputDiv = document.getElementById("altair-viz-3b9bacca45164088bf1e4081a5e74b39");
+    if (outputDiv.id !== "altair-viz-94c4dfe4dfee40528ec829d2c0fb1d74") {
+      outputDiv = document.getElementById("altair-viz-94c4dfe4dfee40528ec829d2c0fb1d74");
     }
 
     const paths = {
@@ -1129,7 +1133,7 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 </section>
 </section>
 <section id="panning-zooming">
-<h2><span class="section-number">6.4. </span>Panning &amp; Zooming<a class="headerlink" href="#panning-zooming" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">3.4. </span>Panning &amp; Zooming<a class="headerlink" href="#panning-zooming" title="Link to this heading">#</a></h2>
 <p>The movie rating scatter plot is a bit cluttered in places, making it hard to examine points in denser regions. Using the interaction techniques of <em>panning</em> and <em>zooming</em>, we can inspect dense regions more closely.</p>
 <p>Let’s start by thinking about how we might express panning and zooming using Altair selections. What defines the “viewport” of a chart? <em>Axis scale domains!</em></p>
 <p>We can change the scale domains to modify the visualized range of data values. To do so interactively, we can bind an <code class="docutils literal notranslate"><span class="pre">interval</span></code> selection to scale domains with the code <code class="docutils literal notranslate"><span class="pre">bind='scales'</span></code>. The result is that instead of an interval brush that we can drag and zoom, we instead can drag and zoom the entire plotting area!</p>
@@ -1150,30 +1154,30 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_97229/4194959270.py:1: AltairDeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_52912/4194959270.py:1: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use add_params instead.
   alt.Chart(movies).mark_circle().add_selection(
 </pre></div>
 </div>
 <div class="output text_html">
 <style>
-  #altair-viz-a63084f20c6449dc9a3098cad68dd611.vega-embed {
+  #altair-viz-2dacd545fb924ee1b218f0d6a605c78c.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-a63084f20c6449dc9a3098cad68dd611.vega-embed details,
-  #altair-viz-a63084f20c6449dc9a3098cad68dd611.vega-embed details summary {
+  #altair-viz-2dacd545fb924ee1b218f0d6a605c78c.vega-embed details,
+  #altair-viz-2dacd545fb924ee1b218f0d6a605c78c.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-a63084f20c6449dc9a3098cad68dd611"></div>
+<div id="altair-viz-2dacd545fb924ee1b218f0d6a605c78c"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-a63084f20c6449dc9a3098cad68dd611") {
-      outputDiv = document.getElementById("altair-viz-a63084f20c6449dc9a3098cad68dd611");
+    if (outputDiv.id !== "altair-viz-2dacd545fb924ee1b218f0d6a605c78c") {
+      outputDiv = document.getElementById("altair-viz-2dacd545fb924ee1b218f0d6a605c78c");
     }
 
     const paths = {
@@ -1243,23 +1247,23 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-50c662bc19b248aeb71441263074e541.vega-embed {
+  #altair-viz-c5d23da6cbe346eab431ec0ec176c9ca.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-50c662bc19b248aeb71441263074e541.vega-embed details,
-  #altair-viz-50c662bc19b248aeb71441263074e541.vega-embed details summary {
+  #altair-viz-c5d23da6cbe346eab431ec0ec176c9ca.vega-embed details,
+  #altair-viz-c5d23da6cbe346eab431ec0ec176c9ca.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-50c662bc19b248aeb71441263074e541"></div>
+<div id="altair-viz-c5d23da6cbe346eab431ec0ec176c9ca"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-50c662bc19b248aeb71441263074e541") {
-      outputDiv = document.getElementById("altair-viz-50c662bc19b248aeb71441263074e541");
+    if (outputDiv.id !== "altair-viz-c5d23da6cbe346eab431ec0ec176c9ca") {
+      outputDiv = document.getElementById("altair-viz-c5d23da6cbe346eab431ec0ec176c9ca");
     }
 
     const paths = {
@@ -1327,30 +1331,30 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_97229/3474470745.py:1: AltairDeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_52912/3474470745.py:1: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use add_params instead.
   alt.Chart(movies).mark_circle().add_selection(
 </pre></div>
 </div>
 <div class="output text_html">
 <style>
-  #altair-viz-1dad5f30656446febd1d7f4599ff37e4.vega-embed {
+  #altair-viz-eb99438341a84fd7a2aca796d70a4ec8.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-1dad5f30656446febd1d7f4599ff37e4.vega-embed details,
-  #altair-viz-1dad5f30656446febd1d7f4599ff37e4.vega-embed details summary {
+  #altair-viz-eb99438341a84fd7a2aca796d70a4ec8.vega-embed details,
+  #altair-viz-eb99438341a84fd7a2aca796d70a4ec8.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-1dad5f30656446febd1d7f4599ff37e4"></div>
+<div id="altair-viz-eb99438341a84fd7a2aca796d70a4ec8"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-1dad5f30656446febd1d7f4599ff37e4") {
-      outputDiv = document.getElementById("altair-viz-1dad5f30656446febd1d7f4599ff37e4");
+    if (outputDiv.id !== "altair-viz-eb99438341a84fd7a2aca796d70a4ec8") {
+      outputDiv = document.getElementById("altair-viz-eb99438341a84fd7a2aca796d70a4ec8");
     }
 
     const paths = {
@@ -1404,7 +1408,7 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 <p><em>When zooming along a single axis only, the shape of the visualized data can change, potentially affecting our perception of relationships in the data. <a class="reference external" href="http://vis.stanford.edu/papers/arclength-banking">Choosing an appropriate aspect ratio</a> is an important visualization design concern!</em></p>
 </section>
 <section id="navigation-overview-detail">
-<h2><span class="section-number">6.5. </span>Navigation: Overview + Detail<a class="headerlink" href="#navigation-overview-detail" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">3.5. </span>Navigation: Overview + Detail<a class="headerlink" href="#navigation-overview-detail" title="Link to this heading">#</a></h2>
 <p>When panning and zooming, we directly adjust the “viewport” of a chart. The related navigation strategy of <em>overview + detail</em> instead uses an overview display to show <em>all</em> of the data, while supporting selections that pan and zoom a separate focus display.</p>
 <p>Below we have two area charts showing a decade of price fluctuations for the S&amp;P 500 stock index. Initially both charts show the same data range. <em>Click and drag in the bottom overview chart to update the focus display and examine specific time spans.</em></p>
 <div class="cell docutils container">
@@ -1427,30 +1431,30 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_97229/100898334.py:12: AltairDeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_52912/100898334.py:12: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use add_params instead.
   base.add_selection(brush).properties(height=60),
 </pre></div>
 </div>
 <div class="output text_html">
 <style>
-  #altair-viz-a918d616ad1f42ccbcaa7dda4b829a57.vega-embed {
+  #altair-viz-8b1e2cb1dd2445c1b617f2218924a3bb.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-a918d616ad1f42ccbcaa7dda4b829a57.vega-embed details,
-  #altair-viz-a918d616ad1f42ccbcaa7dda4b829a57.vega-embed details summary {
+  #altair-viz-8b1e2cb1dd2445c1b617f2218924a3bb.vega-embed details,
+  #altair-viz-8b1e2cb1dd2445c1b617f2218924a3bb.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-a918d616ad1f42ccbcaa7dda4b829a57"></div>
+<div id="altair-viz-8b1e2cb1dd2445c1b617f2218924a3bb"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-a918d616ad1f42ccbcaa7dda4b829a57") {
-      outputDiv = document.getElementById("altair-viz-a918d616ad1f42ccbcaa7dda4b829a57");
+    if (outputDiv.id !== "altair-viz-8b1e2cb1dd2445c1b617f2218924a3bb") {
+      outputDiv = document.getElementById("altair-viz-8b1e2cb1dd2445c1b617f2218924a3bb");
     }
 
     const paths = {
@@ -1504,7 +1508,7 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 <p>Unlike our earlier panning &amp; zooming case, here we don’t want to bind a selection directly to the scales of a single interactive chart. Instead, we want to bind the selection to a scale domain in <em>another</em> chart. To do so, we update the <code class="docutils literal notranslate"><span class="pre">x</span></code> encoding channel for our focus chart, setting the scale <code class="docutils literal notranslate"><span class="pre">domain</span></code> property to reference our <code class="docutils literal notranslate"><span class="pre">brush</span></code> selection. If no interval is defined (the selection is empty), Altair ignores the brush and uses the underlying data to determine the domain. When a brush interval is created, Altair instead uses that as the scale <code class="docutils literal notranslate"><span class="pre">domain</span></code> for the focus chart.</p>
 </section>
 <section id="details-on-demand">
-<h2><span class="section-number">6.6. </span>Details on Demand<a class="headerlink" href="#details-on-demand" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">3.6. </span>Details on Demand<a class="headerlink" href="#details-on-demand" title="Link to this heading">#</a></h2>
 <p>Once we spot points of interest within a visualization, we often want to know more about them. <em>Details-on-demand</em> refers to interactively querying for more information about selected values. <em>Tooltips</em> are one useful means of providing details on demand. However, tooltips typically only show information for one data point at a time. How might we show more?</p>
 <p>The movie ratings scatterplot includes a number of potentially interesting outliers where the Rotten Tomatoes and IMDB ratings disagree. Let’s create a plot that allows us to interactively select points and show their labels. To trigger the filter query on either the hover or click interaction, we will use the <a class="reference external" href="https://altair-viz.github.io/user_guide/interactions.html#composing-multiple-selections">Altair composition operator</a> <code class="docutils literal notranslate"><span class="pre">|</span></code> (“or”).</p>
 <p><em>Mouse over points in the scatter plot below to see a highlight and title label. Shift-click points to make annotations persistent and view multiple labels at once. Which movies are loved by Rotten Tomatoes critics, but not the general audience on IMDB (or vice versa)? See if you can find possible errors, where two different movies with the same name were accidentally combined!</em></p>
@@ -1546,36 +1550,36 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_97229/337648899.py:1: AltairDeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_52912/337648899.py:1: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   hover = alt.selection_single(
-/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_97229/337648899.py:7: AltairDeprecationWarning: 
+/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_52912/337648899.py:7: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   click = alt.selection_multi(
-/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_97229/337648899.py:24: AltairDeprecationWarning: 
+/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_52912/337648899.py:24: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use add_params instead.
   plot.add_selection(hover).add_selection(click),
 </pre></div>
 </div>
 <div class="output text_html">
 <style>
-  #altair-viz-f25a0c728a254bcfae437dfc856598c3.vega-embed {
+  #altair-viz-cae58eac6e69471e8d6e3bf1f6404c3d.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-f25a0c728a254bcfae437dfc856598c3.vega-embed details,
-  #altair-viz-f25a0c728a254bcfae437dfc856598c3.vega-embed details summary {
+  #altair-viz-cae58eac6e69471e8d6e3bf1f6404c3d.vega-embed details,
+  #altair-viz-cae58eac6e69471e8d6e3bf1f6404c3d.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-f25a0c728a254bcfae437dfc856598c3"></div>
+<div id="altair-viz-cae58eac6e69471e8d6e3bf1f6404c3d"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-f25a0c728a254bcfae437dfc856598c3") {
-      outputDiv = document.getElementById("altair-viz-f25a0c728a254bcfae437dfc856598c3");
+    if (outputDiv.id !== "altair-viz-cae58eac6e69471e8d6e3bf1f6404c3d") {
+      outputDiv = document.getElementById("altair-viz-cae58eac6e69471e8d6e3bf1f6404c3d");
     }
 
     const paths = {
@@ -1682,33 +1686,33 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_97229/2914138552.py:2: AltairDeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_52912/2914138552.py:2: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   label = alt.selection_single(
-/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_97229/2914138552.py:27: AltairDeprecationWarning: 
+/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_52912/2914138552.py:27: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use add_params instead.
   ).add_selection(label),
 </pre></div>
 </div>
 <div class="output text_html">
 <style>
-  #altair-viz-14466d8cf38a4064aa2052a26ec93e41.vega-embed {
+  #altair-viz-6f8d6eec213343a9a9b7e779c290593b.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-14466d8cf38a4064aa2052a26ec93e41.vega-embed details,
-  #altair-viz-14466d8cf38a4064aa2052a26ec93e41.vega-embed details summary {
+  #altair-viz-6f8d6eec213343a9a9b7e779c290593b.vega-embed details,
+  #altair-viz-6f8d6eec213343a9a9b7e779c290593b.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-14466d8cf38a4064aa2052a26ec93e41"></div>
+<div id="altair-viz-6f8d6eec213343a9a9b7e779c290593b"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-14466d8cf38a4064aa2052a26ec93e41") {
-      outputDiv = document.getElementById("altair-viz-14466d8cf38a4064aa2052a26ec93e41");
+    if (outputDiv.id !== "altair-viz-6f8d6eec213343a9a9b7e779c290593b") {
+      outputDiv = document.getElementById("altair-viz-6f8d6eec213343a9a9b7e779c290593b");
     }
 
     const paths = {
@@ -1762,7 +1766,7 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 <p><em>Putting into action what we’ve learned so far: can you modify the movie scatter plot above (the one with the dynamic query over years) to include a <code class="docutils literal notranslate"><span class="pre">rule</span></code> mark that shows the average IMDB (or Rotten Tomatoes) rating for the data contained within the year <code class="docutils literal notranslate"><span class="pre">interval</span></code> selection?</em></p>
 </section>
 <section id="brushing-linking-revisited">
-<h2><span class="section-number">6.7. </span>Brushing &amp; Linking, Revisited<a class="headerlink" href="#brushing-linking-revisited" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">3.7. </span>Brushing &amp; Linking, Revisited<a class="headerlink" href="#brushing-linking-revisited" title="Link to this heading">#</a></h2>
 <p>Earlier in this notebook we saw an example of <em>brushing &amp; linking</em>: using a dynamic query histogram to highlight points in a movie rating scatter plot. Here, we’ll visit some additional examples involving linked selections.</p>
 <p>Returning to the <code class="docutils literal notranslate"><span class="pre">cars</span></code> dataset, we can use the <code class="docutils literal notranslate"><span class="pre">repeat</span></code> operator to build a <a class="reference external" href="https://en.wikipedia.org/wiki/Scatter_plot#Scatterplot_matrices">scatter plot matrix (SPLOM)</a> that shows associations between mileage, acceleration, and horsepower. We can define an <code class="docutils literal notranslate"><span class="pre">interval</span></code> selection and include it <em>within</em> our repeated scatter plot specification to enable linked selections among all the plots.</p>
 <p><em>Click and drag in any of the plots below to perform brushing &amp; linking!</em></p>
@@ -1790,30 +1794,30 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_97229/3480946980.py:5: AltairDeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_52912/3480946980.py:5: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use add_params instead.
   alt.Chart(cars).mark_circle().add_selection(
 </pre></div>
 </div>
 <div class="output text_html">
 <style>
-  #altair-viz-2503e9e32e544dc9b2ad7307f29fd645.vega-embed {
+  #altair-viz-ad475489aa864114aa2f19ffee2b2afc.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-2503e9e32e544dc9b2ad7307f29fd645.vega-embed details,
-  #altair-viz-2503e9e32e544dc9b2ad7307f29fd645.vega-embed details summary {
+  #altair-viz-ad475489aa864114aa2f19ffee2b2afc.vega-embed details,
+  #altair-viz-ad475489aa864114aa2f19ffee2b2afc.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-2503e9e32e544dc9b2ad7307f29fd645"></div>
+<div id="altair-viz-ad475489aa864114aa2f19ffee2b2afc"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-2503e9e32e544dc9b2ad7307f29fd645") {
-      outputDiv = document.getElementById("altair-viz-2503e9e32e544dc9b2ad7307f29fd645");
+    if (outputDiv.id !== "altair-viz-ad475489aa864114aa2f19ffee2b2afc") {
+      outputDiv = document.getElementById("altair-viz-ad475489aa864114aa2f19ffee2b2afc");
     }
 
     const paths = {
@@ -1867,7 +1871,7 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 <p>Note above the use of <code class="docutils literal notranslate"><span class="pre">resolve='global'</span></code> on the <code class="docutils literal notranslate"><span class="pre">interval</span></code> selection. The default setting of <code class="docutils literal notranslate"><span class="pre">'global'</span></code> indicates that across all plots only one brush can be active at a time. However, in some cases we might want to define brushes in multiple plots and combine the results. If we use <code class="docutils literal notranslate"><span class="pre">resolve='union'</span></code>, the selection will be the <em>union</em> of all brushes: if a point resides within any brush it will be selected. Alternatively, if we use <code class="docutils literal notranslate"><span class="pre">resolve='intersect'</span></code>, the selection will consist of the <em>intersection</em> of all brushes: only points that reside within all brushes will be selected.</p>
 <p><em>Try setting the <code class="docutils literal notranslate"><span class="pre">resolve</span></code> parameter to <code class="docutils literal notranslate"><span class="pre">'union'</span></code> and <code class="docutils literal notranslate"><span class="pre">'intersect'</span></code> and see how it changes the resulting selection logic.</em></p>
 <section id="cross-filtering">
-<h3><span class="section-number">6.7.1. </span>Cross-Filtering<a class="headerlink" href="#cross-filtering" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">3.7.1. </span>Cross-Filtering<a class="headerlink" href="#cross-filtering" title="Link to this heading">#</a></h3>
 <p>The brushing &amp; linking examples we’ve looked at all use conditional encodings, for example to change opacity values in response to a selection. Another option is to use a selection defined in one view to <em>filter</em> the content of another view.</p>
 <p>Let’s build a collection of histograms for the <code class="docutils literal notranslate"><span class="pre">flights</span></code> dataset: arrival <code class="docutils literal notranslate"><span class="pre">delay</span></code> (how early or late a flight arrives, in minutes), <code class="docutils literal notranslate"><span class="pre">distance</span></code> flown (in miles), and <code class="docutils literal notranslate"><span class="pre">time</span></code> of departure (hour of the day). We’ll use the <code class="docutils literal notranslate"><span class="pre">repeat</span></code> operator to create the histograms, and add an <code class="docutils literal notranslate"><span class="pre">interval</span></code> selection for the <code class="docutils literal notranslate"><span class="pre">x</span></code> axis with brushes resolved via intersection.</p>
 <p>In particular, each histogram will consist of two layers: a gray background layer and a blue foreground layer, with the foreground layer filtered by our intersection of brush selections. The result is a <em>cross-filtering</em> interaction across the three charts!</p>
@@ -1906,30 +1910,30 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_97229/1265798576.py:15: AltairDeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_52912/1265798576.py:15: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use add_params instead.
   hist.add_selection(brush).encode(color=alt.value(&#39;lightgrey&#39;)),
 </pre></div>
 </div>
 <div class="output text_html">
 <style>
-  #altair-viz-bba8c9e120bd448ab363e652d0f234c2.vega-embed {
+  #altair-viz-8c0fd83c4a054e0da5f793157e50ed23.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-bba8c9e120bd448ab363e652d0f234c2.vega-embed details,
-  #altair-viz-bba8c9e120bd448ab363e652d0f234c2.vega-embed details summary {
+  #altair-viz-8c0fd83c4a054e0da5f793157e50ed23.vega-embed details,
+  #altair-viz-8c0fd83c4a054e0da5f793157e50ed23.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-bba8c9e120bd448ab363e652d0f234c2"></div>
+<div id="altair-viz-8c0fd83c4a054e0da5f793157e50ed23"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-bba8c9e120bd448ab363e652d0f234c2") {
-      outputDiv = document.getElementById("altair-viz-bba8c9e120bd448ab363e652d0f234c2");
+    if (outputDiv.id !== "altair-viz-8c0fd83c4a054e0da5f793157e50ed23") {
+      outputDiv = document.getElementById("altair-viz-8c0fd83c4a054e0da5f793157e50ed23");
     }
 
     const paths = {
@@ -1985,7 +1989,7 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 </section>
 </section>
 <section id="summary">
-<h2><span class="section-number">6.8. </span>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">3.8. </span>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
 <p>For more information about the supported interaction options in Altair, please consult the <a class="reference external" href="https://altair-viz.github.io/user_guide/interactions.html">Altair interactive selection documentation</a>. For details about customizing event handlers, for example to compose multiple interaction techniques or support touch-based input on mobile devices, see the <a class="reference external" href="https://vega.github.io/vega-lite/docs/selection.html">Vega-Lite selection documentation</a>.</p>
 <p>Interested in learning more?</p>
 <ul class="simple">
@@ -1996,7 +2000,7 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 <li><p>Finally, for a treatise on what makes interaction effective, read the classic <a class="reference external" href="https://scholar.google.com/scholar?cluster=15702972136892195211">Direct Manipulation Interfaces</a> paper by Hutchins, Hollan, &amp; Norman.</p></li>
 </ul>
 <section id="appendix-on-the-representation-of-time">
-<h3><span class="section-number">6.8.1. </span>Appendix: On The Representation of Time<a class="headerlink" href="#appendix-on-the-representation-of-time" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">3.8.1. </span>Appendix: On The Representation of Time<a class="headerlink" href="#appendix-on-the-representation-of-time" title="Link to this heading">#</a></h3>
 <p>Earlier we observed a small bump in the number of movies in either 1969 and 1970. Where does that bump come from? And why 1969 <em>or</em> 1970? The answer stems from a combination of missing data and how your computer represents time.</p>
 <p>Internally, dates and times are represented relative to the <a class="reference external" href="https://en.wikipedia.org/wiki/Unix_time">UNIX epoch</a>, in which time “zero” corresponds to the stroke of midnight on January 1, 1970 in <a class="reference external" href="https://en.wikipedia.org/wiki/Coordinated_Universal_Time">UTC time</a>, which runs along the <a class="reference external" href="https://en.wikipedia.org/wiki/Prime_meridian">prime meridian</a>. It turns out there are a few movies with missing (<code class="docutils literal notranslate"><span class="pre">null</span></code>) release dates. Those <code class="docutils literal notranslate"><span class="pre">null</span></code> values get interpreted as time <code class="docutils literal notranslate"><span class="pre">0</span></code>, and thus map to January 1, 1970 in UTC time. If you live in the Americas – and thus in “earlier” time zones – this precise point in time corresponds to an earlier hour on December 31, 1969 in your local time zone. On the other hand, if you live near or east of the prime meridian, the date in your local time zone will be January 1, 1970.</p>
 <p>The takeaway? Always be skeptical of your data, and be mindful that how data is represented (whether as date times, or floating point numbers, or latitudes and longitudes, <em>etc.</em>) can sometimes lead to artifacts that impact analysis!</p>
@@ -2040,7 +2044,7 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">5. </span>Multi-View Composition</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Multi-View Composition</p>
       </div>
     </a>
     <a class="right-next"
@@ -2048,7 +2052,7 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">7. </span>Cartographic Visualization</p>
+        <p class="prev-next-title"><span class="section-number">4. </span>Cartographic Visualization</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -2068,22 +2072,22 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">6.1. Datasets</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introducing-selections">6.2. Introducing Selections</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamic-queries">6.3. Dynamic Queries</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#binding-selections-to-multiple-inputs">6.3.1. Binding Selections to Multiple Inputs</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-visualizations-as-dynamic-queries">6.3.2. Using Visualizations as Dynamic Queries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">3.1. Datasets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introducing-selections">3.2. Introducing Selections</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamic-queries">3.3. Dynamic Queries</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#binding-selections-to-multiple-inputs">3.3.1. Binding Selections to Multiple Inputs</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-visualizations-as-dynamic-queries">3.3.2. Using Visualizations as Dynamic Queries</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#panning-zooming">6.4. Panning &amp; Zooming</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#navigation-overview-detail">6.5. Navigation: Overview + Detail</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#details-on-demand">6.6. Details on Demand</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brushing-linking-revisited">6.7. Brushing &amp; Linking, Revisited</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-filtering">6.7.1. Cross-Filtering</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#panning-zooming">3.4. Panning &amp; Zooming</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#navigation-overview-detail">3.5. Navigation: Overview + Detail</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#details-on-demand">3.6. Details on Demand</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#brushing-linking-revisited">3.7. Brushing &amp; Linking, Revisited</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-filtering">3.7.1. Cross-Filtering</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">6.8. Summary</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#appendix-on-the-representation-of-time">6.8.1. Appendix: On The Representation of Time</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">3.8. Summary</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#appendix-on-the-representation-of-time">3.8.1. Appendix: On The Representation of Time</a></li>
 </ul>
 </li>
 </ul>

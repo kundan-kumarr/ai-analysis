@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>3. Data Transformation &#8212; AI with Data analysis</title>
+    <title>1.15. Data Transformation &#8212; AI with Data analysis</title>
   
   
   
@@ -61,8 +61,8 @@
     <link rel="canonical" href="/ai-analysis/altair_data_transformation.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="4. Scales, Axes, and Legends" href="altair_scales_axes_legends.html" />
-    <link rel="prev" title="2. Data Types, Graphical Marks, and Visual Encoding Channels" href="altair_marks_encoding.html" />
+    <link rel="next" title="1.16. Scales, Axes, and Legends" href="altair_scales_axes_legends.html" />
+    <link rel="prev" title="1.14. Data Types, Graphical Marks, and Visual Encoding Channels" href="altair_marks_encoding.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -182,13 +182,20 @@
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Curriculum</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="altair_introduction.html">1. Introduction to Altair</a></li>
-<li class="toctree-l1"><a class="reference internal" href="altair_marks_encoding.html">2. Data Types, Graphical Marks, and Visual Encoding Channels</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Data Transformation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="altair_scales_axes_legends.html">4. Scales, Axes, and Legends</a></li>
-<li class="toctree-l1"><a class="reference internal" href="altair_view_composition.html">5. Multi-View Composition</a></li>
-<li class="toctree-l1"><a class="reference internal" href="altair_interaction.html">6. Interaction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="altair_cartographic.html">7. Cartographic Visualization</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="altair_introduction.html">1. Introduction to Altair</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="altair_marks_encoding.html">1.14. Data Types, Graphical Marks, and Visual Encoding Channels</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">1.15. Data Transformation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="altair_scales_axes_legends.html">1.16. Scales, Axes, and Legends</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Curriculum1</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="altair_view_composition.html">2. Multi-View Composition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="altair_interaction.html">3. Interaction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="altair_cartographic.html">4. Cartographic Visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction-to-prompting-for-llm-reasoning-and-planning.html">5. Pre-Lesson Exercise: Organize Your Workspace Space Kick-Off</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model-selection.html">6. Organize Your Workspace Space</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Support</span></p>
 <ul class="nav bd-sidenav">
@@ -419,22 +426,22 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-movies-dataset">3.1. The Movies Dataset</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#histograms">3.2. Histograms</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aggregation">3.3. Aggregation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#averages-and-sorting">3.3.1. Averages and Sorting</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medians-and-the-inter-quartile-range">3.3.2. Medians and the Inter-Quartile Range</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#time-units">3.3.3. Time Units</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-movies-dataset">1.15.1. The Movies Dataset</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#histograms">1.15.2. Histograms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aggregation">1.15.3. Aggregation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#averages-and-sorting">1.15.3.1. Averages and Sorting</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medians-and-the-inter-quartile-range">1.15.3.2. Medians and the Inter-Quartile Range</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#time-units">1.15.3.3. Time Units</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-data-transformation">3.4. Advanced Data Transformation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calculate">3.4.1. Calculate</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#filter">3.4.2. Filter</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aggregate">3.4.3. Aggregate</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#window">3.4.4. Window</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-data-transformation">1.15.4. Advanced Data Transformation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calculate">1.15.4.1. Calculate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#filter">1.15.4.2. Filter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aggregate">1.15.4.3. Aggregate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#window">1.15.4.4. Window</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">3.5. Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">1.15.5. Summary</a></li>
 </ul>
             </nav>
         </div>
@@ -447,7 +454,7 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="data-transformation">
-<h1><span class="section-number">3. </span>Data Transformation<a class="headerlink" href="#data-transformation" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">1.15. </span>Data Transformation<a class="headerlink" href="#data-transformation" title="Link to this heading">#</a></h1>
 <p>In previous notebooks we learned how to use marks and visual encodings to represent individual data records. Here we will explore methods for <em>transforming</em> data, including the use of aggregates to summarize multiple records. Data transformation is an integral part of visualization: choosing the  variables to show and their level of detail is just as important as choosing appropriate visual encodings. After all, it doesn’t matter how well chosen your visual encodings are if you are showing the wrong information!</p>
 <p>As you work through this module, we recommend that you open the <a class="reference external" href="https://altair-viz.github.io/user_guide/transform/">Altair Data Transformations documentation</a> in another tab. It will be a useful resource if at any point you’d like more details or want to see what other transformations are available.</p>
 <p><em>This notebook is part of the <a class="reference external" href="https://github.com/uwdata/visualization-curriculum">data visualization curriculum</a>.</em></p>
@@ -460,7 +467,7 @@ document.write(`
 </div>
 </div>
 <section id="the-movies-dataset">
-<h2><span class="section-number">3.1. </span>The Movies Dataset<a class="headerlink" href="#the-movies-dataset" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">1.15.1. </span>The Movies Dataset<a class="headerlink" href="#the-movies-dataset" title="Link to this heading">#</a></h2>
 <p>We will be working with a table of data about motion pictures, taken from the <a class="reference external" href="https://vega.github.io/vega-datasets/">vega-datasets</a> collection. The data includes variables such as the film name, director, genre, release date, ratings, and gross revenues. However, <em>be careful when working with this data</em>: the films are from unevenly sampled years, using data combined from multiple sources. If you dig in you will find issues with missing values and even some subtle errors! Nevertheless, the data should prove interesting to explore…</p>
 <p>Let’s retrieve the URL for the JSON data file from the vega_datasets package, and then read the data into a Pandas data frame so that we can inspect its contents.</p>
 <div class="cell docutils container">
@@ -630,7 +637,7 @@ document.write(`
 </div>
 </section>
 <section id="histograms">
-<h2><span class="section-number">3.2. </span>Histograms<a class="headerlink" href="#histograms" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">1.15.2. </span>Histograms<a class="headerlink" href="#histograms" title="Link to this heading">#</a></h2>
 <p>We’ll start our transformation tour by <em>binning</em> data into discrete groups and <em>counting</em> records to summarize those groups. The resulting plots are known as <a class="reference external" href="https://en.wikipedia.org/wiki/Histogram"><em>histograms</em></a>.</p>
 <p>Let’s first look at unaggregated data: a scatter plot showing movie ratings from Rotten Tomatoes versus ratings from IMDB users. We’ll provide data to Altair by passing the movies data URL to the <code class="docutils literal notranslate"><span class="pre">Chart</span></code> method. (We could also pass the Pandas data frame directly to get the same result.) We can then encode the Rotten Tomatoes and IMDB ratings fields using the <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> channels:</p>
 <div class="cell docutils container">
@@ -645,23 +652,23 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-f4f4890aea9849d195534a3e3a785c93.vega-embed {
+  #altair-viz-4c1b95230e80469bb4e937a84c43b8d2.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-f4f4890aea9849d195534a3e3a785c93.vega-embed details,
-  #altair-viz-f4f4890aea9849d195534a3e3a785c93.vega-embed details summary {
+  #altair-viz-4c1b95230e80469bb4e937a84c43b8d2.vega-embed details,
+  #altair-viz-4c1b95230e80469bb4e937a84c43b8d2.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-f4f4890aea9849d195534a3e3a785c93"></div>
+<div id="altair-viz-4c1b95230e80469bb4e937a84c43b8d2"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-f4f4890aea9849d195534a3e3a785c93") {
-      outputDiv = document.getElementById("altair-viz-f4f4890aea9849d195534a3e3a785c93");
+    if (outputDiv.id !== "altair-viz-4c1b95230e80469bb4e937a84c43b8d2") {
+      outputDiv = document.getElementById("altair-viz-4c1b95230e80469bb4e937a84c43b8d2");
     }
 
     const paths = {
@@ -725,23 +732,23 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-a3ecbfb760a3408db85baddee91688fe.vega-embed {
+  #altair-viz-1252433b298d4096a1de930b5d045c0f.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-a3ecbfb760a3408db85baddee91688fe.vega-embed details,
-  #altair-viz-a3ecbfb760a3408db85baddee91688fe.vega-embed details summary {
+  #altair-viz-1252433b298d4096a1de930b5d045c0f.vega-embed details,
+  #altair-viz-1252433b298d4096a1de930b5d045c0f.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-a3ecbfb760a3408db85baddee91688fe"></div>
+<div id="altair-viz-1252433b298d4096a1de930b5d045c0f"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-a3ecbfb760a3408db85baddee91688fe") {
-      outputDiv = document.getElementById("altair-viz-a3ecbfb760a3408db85baddee91688fe");
+    if (outputDiv.id !== "altair-viz-1252433b298d4096a1de930b5d045c0f") {
+      outputDiv = document.getElementById("altair-viz-1252433b298d4096a1de930b5d045c0f");
     }
 
     const paths = {
@@ -805,23 +812,23 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-6f9557f4cd4540d2b85a19c47823fb43.vega-embed {
+  #altair-viz-ed4741cf8e7e48f484d447eb0fac6c8b.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-6f9557f4cd4540d2b85a19c47823fb43.vega-embed details,
-  #altair-viz-6f9557f4cd4540d2b85a19c47823fb43.vega-embed details summary {
+  #altair-viz-ed4741cf8e7e48f484d447eb0fac6c8b.vega-embed details,
+  #altair-viz-ed4741cf8e7e48f484d447eb0fac6c8b.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-6f9557f4cd4540d2b85a19c47823fb43"></div>
+<div id="altair-viz-ed4741cf8e7e48f484d447eb0fac6c8b"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-6f9557f4cd4540d2b85a19c47823fb43") {
-      outputDiv = document.getElementById("altair-viz-6f9557f4cd4540d2b85a19c47823fb43");
+    if (outputDiv.id !== "altair-viz-ed4741cf8e7e48f484d447eb0fac6c8b") {
+      outputDiv = document.getElementById("altair-viz-ed4741cf8e7e48f484d447eb0fac6c8b");
     }
 
     const paths = {
@@ -886,23 +893,23 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-045d9bbee0fc4b7481d15b2f924e4ce3.vega-embed {
+  #altair-viz-6d2cc75862c9470591ee690c21ee46b3.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-045d9bbee0fc4b7481d15b2f924e4ce3.vega-embed details,
-  #altair-viz-045d9bbee0fc4b7481d15b2f924e4ce3.vega-embed details summary {
+  #altair-viz-6d2cc75862c9470591ee690c21ee46b3.vega-embed details,
+  #altair-viz-6d2cc75862c9470591ee690c21ee46b3.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-045d9bbee0fc4b7481d15b2f924e4ce3"></div>
+<div id="altair-viz-6d2cc75862c9470591ee690c21ee46b3"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-045d9bbee0fc4b7481d15b2f924e4ce3") {
-      outputDiv = document.getElementById("altair-viz-045d9bbee0fc4b7481d15b2f924e4ce3");
+    if (outputDiv.id !== "altair-viz-6d2cc75862c9470591ee690c21ee46b3") {
+      outputDiv = document.getElementById("altair-viz-6d2cc75862c9470591ee690c21ee46b3");
     }
 
     const paths = {
@@ -966,23 +973,23 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-a27bab263fe548baa6fb55a00dc4b2de.vega-embed {
+  #altair-viz-859e63e7e37b435fa5941599ce98b3ac.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-a27bab263fe548baa6fb55a00dc4b2de.vega-embed details,
-  #altair-viz-a27bab263fe548baa6fb55a00dc4b2de.vega-embed details summary {
+  #altair-viz-859e63e7e37b435fa5941599ce98b3ac.vega-embed details,
+  #altair-viz-859e63e7e37b435fa5941599ce98b3ac.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-a27bab263fe548baa6fb55a00dc4b2de"></div>
+<div id="altair-viz-859e63e7e37b435fa5941599ce98b3ac"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-a27bab263fe548baa6fb55a00dc4b2de") {
-      outputDiv = document.getElementById("altair-viz-a27bab263fe548baa6fb55a00dc4b2de");
+    if (outputDiv.id !== "altair-viz-859e63e7e37b435fa5941599ce98b3ac") {
+      outputDiv = document.getElementById("altair-viz-859e63e7e37b435fa5941599ce98b3ac");
     }
 
     const paths = {
@@ -1047,23 +1054,23 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-5075ce4ef45d414bb45b8457686799f0.vega-embed {
+  #altair-viz-4ea835644fe0446ba879a864f7724061.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-5075ce4ef45d414bb45b8457686799f0.vega-embed details,
-  #altair-viz-5075ce4ef45d414bb45b8457686799f0.vega-embed details summary {
+  #altair-viz-4ea835644fe0446ba879a864f7724061.vega-embed details,
+  #altair-viz-4ea835644fe0446ba879a864f7724061.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-5075ce4ef45d414bb45b8457686799f0"></div>
+<div id="altair-viz-4ea835644fe0446ba879a864f7724061"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-5075ce4ef45d414bb45b8457686799f0") {
-      outputDiv = document.getElementById("altair-viz-5075ce4ef45d414bb45b8457686799f0");
+    if (outputDiv.id !== "altair-viz-4ea835644fe0446ba879a864f7724061") {
+      outputDiv = document.getElementById("altair-viz-4ea835644fe0446ba879a864f7724061");
     }
 
     const paths = {
@@ -1128,23 +1135,23 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-abccae32e38a4f30bc379295f3d9c489.vega-embed {
+  #altair-viz-306a9cc3c41b40628cfb14a7b8298d2a.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-abccae32e38a4f30bc379295f3d9c489.vega-embed details,
-  #altair-viz-abccae32e38a4f30bc379295f3d9c489.vega-embed details summary {
+  #altair-viz-306a9cc3c41b40628cfb14a7b8298d2a.vega-embed details,
+  #altair-viz-306a9cc3c41b40628cfb14a7b8298d2a.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-abccae32e38a4f30bc379295f3d9c489"></div>
+<div id="altair-viz-306a9cc3c41b40628cfb14a7b8298d2a"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-abccae32e38a4f30bc379295f3d9c489") {
-      outputDiv = document.getElementById("altair-viz-abccae32e38a4f30bc379295f3d9c489");
+    if (outputDiv.id !== "altair-viz-306a9cc3c41b40628cfb14a7b8298d2a") {
+      outputDiv = document.getElementById("altair-viz-306a9cc3c41b40628cfb14a7b8298d2a");
     }
 
     const paths = {
@@ -1210,23 +1217,23 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-6bcb26a7afdd4b5ebdcdd33f247cc74f.vega-embed {
+  #altair-viz-78117e77875d40019c4d45c101d2458d.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-6bcb26a7afdd4b5ebdcdd33f247cc74f.vega-embed details,
-  #altair-viz-6bcb26a7afdd4b5ebdcdd33f247cc74f.vega-embed details summary {
+  #altair-viz-78117e77875d40019c4d45c101d2458d.vega-embed details,
+  #altair-viz-78117e77875d40019c4d45c101d2458d.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-6bcb26a7afdd4b5ebdcdd33f247cc74f"></div>
+<div id="altair-viz-78117e77875d40019c4d45c101d2458d"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-6bcb26a7afdd4b5ebdcdd33f247cc74f") {
-      outputDiv = document.getElementById("altair-viz-6bcb26a7afdd4b5ebdcdd33f247cc74f");
+    if (outputDiv.id !== "altair-viz-78117e77875d40019c4d45c101d2458d") {
+      outputDiv = document.getElementById("altair-viz-78117e77875d40019c4d45c101d2458d");
     }
 
     const paths = {
@@ -1291,23 +1298,23 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-89888fb564f84bc0b8baee3435f441cc.vega-embed {
+  #altair-viz-2a3cddc930ad4c339739460aff05a51b.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-89888fb564f84bc0b8baee3435f441cc.vega-embed details,
-  #altair-viz-89888fb564f84bc0b8baee3435f441cc.vega-embed details summary {
+  #altair-viz-2a3cddc930ad4c339739460aff05a51b.vega-embed details,
+  #altair-viz-2a3cddc930ad4c339739460aff05a51b.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-89888fb564f84bc0b8baee3435f441cc"></div>
+<div id="altair-viz-2a3cddc930ad4c339739460aff05a51b"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-89888fb564f84bc0b8baee3435f441cc") {
-      outputDiv = document.getElementById("altair-viz-89888fb564f84bc0b8baee3435f441cc");
+    if (outputDiv.id !== "altair-viz-2a3cddc930ad4c339739460aff05a51b") {
+      outputDiv = document.getElementById("altair-viz-2a3cddc930ad4c339739460aff05a51b");
     }
 
     const paths = {
@@ -1361,11 +1368,11 @@ document.write(`
 <p>Compare the <em>size</em> and <em>color</em>-based 2D histograms above. Which encoding do you think should be preferred? Why? In which plot can you more precisely compare the magnitude of individual values? In which plot can you more accurately see the overall density of ratings?</p>
 </section>
 <section id="aggregation">
-<h2><span class="section-number">3.3. </span>Aggregation<a class="headerlink" href="#aggregation" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">1.15.3. </span>Aggregation<a class="headerlink" href="#aggregation" title="Link to this heading">#</a></h2>
 <p>Counts are just one type of aggregate. We might also calculate summaries using measures such as the <code class="docutils literal notranslate"><span class="pre">average</span></code>, <code class="docutils literal notranslate"><span class="pre">median</span></code>, <code class="docutils literal notranslate"><span class="pre">min</span></code>, or <code class="docutils literal notranslate"><span class="pre">max</span></code>. The Altair documentation includes the <a class="reference external" href="https://altair-viz.github.io/user_guide/transform/aggregate.html#user-guide-aggregate-transform">full set of available aggregation functions</a>.</p>
 <p>Let’s look at some examples!</p>
 <section id="averages-and-sorting">
-<h3><span class="section-number">3.3.1. </span>Averages and Sorting<a class="headerlink" href="#averages-and-sorting" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">1.15.3.1. </span>Averages and Sorting<a class="headerlink" href="#averages-and-sorting" title="Link to this heading">#</a></h3>
 <p><em>Do different genres of films receive consistently different ratings from critics?</em> As a first step towards answering this question, we might examine the <a class="reference external" href="https://en.wikipedia.org/wiki/Arithmetic_mean"><em>average</em> (a.k.a. the <em>arithmetic mean</em>)</a> rating for each genre of movie.</p>
 <p>Let’s visualize genre along the <code class="docutils literal notranslate"><span class="pre">y</span></code> axis and plot <code class="docutils literal notranslate"><span class="pre">average</span></code> Rotten Tomatoes ratings along the <code class="docutils literal notranslate"><span class="pre">x</span></code> axis.</p>
 <div class="cell docutils container">
@@ -1380,23 +1387,23 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-4ea2ee32630e4cc9a5cb6af5c11034e5.vega-embed {
+  #altair-viz-3eed259a8cc9477ab857239ebaebd052.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-4ea2ee32630e4cc9a5cb6af5c11034e5.vega-embed details,
-  #altair-viz-4ea2ee32630e4cc9a5cb6af5c11034e5.vega-embed details summary {
+  #altair-viz-3eed259a8cc9477ab857239ebaebd052.vega-embed details,
+  #altair-viz-3eed259a8cc9477ab857239ebaebd052.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-4ea2ee32630e4cc9a5cb6af5c11034e5"></div>
+<div id="altair-viz-3eed259a8cc9477ab857239ebaebd052"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-4ea2ee32630e4cc9a5cb6af5c11034e5") {
-      outputDiv = document.getElementById("altair-viz-4ea2ee32630e4cc9a5cb6af5c11034e5");
+    if (outputDiv.id !== "altair-viz-3eed259a8cc9477ab857239ebaebd052") {
+      outputDiv = document.getElementById("altair-viz-3eed259a8cc9477ab857239ebaebd052");
     }
 
     const paths = {
@@ -1463,23 +1470,23 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-eaeecdc3280d49319999198220b3fa8c.vega-embed {
+  #altair-viz-24f9bc024bd34b19949ec1efcdabe0d3.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-eaeecdc3280d49319999198220b3fa8c.vega-embed details,
-  #altair-viz-eaeecdc3280d49319999198220b3fa8c.vega-embed details summary {
+  #altair-viz-24f9bc024bd34b19949ec1efcdabe0d3.vega-embed details,
+  #altair-viz-24f9bc024bd34b19949ec1efcdabe0d3.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-eaeecdc3280d49319999198220b3fa8c"></div>
+<div id="altair-viz-24f9bc024bd34b19949ec1efcdabe0d3"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-eaeecdc3280d49319999198220b3fa8c") {
-      outputDiv = document.getElementById("altair-viz-eaeecdc3280d49319999198220b3fa8c");
+    if (outputDiv.id !== "altair-viz-24f9bc024bd34b19949ec1efcdabe0d3") {
+      outputDiv = document.getElementById("altair-viz-24f9bc024bd34b19949ec1efcdabe0d3");
     }
 
     const paths = {
@@ -1533,7 +1540,7 @@ document.write(`
 <p><em>The sorted plot suggests that critics think highly of documentaries, musicals, westerns, and dramas, but look down upon romantic comedies and horror films… and who doesn’t love <code class="docutils literal notranslate"><span class="pre">null</span></code> movies!?</em></p>
 </section>
 <section id="medians-and-the-inter-quartile-range">
-<h3><span class="section-number">3.3.2. </span>Medians and the Inter-Quartile Range<a class="headerlink" href="#medians-and-the-inter-quartile-range" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">1.15.3.2. </span>Medians and the Inter-Quartile Range<a class="headerlink" href="#medians-and-the-inter-quartile-range" title="Link to this heading">#</a></h3>
 <p>While averages are a common way to summarize data, they can sometimes mislead. For example, very large or very small values (<a class="reference external" href="https://en.wikipedia.org/wiki/Outlier"><em>outliers</em></a>) might skew the average. To be safe, we can compare the genres according to the <a class="reference external" href="https://en.wikipedia.org/wiki/Median"><em>median</em></a> ratings as well.</p>
 <p>The median is a point that splits the data evenly, such that half of the values are less than the median and the other half are greater. The median is less sensitive to outliers and so is referred to as a <a class="reference external" href="https://en.wikipedia.org/wiki/Robust_statistics"><em>robust</em> statistic</a>. For example, arbitrarily increasing the largest rating value will not cause the median to change.</p>
 <p>Let’s update our plot to use a <code class="docutils literal notranslate"><span class="pre">median</span></code> aggregate and sort by those values:</p>
@@ -1551,23 +1558,23 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-d04e7cd1863b437ab861a0e0a2746df8.vega-embed {
+  #altair-viz-8dd24ab34aa948f5ab5e5caf7b766232.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-d04e7cd1863b437ab861a0e0a2746df8.vega-embed details,
-  #altair-viz-d04e7cd1863b437ab861a0e0a2746df8.vega-embed details summary {
+  #altair-viz-8dd24ab34aa948f5ab5e5caf7b766232.vega-embed details,
+  #altair-viz-8dd24ab34aa948f5ab5e5caf7b766232.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-d04e7cd1863b437ab861a0e0a2746df8"></div>
+<div id="altair-viz-8dd24ab34aa948f5ab5e5caf7b766232"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-d04e7cd1863b437ab861a0e0a2746df8") {
-      outputDiv = document.getElementById("altair-viz-d04e7cd1863b437ab861a0e0a2746df8");
+    if (outputDiv.id !== "altair-viz-8dd24ab34aa948f5ab5e5caf7b766232") {
+      outputDiv = document.getElementById("altair-viz-8dd24ab34aa948f5ab5e5caf7b766232");
     }
 
     const paths = {
@@ -1637,23 +1644,23 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-e76fd23d6f384367a3f88d6734874ce7.vega-embed {
+  #altair-viz-3e587d9739ce48da81407ef425363494.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-e76fd23d6f384367a3f88d6734874ce7.vega-embed details,
-  #altair-viz-e76fd23d6f384367a3f88d6734874ce7.vega-embed details summary {
+  #altair-viz-3e587d9739ce48da81407ef425363494.vega-embed details,
+  #altair-viz-3e587d9739ce48da81407ef425363494.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-e76fd23d6f384367a3f88d6734874ce7"></div>
+<div id="altair-viz-3e587d9739ce48da81407ef425363494"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-e76fd23d6f384367a3f88d6734874ce7") {
-      outputDiv = document.getElementById("altair-viz-e76fd23d6f384367a3f88d6734874ce7");
+    if (outputDiv.id !== "altair-viz-3e587d9739ce48da81407ef425363494") {
+      outputDiv = document.getElementById("altair-viz-3e587d9739ce48da81407ef425363494");
     }
 
     const paths = {
@@ -1706,7 +1713,7 @@ document.write(`
 </div>
 </section>
 <section id="time-units">
-<h3><span class="section-number">3.3.3. </span>Time Units<a class="headerlink" href="#time-units" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">1.15.3.3. </span>Time Units<a class="headerlink" href="#time-units" title="Link to this heading">#</a></h3>
 <p><em>Now let’s ask a completely different question: do box office returns vary by season?</em></p>
 <p>To get an initial answer, let’s plot the median U.S. gross revenue by month.</p>
 <p>To make this chart, use the <code class="docutils literal notranslate"><span class="pre">timeUnit</span></code> transform to map release dates to the <code class="docutils literal notranslate"><span class="pre">month</span></code> of the year. The result is similar to binning, but using meaningful time intervals. Other valid time units include <code class="docutils literal notranslate"><span class="pre">year</span></code>, <code class="docutils literal notranslate"><span class="pre">quarter</span></code>, <code class="docutils literal notranslate"><span class="pre">date</span></code> (numeric day in month), <code class="docutils literal notranslate"><span class="pre">day</span></code> (day of the week), and <code class="docutils literal notranslate"><span class="pre">hours</span></code>, as well as compound units such as <code class="docutils literal notranslate"><span class="pre">yearmonth</span></code> or <code class="docutils literal notranslate"><span class="pre">hoursminutes</span></code>. See the Altair documentation for a <a class="reference external" href="https://altair-viz.github.io/user_guide/transform/timeunit.html#user-guide-timeunit-transform">complete list of time units</a>.</p>
@@ -1722,23 +1729,23 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-64ce82233fd84edbbe2be73ad79fc963.vega-embed {
+  #altair-viz-7be16743141a40f8abc126eab2bd9ae5.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-64ce82233fd84edbbe2be73ad79fc963.vega-embed details,
-  #altair-viz-64ce82233fd84edbbe2be73ad79fc963.vega-embed details summary {
+  #altair-viz-7be16743141a40f8abc126eab2bd9ae5.vega-embed details,
+  #altair-viz-7be16743141a40f8abc126eab2bd9ae5.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-64ce82233fd84edbbe2be73ad79fc963"></div>
+<div id="altair-viz-7be16743141a40f8abc126eab2bd9ae5"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-64ce82233fd84edbbe2be73ad79fc963") {
-      outputDiv = document.getElementById("altair-viz-64ce82233fd84edbbe2be73ad79fc963");
+    if (outputDiv.id !== "altair-viz-7be16743141a40f8abc126eab2bd9ae5") {
+      outputDiv = document.getElementById("altair-viz-7be16743141a40f8abc126eab2bd9ae5");
     }
 
     const paths = {
@@ -1802,23 +1809,23 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-2a57a720ed85447989a8206146de7182.vega-embed {
+  #altair-viz-14455ec837454f3298ef32127eae9e5b.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-2a57a720ed85447989a8206146de7182.vega-embed details,
-  #altair-viz-2a57a720ed85447989a8206146de7182.vega-embed details summary {
+  #altair-viz-14455ec837454f3298ef32127eae9e5b.vega-embed details,
+  #altair-viz-14455ec837454f3298ef32127eae9e5b.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-2a57a720ed85447989a8206146de7182"></div>
+<div id="altair-viz-14455ec837454f3298ef32127eae9e5b"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-2a57a720ed85447989a8206146de7182") {
-      outputDiv = document.getElementById("altair-viz-2a57a720ed85447989a8206146de7182");
+    if (outputDiv.id !== "altair-viz-14455ec837454f3298ef32127eae9e5b") {
+      outputDiv = document.getElementById("altair-viz-14455ec837454f3298ef32127eae9e5b");
     }
 
     const paths = {
@@ -1873,11 +1880,11 @@ document.write(`
 </section>
 </section>
 <section id="advanced-data-transformation">
-<h2><span class="section-number">3.4. </span>Advanced Data Transformation<a class="headerlink" href="#advanced-data-transformation" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">1.15.4. </span>Advanced Data Transformation<a class="headerlink" href="#advanced-data-transformation" title="Link to this heading">#</a></h2>
 <p>The examples above all use transformations (<em>bin</em>, <em>timeUnit</em>, <em>aggregate</em>, <em>sort</em>) that are defined relative to an encoding channel. However, at times you may want to apply a chain of multiple transformations prior to visualization, or use transformations that don’t integrate into encoding definitions. For such cases, Altair and Vega-Lite support data transformations defined separately from encodings. These transformations are applied to the data <em>before</em> any encodings are considered.</p>
 <p>We <em>could</em> also perform transformations using Pandas directly, and then visualize the result. However, using the built-in transforms allows our visualizations to be published more easily in other contexts; for example, exporting the Vega-Lite JSON to use in a stand-alone web interface. Let’s look at the built-in transforms supported by Altair, such as <code class="docutils literal notranslate"><span class="pre">calculate</span></code>, <code class="docutils literal notranslate"><span class="pre">filter</span></code>, <code class="docutils literal notranslate"><span class="pre">aggregate</span></code>, and <code class="docutils literal notranslate"><span class="pre">window</span></code>.</p>
 <section id="calculate">
-<h3><span class="section-number">3.4.1. </span>Calculate<a class="headerlink" href="#calculate" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">1.15.4.1. </span>Calculate<a class="headerlink" href="#calculate" title="Link to this heading">#</a></h3>
 <p><em>Think back to our comparison of U.S. gross and worldwide gross. Doesn’t worldwide revenue include the U.S.? (Indeed it does.) How might we get a better sense of trends outside the U.S.?</em></p>
 <p>With the <code class="docutils literal notranslate"><span class="pre">calculate</span></code> transform we can derive new fields. Here we want to subtract U.S. gross from worldwide gross. The <code class="docutils literal notranslate"><span class="pre">calculate</span></code> transform takes a <a class="reference external" href="https://vega.github.io/vega/docs/expressions/">Vega expression string</a> to define a formula over a single record. Vega expressions use JavaScript syntax. The <code class="docutils literal notranslate"><span class="pre">datum.</span></code> prefix accesses a field value on the input record.</p>
 <div class="cell docutils container">
@@ -1894,23 +1901,23 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-1274a0774a8a451fac5f2dde60e97cba.vega-embed {
+  #altair-viz-04dbdeeca1784f2cac596b9e86fc3fee.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-1274a0774a8a451fac5f2dde60e97cba.vega-embed details,
-  #altair-viz-1274a0774a8a451fac5f2dde60e97cba.vega-embed details summary {
+  #altair-viz-04dbdeeca1784f2cac596b9e86fc3fee.vega-embed details,
+  #altair-viz-04dbdeeca1784f2cac596b9e86fc3fee.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-1274a0774a8a451fac5f2dde60e97cba"></div>
+<div id="altair-viz-04dbdeeca1784f2cac596b9e86fc3fee"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-1274a0774a8a451fac5f2dde60e97cba") {
-      outputDiv = document.getElementById("altair-viz-1274a0774a8a451fac5f2dde60e97cba");
+    if (outputDiv.id !== "altair-viz-04dbdeeca1784f2cac596b9e86fc3fee") {
+      outputDiv = document.getElementById("altair-viz-04dbdeeca1784f2cac596b9e86fc3fee");
     }
 
     const paths = {
@@ -1964,7 +1971,7 @@ document.write(`
 <p><em>We can see that seasonal trends hold outside the U.S., but with a more pronounced decline in the non-peak months.</em></p>
 </section>
 <section id="filter">
-<h3><span class="section-number">3.4.2. </span>Filter<a class="headerlink" href="#filter" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">1.15.4.2. </span>Filter<a class="headerlink" href="#filter" title="Link to this heading">#</a></h3>
 <p>The <em>filter</em> transform creates a new table with a subset of the original data, removing rows that fail to meet a provided <a class="reference external" href="https://en.wikipedia.org/wiki/Predicate_%28mathematical_logic%29"><em>predicate</em></a> test. Similar to the <em>calculate</em> transform, filter predicates are expressed using the <a class="reference external" href="https://vega.github.io/vega/docs/expressions/">Vega expression language</a>.</p>
 <p>Below we add a filter to limit our initial scatter plot of IMDB vs. Rotten Tomatoes ratings to only films in the major genre of “Romantic Comedy”.</p>
 <div class="cell docutils container">
@@ -1979,23 +1986,23 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-ebfc5be17be54535a2c914674b9ad714.vega-embed {
+  #altair-viz-7efa69e2b3ca4c628ac2b49aff8fee4a.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-ebfc5be17be54535a2c914674b9ad714.vega-embed details,
-  #altair-viz-ebfc5be17be54535a2c914674b9ad714.vega-embed details summary {
+  #altair-viz-7efa69e2b3ca4c628ac2b49aff8fee4a.vega-embed details,
+  #altair-viz-7efa69e2b3ca4c628ac2b49aff8fee4a.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-ebfc5be17be54535a2c914674b9ad714"></div>
+<div id="altair-viz-7efa69e2b3ca4c628ac2b49aff8fee4a"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-ebfc5be17be54535a2c914674b9ad714") {
-      outputDiv = document.getElementById("altair-viz-ebfc5be17be54535a2c914674b9ad714");
+    if (outputDiv.id !== "altair-viz-7efa69e2b3ca4c628ac2b49aff8fee4a") {
+      outputDiv = document.getElementById("altair-viz-7efa69e2b3ca4c628ac2b49aff8fee4a");
     }
 
     const paths = {
@@ -2060,23 +2067,23 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-d17a6d4cba55474c8b6fbfc2f5c4411e.vega-embed {
+  #altair-viz-129e7c7a9cd64b3ab7c748fc5be2de36.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-d17a6d4cba55474c8b6fbfc2f5c4411e.vega-embed details,
-  #altair-viz-d17a6d4cba55474c8b6fbfc2f5c4411e.vega-embed details summary {
+  #altair-viz-129e7c7a9cd64b3ab7c748fc5be2de36.vega-embed details,
+  #altair-viz-129e7c7a9cd64b3ab7c748fc5be2de36.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-d17a6d4cba55474c8b6fbfc2f5c4411e"></div>
+<div id="altair-viz-129e7c7a9cd64b3ab7c748fc5be2de36"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-d17a6d4cba55474c8b6fbfc2f5c4411e") {
-      outputDiv = document.getElementById("altair-viz-d17a6d4cba55474c8b6fbfc2f5c4411e");
+    if (outputDiv.id !== "altair-viz-129e7c7a9cd64b3ab7c748fc5be2de36") {
+      outputDiv = document.getElementById("altair-viz-129e7c7a9cd64b3ab7c748fc5be2de36");
     }
 
     const paths = {
@@ -2130,7 +2137,7 @@ document.write(`
 <p><em>They seem to score unusually high! Are older films simply better, or is there a <a class="reference external" href="https://en.wikipedia.org/wiki/Selection%5Fbias">selection bias</a> towards more highly-rated older films in this dataset?</em></p>
 </section>
 <section id="aggregate">
-<h3><span class="section-number">3.4.3. </span>Aggregate<a class="headerlink" href="#aggregate" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">1.15.4.3. </span>Aggregate<a class="headerlink" href="#aggregate" title="Link to this heading">#</a></h3>
 <p>We have already seen <code class="docutils literal notranslate"><span class="pre">aggregate</span></code> transforms such as <code class="docutils literal notranslate"><span class="pre">count</span></code> and <code class="docutils literal notranslate"><span class="pre">average</span></code>  in the context of encoding channels. We can also specify aggregates separately, as a pre-processing step for other transforms (as in the <code class="docutils literal notranslate"><span class="pre">window</span></code> transform examples below). The output of an <code class="docutils literal notranslate"><span class="pre">aggregate</span></code> transform is a new data table with records that contain both the <code class="docutils literal notranslate"><span class="pre">groupby</span></code> fields and the computed <code class="docutils literal notranslate"><span class="pre">aggregate</span></code> measures.</p>
 <p>Let’s recreate our plot of average ratings by genre, but this time using a separate <code class="docutils literal notranslate"><span class="pre">aggregate</span></code> transform. The output table from the aggregate transform contains 13 rows, one for each genre.</p>
 <p>To order the <code class="docutils literal notranslate"><span class="pre">y</span></code> axis we must include a required aggregate operation in our sorting instructions. Here we use the <code class="docutils literal notranslate"><span class="pre">max</span></code> operator, which works fine because there is only one output record per genre. We could similarly use the <code class="docutils literal notranslate"><span class="pre">min</span></code> operator and end up with the same plot.</p>
@@ -2152,23 +2159,23 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-c57671ff380c45779c22a3a314abab0f.vega-embed {
+  #altair-viz-d40ee2b630f24bf7bbdac323987d33d7.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-c57671ff380c45779c22a3a314abab0f.vega-embed details,
-  #altair-viz-c57671ff380c45779c22a3a314abab0f.vega-embed details summary {
+  #altair-viz-d40ee2b630f24bf7bbdac323987d33d7.vega-embed details,
+  #altair-viz-d40ee2b630f24bf7bbdac323987d33d7.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-c57671ff380c45779c22a3a314abab0f"></div>
+<div id="altair-viz-d40ee2b630f24bf7bbdac323987d33d7"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-c57671ff380c45779c22a3a314abab0f") {
-      outputDiv = document.getElementById("altair-viz-c57671ff380c45779c22a3a314abab0f");
+    if (outputDiv.id !== "altair-viz-d40ee2b630f24bf7bbdac323987d33d7") {
+      outputDiv = document.getElementById("altair-viz-d40ee2b630f24bf7bbdac323987d33d7");
     }
 
     const paths = {
@@ -2221,7 +2228,7 @@ document.write(`
 </div>
 </section>
 <section id="window">
-<h3><span class="section-number">3.4.4. </span>Window<a class="headerlink" href="#window" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">1.15.4.4. </span>Window<a class="headerlink" href="#window" title="Link to this heading">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">window</span></code> transform performs calculations over sorted groups of data records. Window transforms are quite powerful, supporting tasks such as ranking, lead/lag analysis, cumulative totals, and running sums or averages. Values calculated by a <code class="docutils literal notranslate"><span class="pre">window</span></code> transform are written back to the input data table as new fields. Window operations include the aggregate operations we’ve seen earlier, as well as specialized operations such as <code class="docutils literal notranslate"><span class="pre">rank</span></code>, <code class="docutils literal notranslate"><span class="pre">row_number</span></code>, <code class="docutils literal notranslate"><span class="pre">lead</span></code>, and <code class="docutils literal notranslate"><span class="pre">lag</span></code>. The Vega-Lite documentation lists <a class="reference external" href="https://vega.github.io/vega-lite/docs/window.html#ops">all valid window operations</a>.</p>
 <p>One use case for a <code class="docutils literal notranslate"><span class="pre">window</span></code> transform is to calculate top-k lists. Let’s plot the top 20 directors in terms of total worldwide gross.</p>
 <p>We first use a <code class="docutils literal notranslate"><span class="pre">filter</span></code> transform to remove records for which we don’t know the director. Otherwise, the director <code class="docutils literal notranslate"><span class="pre">null</span></code> would dominate the list! We then apply an <code class="docutils literal notranslate"><span class="pre">aggregate</span></code> to sum up the worldwide gross for all films, grouped by director. At this point we could plot a sorted bar chart, but we’d end up with hundreds and hundreds of directors. How can we limit the display to the top 20?</p>
@@ -2250,23 +2257,23 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-a581419311574b66b7dc16b01e7d7a8e.vega-embed {
+  #altair-viz-ec23677a93104910b465ffd32c645b33.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-a581419311574b66b7dc16b01e7d7a8e.vega-embed details,
-  #altair-viz-a581419311574b66b7dc16b01e7d7a8e.vega-embed details summary {
+  #altair-viz-ec23677a93104910b465ffd32c645b33.vega-embed details,
+  #altair-viz-ec23677a93104910b465ffd32c645b33.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-a581419311574b66b7dc16b01e7d7a8e"></div>
+<div id="altair-viz-ec23677a93104910b465ffd32c645b33"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-a581419311574b66b7dc16b01e7d7a8e") {
-      outputDiv = document.getElementById("altair-viz-a581419311574b66b7dc16b01e7d7a8e");
+    if (outputDiv.id !== "altair-viz-ec23677a93104910b465ffd32c645b33") {
+      outputDiv = document.getElementById("altair-viz-ec23677a93104910b465ffd32c645b33");
     }
 
     const paths = {
@@ -2340,23 +2347,23 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-1f4db108d6c64b27b8100ac0cefea04f.vega-embed {
+  #altair-viz-a3168180802748038b12cfd01346792b.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-1f4db108d6c64b27b8100ac0cefea04f.vega-embed details,
-  #altair-viz-1f4db108d6c64b27b8100ac0cefea04f.vega-embed details summary {
+  #altair-viz-a3168180802748038b12cfd01346792b.vega-embed details,
+  #altair-viz-a3168180802748038b12cfd01346792b.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-1f4db108d6c64b27b8100ac0cefea04f"></div>
+<div id="altair-viz-a3168180802748038b12cfd01346792b"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-1f4db108d6c64b27b8100ac0cefea04f") {
-      outputDiv = document.getElementById("altair-viz-1f4db108d6c64b27b8100ac0cefea04f");
+    if (outputDiv.id !== "altair-viz-a3168180802748038b12cfd01346792b") {
+      outputDiv = document.getElementById("altair-viz-a3168180802748038b12cfd01346792b");
     }
 
     const paths = {
@@ -2411,7 +2418,7 @@ document.write(`
 </section>
 </section>
 <section id="summary">
-<h2><span class="section-number">3.5. </span>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">1.15.5. </span>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
 <p>We’ve only scratched the surface of what data transformations can do! For more details, including all the available transformations and their parameters, see the <a class="reference external" href="https://altair-viz.github.io/user_guide/transform/index.html">Altair data transformation documentation</a>.</p>
 <p>Sometimes you will need to perform significant data transformation to prepare your data <em>prior</em> to using visualization tools. To engage in <a class="reference external" href="https://en.wikipedia.org/wiki/Data_wrangling"><em>data wrangling</em></a> right here in Python, you can use the <a class="reference external" href="https://pandas.pydata.org/">Pandas library</a>.</p>
 </section>
@@ -2453,7 +2460,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">2. </span>Data Types, Graphical Marks, and Visual Encoding Channels</p>
+        <p class="prev-next-title"><span class="section-number">1.14. </span>Data Types, Graphical Marks, and Visual Encoding Channels</p>
       </div>
     </a>
     <a class="right-next"
@@ -2461,7 +2468,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">4. </span>Scales, Axes, and Legends</p>
+        <p class="prev-next-title"><span class="section-number">1.16. </span>Scales, Axes, and Legends</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -2481,22 +2488,22 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-movies-dataset">3.1. The Movies Dataset</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#histograms">3.2. Histograms</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aggregation">3.3. Aggregation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#averages-and-sorting">3.3.1. Averages and Sorting</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medians-and-the-inter-quartile-range">3.3.2. Medians and the Inter-Quartile Range</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#time-units">3.3.3. Time Units</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-movies-dataset">1.15.1. The Movies Dataset</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#histograms">1.15.2. Histograms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aggregation">1.15.3. Aggregation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#averages-and-sorting">1.15.3.1. Averages and Sorting</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medians-and-the-inter-quartile-range">1.15.3.2. Medians and the Inter-Quartile Range</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#time-units">1.15.3.3. Time Units</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-data-transformation">3.4. Advanced Data Transformation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calculate">3.4.1. Calculate</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#filter">3.4.2. Filter</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aggregate">3.4.3. Aggregate</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#window">3.4.4. Window</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#advanced-data-transformation">1.15.4. Advanced Data Transformation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#calculate">1.15.4.1. Calculate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#filter">1.15.4.2. Filter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aggregate">1.15.4.3. Aggregate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#window">1.15.4.4. Window</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">3.5. Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">1.15.5. Summary</a></li>
 </ul>
   </nav></div>
 

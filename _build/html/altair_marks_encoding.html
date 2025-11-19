@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>2. Data Types, Graphical Marks, and Visual Encoding Channels &#8212; AI with Data analysis</title>
+    <title>1.14. Data Types, Graphical Marks, and Visual Encoding Channels &#8212; AI with Data analysis</title>
   
   
   
@@ -61,7 +61,7 @@
     <link rel="canonical" href="/ai-analysis/altair_marks_encoding.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="3. Data Transformation" href="altair_data_transformation.html" />
+    <link rel="next" title="1.15. Data Transformation" href="altair_data_transformation.html" />
     <link rel="prev" title="1. Introduction to Altair" href="altair_introduction.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -182,13 +182,20 @@
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Curriculum</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="altair_introduction.html">1. Introduction to Altair</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">2. Data Types, Graphical Marks, and Visual Encoding Channels</a></li>
-<li class="toctree-l1"><a class="reference internal" href="altair_data_transformation.html">3. Data Transformation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="altair_scales_axes_legends.html">4. Scales, Axes, and Legends</a></li>
-<li class="toctree-l1"><a class="reference internal" href="altair_view_composition.html">5. Multi-View Composition</a></li>
-<li class="toctree-l1"><a class="reference internal" href="altair_interaction.html">6. Interaction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="altair_cartographic.html">7. Cartographic Visualization</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="altair_introduction.html">1. Introduction to Altair</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">1.14. Data Types, Graphical Marks, and Visual Encoding Channels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="altair_data_transformation.html">1.15. Data Transformation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="altair_scales_axes_legends.html">1.16. Scales, Axes, and Legends</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Curriculum1</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="altair_view_composition.html">2. Multi-View Composition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="altair_interaction.html">3. Interaction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="altair_cartographic.html">4. Cartographic Visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction-to-prompting-for-llm-reasoning-and-planning.html">5. Pre-Lesson Exercise: Organize Your Workspace Space Kick-Off</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model-selection.html">6. Organize Your Workspace Space</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Support</span></p>
 <ul class="nav bd-sidenav">
@@ -419,37 +426,37 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#global-development-data">2.1. Global Development Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-types">2.2. Data Types</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nominal-n">2.2.1. Nominal (N)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ordinal-o">2.2.2. Ordinal (O)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantitative-q">2.2.3. Quantitative (Q)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#temporal-t">2.2.4. Temporal (T)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">2.2.5. Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#global-development-data">1.14.1. Global Development Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-types">1.14.2. Data Types</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nominal-n">1.14.2.1. Nominal (N)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ordinal-o">1.14.2.2. Ordinal (O)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantitative-q">1.14.2.3. Quantitative (Q)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#temporal-t">1.14.2.4. Temporal (T)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">1.14.2.5. Summary</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encoding-channels">2.3. Encoding Channels</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#x">2.3.1. X</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#y">2.3.2. Y</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#size">2.3.3. Size</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#color-and-opacity">2.3.4. Color and Opacity</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shape">2.3.5. Shape</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tooltips-ordering">2.3.6. Tooltips &amp; Ordering</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#column-and-row-facets">2.3.7. Column and Row Facets</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-peek-ahead-interactive-filtering">2.3.8. A Peek Ahead: Interactive Filtering</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encoding-channels">1.14.3. Encoding Channels</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#x">1.14.3.1. X</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#y">1.14.3.2. Y</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#size">1.14.3.3. Size</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#color-and-opacity">1.14.3.4. Color and Opacity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shape">1.14.3.5. Shape</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tooltips-ordering">1.14.3.6. Tooltips &amp; Ordering</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#column-and-row-facets">1.14.3.7. Column and Row Facets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-peek-ahead-interactive-filtering">1.14.3.8. A Peek Ahead: Interactive Filtering</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graphical-marks">2.4. Graphical Marks</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#point-marks">2.4.1. Point Marks</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circle-marks">2.4.2. Circle Marks</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#square-marks">2.4.3. Square Marks</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tick-marks">2.4.4. Tick Marks</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bar-marks">2.4.5. Bar Marks</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#line-marks">2.4.6. Line Marks</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#area-marks">2.4.7. Area Marks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graphical-marks">1.14.4. Graphical Marks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#point-marks">1.14.4.1. Point Marks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circle-marks">1.14.4.2. Circle Marks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#square-marks">1.14.4.3. Square Marks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tick-marks">1.14.4.4. Tick Marks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bar-marks">1.14.4.5. Bar Marks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#line-marks">1.14.4.6. Line Marks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#area-marks">1.14.4.7. Area Marks</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2.5. Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1.14.5. Summary</a></li>
 </ul>
             </nav>
         </div>
@@ -462,7 +469,7 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="data-types-graphical-marks-and-visual-encoding-channels">
-<h1><span class="section-number">2. </span>Data Types, Graphical Marks, and Visual Encoding Channels<a class="headerlink" href="#data-types-graphical-marks-and-visual-encoding-channels" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">1.14. </span>Data Types, Graphical Marks, and Visual Encoding Channels<a class="headerlink" href="#data-types-graphical-marks-and-visual-encoding-channels" title="Link to this heading">#</a></h1>
 <p>A visualization represents data using a collection of <em>graphical marks</em> (bars, lines, points, etc.). The attributes of a mark — such as its position, shape, size, or color — serve as <em>channels</em> through which we can encode underlying data values.</p>
 <p>With a basic framework of <em>data types</em>, <em>marks</em>, and <em>encoding channels</em>, we can concisely create a wide variety of visualizations. In this notebook, we explore each of these elements and show how to use them to create custom statistical graphics.</p>
 <p><em>This notebook is part of the <a class="reference external" href="https://github.com/uwdata/visualization-curriculum">data visualization curriculum</a>.</em></p>
@@ -475,7 +482,7 @@ document.write(`
 </div>
 </div>
 <section id="global-development-data">
-<h2><span class="section-number">2.1. </span>Global Development Data<a class="headerlink" href="#global-development-data" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">1.14.1. </span>Global Development Data<a class="headerlink" href="#global-development-data" title="Link to this heading">#</a></h2>
 <p>We will be visualizing global health and population data for a number of countries, over the time period of 1955 to 2005. The data was collected by the <a class="reference external" href="https://www.gapminder.org/">Gapminder Foundation</a> and shared in <a class="reference external" href="https://www.youtube.com/watch?v=hVimVzgtD6w">Hans Rosling’s popular TED talk</a>. If you haven’t seen the talk, we encourage you to watch it first!</p>
 <p>Let’s first load the dataset from the <a class="reference external" href="https://github.com/vega/vega-datasets">vega-datasets</a> collection into a Pandas data frame.</p>
 <div class="cell docutils container">
@@ -678,25 +685,25 @@ document.write(`
 </div>
 </section>
 <section id="data-types">
-<h2><span class="section-number">2.2. </span>Data Types<a class="headerlink" href="#data-types" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">1.14.2. </span>Data Types<a class="headerlink" href="#data-types" title="Link to this heading">#</a></h2>
 <p>The first ingredient in effective visualization is the input data. Data values can represent different forms of measurement. What kinds of comparisons do those measurements support? And what kinds of visual encodings then support those comparisons?</p>
 <p>We will start by looking at the basic data types that Altair uses to inform visual encoding choices. These data types determine the kinds of comparisons we can make, and thereby guide our visualization design decisions.</p>
 <section id="nominal-n">
-<h3><span class="section-number">2.2.1. </span>Nominal (N)<a class="headerlink" href="#nominal-n" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">1.14.2.1. </span>Nominal (N)<a class="headerlink" href="#nominal-n" title="Link to this heading">#</a></h3>
 <p><em>Nominal</em> data (also called <em>categorical</em> data) consist of category names.</p>
 <p>With nominal data we can compare the equality of values: <em>is value A the same or different than value B? (A = B)</em>, supporting statements like “A is equal to B” or “A is not equal to B”.
 In the dataset above, the <code class="docutils literal notranslate"><span class="pre">country</span></code> field is nominal.</p>
 <p>When visualizing nominal data we should readily be able to see if values are the same or different: position, color hue (blue, red, green, <em>etc.</em>), and shape can help. However, using a size channel to encode nominal data might mislead us, suggesting rank-order or magnitude differences among values that do not exist!</p>
 </section>
 <section id="ordinal-o">
-<h3><span class="section-number">2.2.2. </span>Ordinal (O)<a class="headerlink" href="#ordinal-o" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">1.14.2.2. </span>Ordinal (O)<a class="headerlink" href="#ordinal-o" title="Link to this heading">#</a></h3>
 <p><em>Ordinal</em> data consist of values that have a specific ordering.</p>
 <p>With ordinal data we can compare the rank-ordering of values: <em>does value A come before or after value B? (A &lt; B)</em>, supporting statements like “A is less than B” or “A is greater than B”.
 In the dataset above, we can treat the <code class="docutils literal notranslate"><span class="pre">year</span></code> field as ordinal.</p>
 <p>When visualizing ordinal data, we should perceive a sense of rank-order. Position, size, or color value (brightness) might be appropriate, where as color hue (which is not perceptually ordered) would be less appropriate.</p>
 </section>
 <section id="quantitative-q">
-<h3><span class="section-number">2.2.3. </span>Quantitative (Q)<a class="headerlink" href="#quantitative-q" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">1.14.2.3. </span>Quantitative (Q)<a class="headerlink" href="#quantitative-q" title="Link to this heading">#</a></h3>
 <p>With <em>quantitative</em> data we can measure numerical differences among values. There are multiple sub-types of quantitative data:</p>
 <p>For <em>interval</em> data we can measure the distance (interval) between points: <em>what is the distance to value A from value B? (A - B)</em>, supporting statements such as “A is 12 units away from B”.</p>
 <p>For <em>ratio</em> data the zero-point is meaningful and so we can also measure proportions or scale factors: <em>value A is what proportion of value B? (A / B)</em>, supporting statements such as “A is 10% of B” or “B is 7 times larger than A”.</p>
@@ -705,20 +712,20 @@ Vega-Lite represents quantitative data, but does not make a distinction between 
 <p>Quantitative values can be visualized using position, size, or color value, among other channels. An axis with a zero baseline is essential for proportional comparisons of ratio values, but can be safely omitted for interval comparisons.</p>
 </section>
 <section id="temporal-t">
-<h3><span class="section-number">2.2.4. </span>Temporal (T)<a class="headerlink" href="#temporal-t" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">1.14.2.4. </span>Temporal (T)<a class="headerlink" href="#temporal-t" title="Link to this heading">#</a></h3>
 <p><em>Temporal</em> values measure time points or intervals. This type is a special case of quantitative values (timestamps) with rich semantics and conventions (i.e., the <a class="reference external" href="https://en.wikipedia.org/wiki/Gregorian_calendar">Gregorian calendar</a>). The temporal type in Vega-Lite supports reasoning about time units (year, month, day, hour, etc.), and provides methods for requesting specific time intervals.</p>
 <p>Example temporal values include date strings such as <code class="docutils literal notranslate"><span class="pre">“2019-01-04”</span></code> and <code class="docutils literal notranslate"><span class="pre">“Jan</span> <span class="pre">04</span> <span class="pre">2019”</span></code>, as well as standardized date-times such as the <a class="reference external" href="https://en.wikipedia.org/wiki/ISO_8601">ISO date-time format</a>: <code class="docutils literal notranslate"><span class="pre">“2019-01-04T17:50:35.643Z”</span></code>.</p>
 <p>There are no temporal values in our global development dataset above, as the <code class="docutils literal notranslate"><span class="pre">year</span></code> field is simply encoded as an integer. For more details about using temporal data in Altair, see the <a class="reference external" href="https://altair-viz.github.io/user_guide/times_and_dates.html">Times and Dates documentation</a>.</p>
 </section>
 <section id="summary">
-<h3><span class="section-number">2.2.5. </span>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">1.14.2.5. </span>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h3>
 <p>These data types are not mutually exclusive, but rather form a hierarchy: ordinal data support nominal (equality) comparisons, while quantitative data support ordinal (rank-order) comparisons.</p>
 <p>Moreover, these data types do <em>not</em> provide a fixed categorization. Just because a data field is represented using a number doesn’t mean we have to treat it as a quantitative type! For example, we might interpret a set of ages (10 years old, 20 years old, etc) as nominal (underage or overage), ordinal (grouped by year), or quantitative (calculate average age).</p>
 <p>Now let’s examine how to visually encode these data types!</p>
 </section>
 </section>
 <section id="encoding-channels">
-<h2><span class="section-number">2.3. </span>Encoding Channels<a class="headerlink" href="#encoding-channels" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">1.14.3. </span>Encoding Channels<a class="headerlink" href="#encoding-channels" title="Link to this heading">#</a></h2>
 <p>At the heart of Altair is the use of <em>encodings</em> that bind data fields (with a given data type) to available encoding <em>channels</em> of a chosen <em>mark</em> type. In this notebook we’ll examine the following encoding channels:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">x</span></code>: Horizontal (x-axis) position of the mark.</p></li>
@@ -734,7 +741,7 @@ Vega-Lite represents quantitative data, but does not make a distinction between 
 </ul>
 <p>For a complete list of available channels, see the <a class="reference external" href="https://altair-viz.github.io/user_guide/encodings/index.html">Altair encoding documentation</a>.</p>
 <section id="x">
-<h3><span class="section-number">2.3.1. </span>X<a class="headerlink" href="#x" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">1.14.3.1. </span>X<a class="headerlink" href="#x" title="Link to this heading">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">x</span></code> encoding channel sets a mark’s horizontal position (x-coordinate). In addition, default choices of axis and title are made automatically. In the chart below, the choice of a quantitative data type results in a continuous linear axis scale:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -747,23 +754,23 @@ Vega-Lite represents quantitative data, but does not make a distinction between 
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-30f93d0cc6894ddbbbd26edf1ca1afa0.vega-embed {
+  #altair-viz-7a371aa4df1545608ace3132993654d4.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-30f93d0cc6894ddbbbd26edf1ca1afa0.vega-embed details,
-  #altair-viz-30f93d0cc6894ddbbbd26edf1ca1afa0.vega-embed details summary {
+  #altair-viz-7a371aa4df1545608ace3132993654d4.vega-embed details,
+  #altair-viz-7a371aa4df1545608ace3132993654d4.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-30f93d0cc6894ddbbbd26edf1ca1afa0"></div>
+<div id="altair-viz-7a371aa4df1545608ace3132993654d4"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-30f93d0cc6894ddbbbd26edf1ca1afa0") {
-      outputDiv = document.getElementById("altair-viz-30f93d0cc6894ddbbbd26edf1ca1afa0");
+    if (outputDiv.id !== "altair-viz-7a371aa4df1545608ace3132993654d4") {
+      outputDiv = document.getElementById("altair-viz-7a371aa4df1545608ace3132993654d4");
     }
 
     const paths = {
@@ -816,7 +823,7 @@ Vega-Lite represents quantitative data, but does not make a distinction between 
 </div>
 </section>
 <section id="y">
-<h3><span class="section-number">2.3.2. </span>Y<a class="headerlink" href="#y" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">1.14.3.2. </span>Y<a class="headerlink" href="#y" title="Link to this heading">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">y</span></code> encoding channel sets a mark’s vertical position (y-coordinate). Here we’ve added the <code class="docutils literal notranslate"><span class="pre">cluster</span></code> field using an ordinal (<code class="docutils literal notranslate"><span class="pre">O</span></code>) data type. The result is a discrete axis that includes a sized band, with a default step size, for each unique value:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -830,23 +837,23 @@ Vega-Lite represents quantitative data, but does not make a distinction between 
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-0a42004e305b40a1b79660fc0acd5c21.vega-embed {
+  #altair-viz-e0c4fd8384cf40989591c2beee79c395.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-0a42004e305b40a1b79660fc0acd5c21.vega-embed details,
-  #altair-viz-0a42004e305b40a1b79660fc0acd5c21.vega-embed details summary {
+  #altair-viz-e0c4fd8384cf40989591c2beee79c395.vega-embed details,
+  #altair-viz-e0c4fd8384cf40989591c2beee79c395.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-0a42004e305b40a1b79660fc0acd5c21"></div>
+<div id="altair-viz-e0c4fd8384cf40989591c2beee79c395"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-0a42004e305b40a1b79660fc0acd5c21") {
-      outputDiv = document.getElementById("altair-viz-0a42004e305b40a1b79660fc0acd5c21");
+    if (outputDiv.id !== "altair-viz-e0c4fd8384cf40989591c2beee79c395") {
+      outputDiv = document.getElementById("altair-viz-e0c4fd8384cf40989591c2beee79c395");
     }
 
     const paths = {
@@ -911,23 +918,23 @@ Vega-Lite represents quantitative data, but does not make a distinction between 
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-c5bec4e3b2944997a3be84fc33839cf8.vega-embed {
+  #altair-viz-7e1a7ed579144fdcb1f0e2fc68d07797.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-c5bec4e3b2944997a3be84fc33839cf8.vega-embed details,
-  #altair-viz-c5bec4e3b2944997a3be84fc33839cf8.vega-embed details summary {
+  #altair-viz-7e1a7ed579144fdcb1f0e2fc68d07797.vega-embed details,
+  #altair-viz-7e1a7ed579144fdcb1f0e2fc68d07797.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-c5bec4e3b2944997a3be84fc33839cf8"></div>
+<div id="altair-viz-7e1a7ed579144fdcb1f0e2fc68d07797"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-c5bec4e3b2944997a3be84fc33839cf8") {
-      outputDiv = document.getElementById("altair-viz-c5bec4e3b2944997a3be84fc33839cf8");
+    if (outputDiv.id !== "altair-viz-7e1a7ed579144fdcb1f0e2fc68d07797") {
+      outputDiv = document.getElementById("altair-viz-7e1a7ed579144fdcb1f0e2fc68d07797");
     }
 
     const paths = {
@@ -991,23 +998,23 @@ Vega-Lite represents quantitative data, but does not make a distinction between 
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-456b7bbd157044ceb2bd092e359ddcea.vega-embed {
+  #altair-viz-ea9f2cd20933481187e7ee7b3fba770d.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-456b7bbd157044ceb2bd092e359ddcea.vega-embed details,
-  #altair-viz-456b7bbd157044ceb2bd092e359ddcea.vega-embed details summary {
+  #altair-viz-ea9f2cd20933481187e7ee7b3fba770d.vega-embed details,
+  #altair-viz-ea9f2cd20933481187e7ee7b3fba770d.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-456b7bbd157044ceb2bd092e359ddcea"></div>
+<div id="altair-viz-ea9f2cd20933481187e7ee7b3fba770d"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-456b7bbd157044ceb2bd092e359ddcea") {
-      outputDiv = document.getElementById("altair-viz-456b7bbd157044ceb2bd092e359ddcea");
+    if (outputDiv.id !== "altair-viz-ea9f2cd20933481187e7ee7b3fba770d") {
+      outputDiv = document.getElementById("altair-viz-ea9f2cd20933481187e7ee7b3fba770d");
     }
 
     const paths = {
@@ -1062,7 +1069,7 @@ Vega-Lite represents quantitative data, but does not make a distinction between 
 <p><em>What happens if you also add <code class="docutils literal notranslate"><span class="pre">nice=False</span></code> to the scale attribute above?</em></p>
 </section>
 <section id="size">
-<h3><span class="section-number">2.3.3. </span>Size<a class="headerlink" href="#size" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">1.14.3.3. </span>Size<a class="headerlink" href="#size" title="Link to this heading">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">size</span></code> encoding channel sets a mark’s size or extent. The meaning of the channel can vary based on the mark type. For <code class="docutils literal notranslate"><span class="pre">point</span></code> marks, the <code class="docutils literal notranslate"><span class="pre">size</span></code> channel maps to the pixel area of the plotting symbol, such that the diameter of the point matches the square root of the size value.</p>
 <p>Let’s augment our scatter plot by encoding population (<code class="docutils literal notranslate"><span class="pre">pop</span></code>) on the <code class="docutils literal notranslate"><span class="pre">size</span></code> channel. As a result, the chart now also includes a legend for interpreting the size values.</p>
 <div class="cell docutils container">
@@ -1078,23 +1085,23 @@ Vega-Lite represents quantitative data, but does not make a distinction between 
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-ead0c5a795a74079961bb536c12792da.vega-embed {
+  #altair-viz-c6ad3ceda5a34eccbebe3b4ca6729c38.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-ead0c5a795a74079961bb536c12792da.vega-embed details,
-  #altair-viz-ead0c5a795a74079961bb536c12792da.vega-embed details summary {
+  #altair-viz-c6ad3ceda5a34eccbebe3b4ca6729c38.vega-embed details,
+  #altair-viz-c6ad3ceda5a34eccbebe3b4ca6729c38.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-ead0c5a795a74079961bb536c12792da"></div>
+<div id="altair-viz-c6ad3ceda5a34eccbebe3b4ca6729c38"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-ead0c5a795a74079961bb536c12792da") {
-      outputDiv = document.getElementById("altair-viz-ead0c5a795a74079961bb536c12792da");
+    if (outputDiv.id !== "altair-viz-c6ad3ceda5a34eccbebe3b4ca6729c38") {
+      outputDiv = document.getElementById("altair-viz-c6ad3ceda5a34eccbebe3b4ca6729c38");
     }
 
     const paths = {
@@ -1159,23 +1166,23 @@ Vega-Lite represents quantitative data, but does not make a distinction between 
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-e12825ca394c4ebbb0c31db722ff414a.vega-embed {
+  #altair-viz-47a662ac12f343cda752aaa5277ace33.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-e12825ca394c4ebbb0c31db722ff414a.vega-embed details,
-  #altair-viz-e12825ca394c4ebbb0c31db722ff414a.vega-embed details summary {
+  #altair-viz-47a662ac12f343cda752aaa5277ace33.vega-embed details,
+  #altair-viz-47a662ac12f343cda752aaa5277ace33.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-e12825ca394c4ebbb0c31db722ff414a"></div>
+<div id="altair-viz-47a662ac12f343cda752aaa5277ace33"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-e12825ca394c4ebbb0c31db722ff414a") {
-      outputDiv = document.getElementById("altair-viz-e12825ca394c4ebbb0c31db722ff414a");
+    if (outputDiv.id !== "altair-viz-47a662ac12f343cda752aaa5277ace33") {
+      outputDiv = document.getElementById("altair-viz-47a662ac12f343cda752aaa5277ace33");
     }
 
     const paths = {
@@ -1228,7 +1235,7 @@ Vega-Lite represents quantitative data, but does not make a distinction between 
 </div>
 </section>
 <section id="color-and-opacity">
-<h3><span class="section-number">2.3.4. </span>Color and Opacity<a class="headerlink" href="#color-and-opacity" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">1.14.3.4. </span>Color and Opacity<a class="headerlink" href="#color-and-opacity" title="Link to this heading">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">color</span></code> encoding channel sets a mark’s color. The style of color encoding is highly dependent on the data type: nominal data will default to a multi-hued qualitative color scheme, whereas ordinal and quantitative data will use perceptually ordered color gradients.</p>
 <p>Here, we encode the <code class="docutils literal notranslate"><span class="pre">cluster</span></code> field using the <code class="docutils literal notranslate"><span class="pre">color</span></code> channel and a nominal (<code class="docutils literal notranslate"><span class="pre">N</span></code>) data type, resulting in a distinct hue for each cluster value. Can you start to guess what the <code class="docutils literal notranslate"><span class="pre">cluster</span></code> field might indicate?</p>
 <div class="cell docutils container">
@@ -1245,23 +1252,23 @@ Vega-Lite represents quantitative data, but does not make a distinction between 
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-37e4616f9b184f60b4d67f7a0891013b.vega-embed {
+  #altair-viz-9f705dcfbf554d8aaaa9646c0d6b1123.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-37e4616f9b184f60b4d67f7a0891013b.vega-embed details,
-  #altair-viz-37e4616f9b184f60b4d67f7a0891013b.vega-embed details summary {
+  #altair-viz-9f705dcfbf554d8aaaa9646c0d6b1123.vega-embed details,
+  #altair-viz-9f705dcfbf554d8aaaa9646c0d6b1123.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-37e4616f9b184f60b4d67f7a0891013b"></div>
+<div id="altair-viz-9f705dcfbf554d8aaaa9646c0d6b1123"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-37e4616f9b184f60b4d67f7a0891013b") {
-      outputDiv = document.getElementById("altair-viz-37e4616f9b184f60b4d67f7a0891013b");
+    if (outputDiv.id !== "altair-viz-9f705dcfbf554d8aaaa9646c0d6b1123") {
+      outputDiv = document.getElementById("altair-viz-9f705dcfbf554d8aaaa9646c0d6b1123");
     }
 
     const paths = {
@@ -1327,23 +1334,23 @@ Vega-Lite represents quantitative data, but does not make a distinction between 
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-39b58bd1d6814791b6eda50742d3ec09.vega-embed {
+  #altair-viz-0ab602fed7dd416abd04f9485403f253.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-39b58bd1d6814791b6eda50742d3ec09.vega-embed details,
-  #altair-viz-39b58bd1d6814791b6eda50742d3ec09.vega-embed details summary {
+  #altair-viz-0ab602fed7dd416abd04f9485403f253.vega-embed details,
+  #altair-viz-0ab602fed7dd416abd04f9485403f253.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-39b58bd1d6814791b6eda50742d3ec09"></div>
+<div id="altair-viz-0ab602fed7dd416abd04f9485403f253"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-39b58bd1d6814791b6eda50742d3ec09") {
-      outputDiv = document.getElementById("altair-viz-39b58bd1d6814791b6eda50742d3ec09");
+    if (outputDiv.id !== "altair-viz-0ab602fed7dd416abd04f9485403f253") {
+      outputDiv = document.getElementById("altair-viz-0ab602fed7dd416abd04f9485403f253");
     }
 
     const paths = {
@@ -1411,23 +1418,23 @@ Vega-Lite represents quantitative data, but does not make a distinction between 
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-7a158db5a2f14f5bb9dac834aaf50712.vega-embed {
+  #altair-viz-5a4ce01cb5944f939eb4386f3da1dca4.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-7a158db5a2f14f5bb9dac834aaf50712.vega-embed details,
-  #altair-viz-7a158db5a2f14f5bb9dac834aaf50712.vega-embed details summary {
+  #altair-viz-5a4ce01cb5944f939eb4386f3da1dca4.vega-embed details,
+  #altair-viz-5a4ce01cb5944f939eb4386f3da1dca4.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-7a158db5a2f14f5bb9dac834aaf50712"></div>
+<div id="altair-viz-5a4ce01cb5944f939eb4386f3da1dca4"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-7a158db5a2f14f5bb9dac834aaf50712") {
-      outputDiv = document.getElementById("altair-viz-7a158db5a2f14f5bb9dac834aaf50712");
+    if (outputDiv.id !== "altair-viz-5a4ce01cb5944f939eb4386f3da1dca4") {
+      outputDiv = document.getElementById("altair-viz-5a4ce01cb5944f939eb4386f3da1dca4");
     }
 
     const paths = {
@@ -1480,7 +1487,7 @@ Vega-Lite represents quantitative data, but does not make a distinction between 
 </div>
 </section>
 <section id="shape">
-<h3><span class="section-number">2.3.5. </span>Shape<a class="headerlink" href="#shape" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">1.14.3.5. </span>Shape<a class="headerlink" href="#shape" title="Link to this heading">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">shape</span></code> encoding channel sets the geometric shape used by <code class="docutils literal notranslate"><span class="pre">point</span></code> marks. Unlike the other channels we have seen so far, the <code class="docutils literal notranslate"><span class="pre">shape</span></code> channel can not be used by other mark types. The shape encoding channel should only be used with nominal data, as perceptual rank-order and magnitude comparisons are not supported.</p>
 <p>Let’s encode the <code class="docutils literal notranslate"><span class="pre">cluster</span></code> field using <code class="docutils literal notranslate"><span class="pre">shape</span></code> as well as <code class="docutils literal notranslate"><span class="pre">color</span></code>. Using multiple channels for the same underlying data field is known as a <em>redundant encoding</em>. The resulting chart combines both color and shape information into a single symbol legend:</p>
 <div class="cell docutils container">
@@ -1499,23 +1506,23 @@ Vega-Lite represents quantitative data, but does not make a distinction between 
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-5b78b7c01aa6456095ff24e130e14563.vega-embed {
+  #altair-viz-5cb252e5f4dc40a38fe710716adaae65.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-5b78b7c01aa6456095ff24e130e14563.vega-embed details,
-  #altair-viz-5b78b7c01aa6456095ff24e130e14563.vega-embed details summary {
+  #altair-viz-5cb252e5f4dc40a38fe710716adaae65.vega-embed details,
+  #altair-viz-5cb252e5f4dc40a38fe710716adaae65.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-5b78b7c01aa6456095ff24e130e14563"></div>
+<div id="altair-viz-5cb252e5f4dc40a38fe710716adaae65"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-5b78b7c01aa6456095ff24e130e14563") {
-      outputDiv = document.getElementById("altair-viz-5b78b7c01aa6456095ff24e130e14563");
+    if (outputDiv.id !== "altair-viz-5cb252e5f4dc40a38fe710716adaae65") {
+      outputDiv = document.getElementById("altair-viz-5cb252e5f4dc40a38fe710716adaae65");
     }
 
     const paths = {
@@ -1568,7 +1575,7 @@ Vega-Lite represents quantitative data, but does not make a distinction between 
 </div>
 </section>
 <section id="tooltips-ordering">
-<h3><span class="section-number">2.3.6. </span>Tooltips &amp; Ordering<a class="headerlink" href="#tooltips-ordering" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">1.14.3.6. </span>Tooltips &amp; Ordering<a class="headerlink" href="#tooltips-ordering" title="Link to this heading">#</a></h3>
 <p>By this point, you might feel a bit frustrated: we’ve built up a chart, but we still don’t know what countries the visualized points correspond to! Let’s add interactive tooltips to enable exploration.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">tooltip</span></code> encoding channel determines tooltip text to show when a user moves the mouse cursor over a mark. Let’s add a tooltip encoding for the <code class="docutils literal notranslate"><span class="pre">country</span></code> field, then investigate which countries are being represented.</p>
 <div class="cell docutils container">
@@ -1587,23 +1594,23 @@ Vega-Lite represents quantitative data, but does not make a distinction between 
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-968be8b9dfc0461aa409d20c5a5bb0bd.vega-embed {
+  #altair-viz-a71b8830056646da9258d4adbc3f8e30.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-968be8b9dfc0461aa409d20c5a5bb0bd.vega-embed details,
-  #altair-viz-968be8b9dfc0461aa409d20c5a5bb0bd.vega-embed details summary {
+  #altair-viz-a71b8830056646da9258d4adbc3f8e30.vega-embed details,
+  #altair-viz-a71b8830056646da9258d4adbc3f8e30.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-968be8b9dfc0461aa409d20c5a5bb0bd"></div>
+<div id="altair-viz-a71b8830056646da9258d4adbc3f8e30"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-968be8b9dfc0461aa409d20c5a5bb0bd") {
-      outputDiv = document.getElementById("altair-viz-968be8b9dfc0461aa409d20c5a5bb0bd");
+    if (outputDiv.id !== "altair-viz-a71b8830056646da9258d4adbc3f8e30") {
+      outputDiv = document.getElementById("altair-viz-a71b8830056646da9258d4adbc3f8e30");
     }
 
     const paths = {
@@ -1674,23 +1681,23 @@ Vega-Lite represents quantitative data, but does not make a distinction between 
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-3fdaa91458c446429b373f88ceb42f6d.vega-embed {
+  #altair-viz-294e40e8d4c44bce9a34815b75842afe.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-3fdaa91458c446429b373f88ceb42f6d.vega-embed details,
-  #altair-viz-3fdaa91458c446429b373f88ceb42f6d.vega-embed details summary {
+  #altair-viz-294e40e8d4c44bce9a34815b75842afe.vega-embed details,
+  #altair-viz-294e40e8d4c44bce9a34815b75842afe.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-3fdaa91458c446429b373f88ceb42f6d"></div>
+<div id="altair-viz-294e40e8d4c44bce9a34815b75842afe"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-3fdaa91458c446429b373f88ceb42f6d") {
-      outputDiv = document.getElementById("altair-viz-3fdaa91458c446429b373f88ceb42f6d");
+    if (outputDiv.id !== "altair-viz-294e40e8d4c44bce9a34815b75842afe") {
+      outputDiv = document.getElementById("altair-viz-294e40e8d4c44bce9a34815b75842afe");
     }
 
     const paths = {
@@ -1765,23 +1772,23 @@ Vega-Lite represents quantitative data, but does not make a distinction between 
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-70e6d1985afa4b7ba0f26e2e2a7728e9.vega-embed {
+  #altair-viz-c97de55b4caa46b0bdeaa0120d9c7a84.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-70e6d1985afa4b7ba0f26e2e2a7728e9.vega-embed details,
-  #altair-viz-70e6d1985afa4b7ba0f26e2e2a7728e9.vega-embed details summary {
+  #altair-viz-c97de55b4caa46b0bdeaa0120d9c7a84.vega-embed details,
+  #altair-viz-c97de55b4caa46b0bdeaa0120d9c7a84.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-70e6d1985afa4b7ba0f26e2e2a7728e9"></div>
+<div id="altair-viz-c97de55b4caa46b0bdeaa0120d9c7a84"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-70e6d1985afa4b7ba0f26e2e2a7728e9") {
-      outputDiv = document.getElementById("altair-viz-70e6d1985afa4b7ba0f26e2e2a7728e9");
+    if (outputDiv.id !== "altair-viz-c97de55b4caa46b0bdeaa0120d9c7a84") {
+      outputDiv = document.getElementById("altair-viz-c97de55b4caa46b0bdeaa0120d9c7a84");
     }
 
     const paths = {
@@ -1835,7 +1842,7 @@ Vega-Lite represents quantitative data, but does not make a distinction between 
 <p>Now we can see multiple data fields upon mouse over!</p>
 </section>
 <section id="column-and-row-facets">
-<h3><span class="section-number">2.3.7. </span>Column and Row Facets<a class="headerlink" href="#column-and-row-facets" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">1.14.3.7. </span>Column and Row Facets<a class="headerlink" href="#column-and-row-facets" title="Link to this heading">#</a></h3>
 <p>Spatial position is one of the most powerful and flexible channels for visual encoding, but what can we do if we already have assigned fields to the <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> channels? One valuable technique is to create a <em>trellis plot</em>, consisting of sub-plots that show a subset of the data. A trellis plot is one example of the more general technique of presenting data using <a class="reference external" href="https://en.wikipedia.org/wiki/Small_multiple">small multiples</a> of views.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">column</span></code> and <code class="docutils literal notranslate"><span class="pre">row</span></code> encoding channels generate either a horizontal (columns) or vertical (rows) set of sub-plots, in which the data is partitioned according to the provided data field.</p>
 <p>Here is a trellis plot that divides the data into one column per `cluster` value:</p>
@@ -1857,23 +1864,23 @@ Vega-Lite represents quantitative data, but does not make a distinction between 
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-3b4228488eea4bc7bb0a0c46b4fa66d6.vega-embed {
+  #altair-viz-7f6a36d65123446699e882cca24f2a74.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-3b4228488eea4bc7bb0a0c46b4fa66d6.vega-embed details,
-  #altair-viz-3b4228488eea4bc7bb0a0c46b4fa66d6.vega-embed details summary {
+  #altair-viz-7f6a36d65123446699e882cca24f2a74.vega-embed details,
+  #altair-viz-7f6a36d65123446699e882cca24f2a74.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-3b4228488eea4bc7bb0a0c46b4fa66d6"></div>
+<div id="altair-viz-7f6a36d65123446699e882cca24f2a74"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-3b4228488eea4bc7bb0a0c46b4fa66d6") {
-      outputDiv = document.getElementById("altair-viz-3b4228488eea4bc7bb0a0c46b4fa66d6");
+    if (outputDiv.id !== "altair-viz-7f6a36d65123446699e882cca24f2a74") {
+      outputDiv = document.getElementById("altair-viz-7f6a36d65123446699e882cca24f2a74");
     }
 
     const paths = {
@@ -1944,23 +1951,23 @@ Vega-Lite represents quantitative data, but does not make a distinction between 
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-e4a19252dcbc480399f4fea77ccf58c5.vega-embed {
+  #altair-viz-19fa87eea8e54232a07eba2728195050.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-e4a19252dcbc480399f4fea77ccf58c5.vega-embed details,
-  #altair-viz-e4a19252dcbc480399f4fea77ccf58c5.vega-embed details summary {
+  #altair-viz-19fa87eea8e54232a07eba2728195050.vega-embed details,
+  #altair-viz-19fa87eea8e54232a07eba2728195050.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-e4a19252dcbc480399f4fea77ccf58c5"></div>
+<div id="altair-viz-19fa87eea8e54232a07eba2728195050"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-e4a19252dcbc480399f4fea77ccf58c5") {
-      outputDiv = document.getElementById("altair-viz-e4a19252dcbc480399f4fea77ccf58c5");
+    if (outputDiv.id !== "altair-viz-19fa87eea8e54232a07eba2728195050") {
+      outputDiv = document.getElementById("altair-viz-19fa87eea8e54232a07eba2728195050");
     }
 
     const paths = {
@@ -2015,7 +2022,7 @@ Vega-Lite represents quantitative data, but does not make a distinction between 
 <p>In the meantime, <em>can you rewrite the chart above to facet into rows instead of columns?</em></p>
 </section>
 <section id="a-peek-ahead-interactive-filtering">
-<h3><span class="section-number">2.3.8. </span>A Peek Ahead: Interactive Filtering<a class="headerlink" href="#a-peek-ahead-interactive-filtering" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">1.14.3.8. </span>A Peek Ahead: Interactive Filtering<a class="headerlink" href="#a-peek-ahead-interactive-filtering" title="Link to this heading">#</a></h3>
 <p>In later modules, we’ll dive into interaction techniques for data exploration. Here is a sneak peak: binding a range slider to the <code class="docutils literal notranslate"><span class="pre">year</span></code> field to enable interactive scrubbing through each year of data. Don’t worry if the code below is a bit confusing at this point, as we will cover interaction in detail later.</p>
 <p><em>Drag the slider back and forth to see how the data values change over time!</em></p>
 <div class="cell docutils container">
@@ -2038,7 +2045,7 @@ Vega-Lite represents quantitative data, but does not make a distinction between 
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_97282/2101592094.py:1: AltairDeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_53727/2101592094.py:1: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   select_year = alt.selection_single(
 </pre></div>
@@ -2091,7 +2098,7 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 </section>
 </section>
 <section id="graphical-marks">
-<h2><span class="section-number">2.4. </span>Graphical Marks<a class="headerlink" href="#graphical-marks" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">1.14.4. </span>Graphical Marks<a class="headerlink" href="#graphical-marks" title="Link to this heading">#</a></h2>
 <p>Our exploration of encoding channels above exclusively uses <code class="docutils literal notranslate"><span class="pre">point</span></code> marks to visualize the data. However, the <code class="docutils literal notranslate"><span class="pre">point</span></code> mark type is only one of the many geometric shapes that can be used to visually represent data. Altair includes a number of built-in mark types, including:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">mark_area()</span></code> - Filled areas defined by a top-line and a baseline.</p></li>
@@ -2107,7 +2114,7 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 </ul>
 <p>For a complete list, and links to examples, see the <a class="reference external" href="https://altair-viz.github.io/user_guide/marks/index.html">Altair marks documentation</a>. Next, we will step through a number of the most commonly used mark types for statistical graphics.</p>
 <section id="point-marks">
-<h3><span class="section-number">2.4.1. </span>Point Marks<a class="headerlink" href="#point-marks" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">1.14.4.1. </span>Point Marks<a class="headerlink" href="#point-marks" title="Link to this heading">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">point</span></code> mark type conveys specific points, as in <em>scatter plots</em> and <em>dot plots</em>. In addition to <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> encoding channels (to specify 2D point positions), point marks can use <code class="docutils literal notranslate"><span class="pre">color</span></code>, <code class="docutils literal notranslate"><span class="pre">size</span></code>, and <code class="docutils literal notranslate"><span class="pre">shape</span></code> encodings to convey additional data fields.</p>
 <p>Below is a dot plot of <code class="docutils literal notranslate"><span class="pre">fertility</span></code>, with the <code class="docutils literal notranslate"><span class="pre">cluster</span></code> field redundantly encoded using both the <code class="docutils literal notranslate"><span class="pre">y</span></code> and <code class="docutils literal notranslate"><span class="pre">shape</span></code> channels.</p>
 <div class="cell docutils container">
@@ -2123,23 +2130,23 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-eddc7ba826a2439390e88ddfb09f0248.vega-embed {
+  #altair-viz-8de6b25b396849238065ab1e5d0bbe24.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-eddc7ba826a2439390e88ddfb09f0248.vega-embed details,
-  #altair-viz-eddc7ba826a2439390e88ddfb09f0248.vega-embed details summary {
+  #altair-viz-8de6b25b396849238065ab1e5d0bbe24.vega-embed details,
+  #altair-viz-8de6b25b396849238065ab1e5d0bbe24.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-eddc7ba826a2439390e88ddfb09f0248"></div>
+<div id="altair-viz-8de6b25b396849238065ab1e5d0bbe24"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-eddc7ba826a2439390e88ddfb09f0248") {
-      outputDiv = document.getElementById("altair-viz-eddc7ba826a2439390e88ddfb09f0248");
+    if (outputDiv.id !== "altair-viz-8de6b25b396849238065ab1e5d0bbe24") {
+      outputDiv = document.getElementById("altair-viz-8de6b25b396849238065ab1e5d0bbe24");
     }
 
     const paths = {
@@ -2205,23 +2212,23 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-7708fa2ef8eb4d84afa7a00e76eb7c12.vega-embed {
+  #altair-viz-40715dd375654145a6f87d0affba3ead.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-7708fa2ef8eb4d84afa7a00e76eb7c12.vega-embed details,
-  #altair-viz-7708fa2ef8eb4d84afa7a00e76eb7c12.vega-embed details summary {
+  #altair-viz-40715dd375654145a6f87d0affba3ead.vega-embed details,
+  #altair-viz-40715dd375654145a6f87d0affba3ead.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-7708fa2ef8eb4d84afa7a00e76eb7c12"></div>
+<div id="altair-viz-40715dd375654145a6f87d0affba3ead"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-7708fa2ef8eb4d84afa7a00e76eb7c12") {
-      outputDiv = document.getElementById("altair-viz-7708fa2ef8eb4d84afa7a00e76eb7c12");
+    if (outputDiv.id !== "altair-viz-40715dd375654145a6f87d0affba3ead") {
+      outputDiv = document.getElementById("altair-viz-40715dd375654145a6f87d0affba3ead");
     }
 
     const paths = {
@@ -2274,7 +2281,7 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 </div>
 </section>
 <section id="circle-marks">
-<h3><span class="section-number">2.4.2. </span>Circle Marks<a class="headerlink" href="#circle-marks" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">1.14.4.2. </span>Circle Marks<a class="headerlink" href="#circle-marks" title="Link to this heading">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">circle</span></code> mark type is a convenient shorthand for <code class="docutils literal notranslate"><span class="pre">point</span></code> marks drawn as filled circles.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2289,23 +2296,23 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-74a00cb3c3a349c59f4d57908395e8df.vega-embed {
+  #altair-viz-123f9ccbbb26406a8ec918273b3995a5.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-74a00cb3c3a349c59f4d57908395e8df.vega-embed details,
-  #altair-viz-74a00cb3c3a349c59f4d57908395e8df.vega-embed details summary {
+  #altair-viz-123f9ccbbb26406a8ec918273b3995a5.vega-embed details,
+  #altair-viz-123f9ccbbb26406a8ec918273b3995a5.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-74a00cb3c3a349c59f4d57908395e8df"></div>
+<div id="altair-viz-123f9ccbbb26406a8ec918273b3995a5"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-74a00cb3c3a349c59f4d57908395e8df") {
-      outputDiv = document.getElementById("altair-viz-74a00cb3c3a349c59f4d57908395e8df");
+    if (outputDiv.id !== "altair-viz-123f9ccbbb26406a8ec918273b3995a5") {
+      outputDiv = document.getElementById("altair-viz-123f9ccbbb26406a8ec918273b3995a5");
     }
 
     const paths = {
@@ -2358,7 +2365,7 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 </div>
 </section>
 <section id="square-marks">
-<h3><span class="section-number">2.4.3. </span>Square Marks<a class="headerlink" href="#square-marks" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">1.14.4.3. </span>Square Marks<a class="headerlink" href="#square-marks" title="Link to this heading">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">square</span></code> mark type is a convenient shorthand for <code class="docutils literal notranslate"><span class="pre">point</span></code> marks drawn as filled squares.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2373,23 +2380,23 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-5f021e4d509243d8849d4e07c1e7df99.vega-embed {
+  #altair-viz-fb16abd2c4b64a6983f7c29da3b3e008.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-5f021e4d509243d8849d4e07c1e7df99.vega-embed details,
-  #altair-viz-5f021e4d509243d8849d4e07c1e7df99.vega-embed details summary {
+  #altair-viz-fb16abd2c4b64a6983f7c29da3b3e008.vega-embed details,
+  #altair-viz-fb16abd2c4b64a6983f7c29da3b3e008.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-5f021e4d509243d8849d4e07c1e7df99"></div>
+<div id="altair-viz-fb16abd2c4b64a6983f7c29da3b3e008"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-5f021e4d509243d8849d4e07c1e7df99") {
-      outputDiv = document.getElementById("altair-viz-5f021e4d509243d8849d4e07c1e7df99");
+    if (outputDiv.id !== "altair-viz-fb16abd2c4b64a6983f7c29da3b3e008") {
+      outputDiv = document.getElementById("altair-viz-fb16abd2c4b64a6983f7c29da3b3e008");
     }
 
     const paths = {
@@ -2442,7 +2449,7 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 </div>
 </section>
 <section id="tick-marks">
-<h3><span class="section-number">2.4.4. </span>Tick Marks<a class="headerlink" href="#tick-marks" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">1.14.4.4. </span>Tick Marks<a class="headerlink" href="#tick-marks" title="Link to this heading">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">tick</span></code> mark type conveys a data point using a short line segment or “tick”. These are particularly useful for comparing values along a single dimension with minimal overlap. A <em>dot plot</em> drawn with tick marks is sometimes referred to as a <em>strip plot</em>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2457,23 +2464,23 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-6c794011797d4b27a01183b699848e28.vega-embed {
+  #altair-viz-f4809b818a854e329a428fa7e30d89b2.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-6c794011797d4b27a01183b699848e28.vega-embed details,
-  #altair-viz-6c794011797d4b27a01183b699848e28.vega-embed details summary {
+  #altair-viz-f4809b818a854e329a428fa7e30d89b2.vega-embed details,
+  #altair-viz-f4809b818a854e329a428fa7e30d89b2.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-6c794011797d4b27a01183b699848e28"></div>
+<div id="altair-viz-f4809b818a854e329a428fa7e30d89b2"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-6c794011797d4b27a01183b699848e28") {
-      outputDiv = document.getElementById("altair-viz-6c794011797d4b27a01183b699848e28");
+    if (outputDiv.id !== "altair-viz-f4809b818a854e329a428fa7e30d89b2") {
+      outputDiv = document.getElementById("altair-viz-f4809b818a854e329a428fa7e30d89b2");
     }
 
     const paths = {
@@ -2526,7 +2533,7 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 </div>
 </section>
 <section id="bar-marks">
-<h3><span class="section-number">2.4.5. </span>Bar Marks<a class="headerlink" href="#bar-marks" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">1.14.4.5. </span>Bar Marks<a class="headerlink" href="#bar-marks" title="Link to this heading">#</a></h3>
 <p>The `bar` mark type draws a rectangle with a position, width, and height.</p>
 <p>The plot below is a simple bar chart of the population (`pop`) of each country.</p>
 <div class="cell docutils container">
@@ -2541,23 +2548,23 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-a9c74f88bc024b9ea8d8cfe563ba6356.vega-embed {
+  #altair-viz-dbc92b5a62c2446c906a79919eebf020.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-a9c74f88bc024b9ea8d8cfe563ba6356.vega-embed details,
-  #altair-viz-a9c74f88bc024b9ea8d8cfe563ba6356.vega-embed details summary {
+  #altair-viz-dbc92b5a62c2446c906a79919eebf020.vega-embed details,
+  #altair-viz-dbc92b5a62c2446c906a79919eebf020.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-a9c74f88bc024b9ea8d8cfe563ba6356"></div>
+<div id="altair-viz-dbc92b5a62c2446c906a79919eebf020"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-a9c74f88bc024b9ea8d8cfe563ba6356") {
-      outputDiv = document.getElementById("altair-viz-a9c74f88bc024b9ea8d8cfe563ba6356");
+    if (outputDiv.id !== "altair-viz-dbc92b5a62c2446c906a79919eebf020") {
+      outputDiv = document.getElementById("altair-viz-dbc92b5a62c2446c906a79919eebf020");
     }
 
     const paths = {
@@ -2624,23 +2631,23 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-9ce3fa2b120f45aebbbc206de2ad3a85.vega-embed {
+  #altair-viz-5033441b5ce54f928fd7685e7cc98bba.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-9ce3fa2b120f45aebbbc206de2ad3a85.vega-embed details,
-  #altair-viz-9ce3fa2b120f45aebbbc206de2ad3a85.vega-embed details summary {
+  #altair-viz-5033441b5ce54f928fd7685e7cc98bba.vega-embed details,
+  #altair-viz-5033441b5ce54f928fd7685e7cc98bba.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-9ce3fa2b120f45aebbbc206de2ad3a85"></div>
+<div id="altair-viz-5033441b5ce54f928fd7685e7cc98bba"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-9ce3fa2b120f45aebbbc206de2ad3a85") {
-      outputDiv = document.getElementById("altair-viz-9ce3fa2b120f45aebbbc206de2ad3a85");
+    if (outputDiv.id !== "altair-viz-5033441b5ce54f928fd7685e7cc98bba") {
+      outputDiv = document.getElementById("altair-viz-5033441b5ce54f928fd7685e7cc98bba");
     }
 
     const paths = {
@@ -2708,23 +2715,23 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-0bc91e844a554716acecbb7a66d256b5.vega-embed {
+  #altair-viz-61f1269748dd4269b6012cb0f23957d6.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-0bc91e844a554716acecbb7a66d256b5.vega-embed details,
-  #altair-viz-0bc91e844a554716acecbb7a66d256b5.vega-embed details summary {
+  #altair-viz-61f1269748dd4269b6012cb0f23957d6.vega-embed details,
+  #altair-viz-61f1269748dd4269b6012cb0f23957d6.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-0bc91e844a554716acecbb7a66d256b5"></div>
+<div id="altair-viz-61f1269748dd4269b6012cb0f23957d6"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-0bc91e844a554716acecbb7a66d256b5") {
-      outputDiv = document.getElementById("altair-viz-0bc91e844a554716acecbb7a66d256b5");
+    if (outputDiv.id !== "altair-viz-61f1269748dd4269b6012cb0f23957d6") {
+      outputDiv = document.getElementById("altair-viz-61f1269748dd4269b6012cb0f23957d6");
     }
 
     const paths = {
@@ -2777,7 +2784,7 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 </div>
 </section>
 <section id="line-marks">
-<h3><span class="section-number">2.4.6. </span>Line Marks<a class="headerlink" href="#line-marks" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">1.14.4.6. </span>Line Marks<a class="headerlink" href="#line-marks" title="Link to this heading">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">line</span></code> mark type connects plotted points with line segments, for example so that a line’s slope conveys information about the rate of change.</p>
 <p>Let’s plot a line chart of fertility per country over the years, using the full, unfiltered global development data frame. We’ll again hide the legend and use tooltips instead.</p>
 <div class="cell docutils container">
@@ -2796,23 +2803,23 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-df3222d133334811ac662f8c3c35ce47.vega-embed {
+  #altair-viz-3c344207b481453f98e44252f7c8b3b7.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-df3222d133334811ac662f8c3c35ce47.vega-embed details,
-  #altair-viz-df3222d133334811ac662f8c3c35ce47.vega-embed details summary {
+  #altair-viz-3c344207b481453f98e44252f7c8b3b7.vega-embed details,
+  #altair-viz-3c344207b481453f98e44252f7c8b3b7.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-df3222d133334811ac662f8c3c35ce47"></div>
+<div id="altair-viz-3c344207b481453f98e44252f7c8b3b7"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-df3222d133334811ac662f8c3c35ce47") {
-      outputDiv = document.getElementById("altair-viz-df3222d133334811ac662f8c3c35ce47");
+    if (outputDiv.id !== "altair-viz-3c344207b481453f98e44252f7c8b3b7") {
+      outputDiv = document.getElementById("altair-viz-3c344207b481453f98e44252f7c8b3b7");
     }
 
     const paths = {
@@ -2885,23 +2892,23 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-2b8e256e08374893928e0ed699fd7397.vega-embed {
+  #altair-viz-e946a497c8094614a2572351c8d88a14.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-2b8e256e08374893928e0ed699fd7397.vega-embed details,
-  #altair-viz-2b8e256e08374893928e0ed699fd7397.vega-embed details summary {
+  #altair-viz-e946a497c8094614a2572351c8d88a14.vega-embed details,
+  #altair-viz-e946a497c8094614a2572351c8d88a14.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-2b8e256e08374893928e0ed699fd7397"></div>
+<div id="altair-viz-e946a497c8094614a2572351c8d88a14"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-2b8e256e08374893928e0ed699fd7397") {
-      outputDiv = document.getElementById("altair-viz-2b8e256e08374893928e0ed699fd7397");
+    if (outputDiv.id !== "altair-viz-e946a497c8094614a2572351c8d88a14") {
+      outputDiv = document.getElementById("altair-viz-e946a497c8094614a2572351c8d88a14");
     }
 
     const paths = {
@@ -2973,23 +2980,23 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-a512153fc5224033856d5495a7f0af51.vega-embed {
+  #altair-viz-7dc9d41afb9748269095666bbc74b000.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-a512153fc5224033856d5495a7f0af51.vega-embed details,
-  #altair-viz-a512153fc5224033856d5495a7f0af51.vega-embed details summary {
+  #altair-viz-7dc9d41afb9748269095666bbc74b000.vega-embed details,
+  #altair-viz-7dc9d41afb9748269095666bbc74b000.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-a512153fc5224033856d5495a7f0af51"></div>
+<div id="altair-viz-7dc9d41afb9748269095666bbc74b000"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-a512153fc5224033856d5495a7f0af51") {
-      outputDiv = document.getElementById("altair-viz-a512153fc5224033856d5495a7f0af51");
+    if (outputDiv.id !== "altair-viz-7dc9d41afb9748269095666bbc74b000") {
+      outputDiv = document.getElementById("altair-viz-7dc9d41afb9748269095666bbc74b000");
     }
 
     const paths = {
@@ -3042,7 +3049,7 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 </div>
 </section>
 <section id="area-marks">
-<h3><span class="section-number">2.4.7. </span>Area Marks<a class="headerlink" href="#area-marks" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">1.14.4.7. </span>Area Marks<a class="headerlink" href="#area-marks" title="Link to this heading">#</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">area</span></code> mark type combines aspects of <code class="docutils literal notranslate"><span class="pre">line</span></code> and <code class="docutils literal notranslate"><span class="pre">bar</span></code> marks: it visualizes connections (slopes) among data points, but also shows a filled region, with one edge defaulting to a zero-valued baseline.</p>
 <p>The chart below is an area chart of population over time for just the United States:</p>
 <div class="cell docutils container">
@@ -3059,23 +3066,23 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-bcf0446e6aa545d1bc70dbece25b8ca4.vega-embed {
+  #altair-viz-d46b19ee427a418b8b9c7832e44a0b10.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-bcf0446e6aa545d1bc70dbece25b8ca4.vega-embed details,
-  #altair-viz-bcf0446e6aa545d1bc70dbece25b8ca4.vega-embed details summary {
+  #altair-viz-d46b19ee427a418b8b9c7832e44a0b10.vega-embed details,
+  #altair-viz-d46b19ee427a418b8b9c7832e44a0b10.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-bcf0446e6aa545d1bc70dbece25b8ca4"></div>
+<div id="altair-viz-d46b19ee427a418b8b9c7832e44a0b10"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-bcf0446e6aa545d1bc70dbece25b8ca4") {
-      outputDiv = document.getElementById("altair-viz-bcf0446e6aa545d1bc70dbece25b8ca4");
+    if (outputDiv.id !== "altair-viz-d46b19ee427a418b8b9c7832e44a0b10") {
+      outputDiv = document.getElementById("altair-viz-d46b19ee427a418b8b9c7832e44a0b10");
     }
 
     const paths = {
@@ -3139,23 +3146,23 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-3d17a6bd21c94444ba8d47aa2e62aa63.vega-embed {
+  #altair-viz-5f36504f6f8e487a9e5d14ccf28b4897.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-3d17a6bd21c94444ba8d47aa2e62aa63.vega-embed details,
-  #altair-viz-3d17a6bd21c94444ba8d47aa2e62aa63.vega-embed details summary {
+  #altair-viz-5f36504f6f8e487a9e5d14ccf28b4897.vega-embed details,
+  #altair-viz-5f36504f6f8e487a9e5d14ccf28b4897.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-3d17a6bd21c94444ba8d47aa2e62aa63"></div>
+<div id="altair-viz-5f36504f6f8e487a9e5d14ccf28b4897"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-3d17a6bd21c94444ba8d47aa2e62aa63") {
-      outputDiv = document.getElementById("altair-viz-3d17a6bd21c94444ba8d47aa2e62aa63");
+    if (outputDiv.id !== "altair-viz-5f36504f6f8e487a9e5d14ccf28b4897") {
+      outputDiv = document.getElementById("altair-viz-5f36504f6f8e487a9e5d14ccf28b4897");
     }
 
     const paths = {
@@ -3226,23 +3233,23 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-7f15644d9df1468594b3b4701c912754.vega-embed {
+  #altair-viz-45b14e5f025f499e9c84c77acf6b1cb6.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-7f15644d9df1468594b3b4701c912754.vega-embed details,
-  #altair-viz-7f15644d9df1468594b3b4701c912754.vega-embed details summary {
+  #altair-viz-45b14e5f025f499e9c84c77acf6b1cb6.vega-embed details,
+  #altair-viz-45b14e5f025f499e9c84c77acf6b1cb6.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-7f15644d9df1468594b3b4701c912754"></div>
+<div id="altair-viz-45b14e5f025f499e9c84c77acf6b1cb6"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-7f15644d9df1468594b3b4701c912754") {
-      outputDiv = document.getElementById("altair-viz-7f15644d9df1468594b3b4701c912754");
+    if (outputDiv.id !== "altair-viz-45b14e5f025f499e9c84c77acf6b1cb6") {
+      outputDiv = document.getElementById("altair-viz-45b14e5f025f499e9c84c77acf6b1cb6");
     }
 
     const paths = {
@@ -3312,23 +3319,23 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-925b0d35e74b443db5fd53ed8c6839c5.vega-embed {
+  #altair-viz-fdae7b51ba9c4858a802d36643df3471.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-925b0d35e74b443db5fd53ed8c6839c5.vega-embed details,
-  #altair-viz-925b0d35e74b443db5fd53ed8c6839c5.vega-embed details summary {
+  #altair-viz-fdae7b51ba9c4858a802d36643df3471.vega-embed details,
+  #altair-viz-fdae7b51ba9c4858a802d36643df3471.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-925b0d35e74b443db5fd53ed8c6839c5"></div>
+<div id="altair-viz-fdae7b51ba9c4858a802d36643df3471"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-925b0d35e74b443db5fd53ed8c6839c5") {
-      outputDiv = document.getElementById("altair-viz-925b0d35e74b443db5fd53ed8c6839c5");
+    if (outputDiv.id !== "altair-viz-fdae7b51ba9c4858a802d36643df3471") {
+      outputDiv = document.getElementById("altair-viz-fdae7b51ba9c4858a802d36643df3471");
     }
 
     const paths = {
@@ -3393,23 +3400,23 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-7cfb8772cfff4cd1a4fc0b618237dfdb.vega-embed {
+  #altair-viz-f11aae806f57489ca7296f241342792f.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-7cfb8772cfff4cd1a4fc0b618237dfdb.vega-embed details,
-  #altair-viz-7cfb8772cfff4cd1a4fc0b618237dfdb.vega-embed details summary {
+  #altair-viz-f11aae806f57489ca7296f241342792f.vega-embed details,
+  #altair-viz-f11aae806f57489ca7296f241342792f.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-7cfb8772cfff4cd1a4fc0b618237dfdb"></div>
+<div id="altair-viz-f11aae806f57489ca7296f241342792f"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-7cfb8772cfff4cd1a4fc0b618237dfdb") {
-      outputDiv = document.getElementById("altair-viz-7cfb8772cfff4cd1a4fc0b618237dfdb");
+    if (outputDiv.id !== "altair-viz-f11aae806f57489ca7296f241342792f") {
+      outputDiv = document.getElementById("altair-viz-f11aae806f57489ca7296f241342792f");
     }
 
     const paths = {
@@ -3477,23 +3484,23 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-7a60d12c84034ac5a48eb23e0fca0440.vega-embed {
+  #altair-viz-44cd2f2823b941268810d59975bae47f.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-7a60d12c84034ac5a48eb23e0fca0440.vega-embed details,
-  #altair-viz-7a60d12c84034ac5a48eb23e0fca0440.vega-embed details summary {
+  #altair-viz-44cd2f2823b941268810d59975bae47f.vega-embed details,
+  #altair-viz-44cd2f2823b941268810d59975bae47f.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-7a60d12c84034ac5a48eb23e0fca0440"></div>
+<div id="altair-viz-44cd2f2823b941268810d59975bae47f"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-7a60d12c84034ac5a48eb23e0fca0440") {
-      outputDiv = document.getElementById("altair-viz-7a60d12c84034ac5a48eb23e0fca0440");
+    if (outputDiv.id !== "altair-viz-44cd2f2823b941268810d59975bae47f") {
+      outputDiv = document.getElementById("altair-viz-44cd2f2823b941268810d59975bae47f");
     }
 
     const paths = {
@@ -3561,23 +3568,23 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-d24a6c6954f942228d82e121c73fa56b.vega-embed {
+  #altair-viz-8db6d6ce3e514ce492d4098fd6a1535e.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-d24a6c6954f942228d82e121c73fa56b.vega-embed details,
-  #altair-viz-d24a6c6954f942228d82e121c73fa56b.vega-embed details summary {
+  #altair-viz-8db6d6ce3e514ce492d4098fd6a1535e.vega-embed details,
+  #altair-viz-8db6d6ce3e514ce492d4098fd6a1535e.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-d24a6c6954f942228d82e121c73fa56b"></div>
+<div id="altair-viz-8db6d6ce3e514ce492d4098fd6a1535e"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-d24a6c6954f942228d82e121c73fa56b") {
-      outputDiv = document.getElementById("altair-viz-d24a6c6954f942228d82e121c73fa56b");
+    if (outputDiv.id !== "altair-viz-8db6d6ce3e514ce492d4098fd6a1535e") {
+      outputDiv = document.getElementById("altair-viz-8db6d6ce3e514ce492d4098fd6a1535e");
     }
 
     const paths = {
@@ -3631,7 +3638,7 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 </section>
 </section>
 <section id="id1">
-<h2><span class="section-number">2.5. </span>Summary<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">1.14.5. </span>Summary<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <p>We’ve completed our tour of data types, encoding channels, and graphical marks! You should now be well-equipped to further explore the space of encodings, mark types, and mark parameters. For a comprehensive reference – including features we’ve skipped over here! – see the Altair <a class="reference external" href="https://altair-viz.github.io/user_guide/marks/index.html">marks</a> and <a class="reference external" href="https://altair-viz.github.io/user_guide/encodings/index.html">encoding</a> documentation.</p>
 <p>In the next module, we will look at the use of data transformations to create charts that summarize data or visualize new derived fields. In a later module, we’ll examine how to further customize your charts by modifying scales, axes, and legends.</p>
 <p>Interested in learning more about visual encoding?</p>
@@ -3689,7 +3696,7 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">3. </span>Data Transformation</p>
+        <p class="prev-next-title"><span class="section-number">1.15. </span>Data Transformation</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -3709,37 +3716,37 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#global-development-data">2.1. Global Development Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-types">2.2. Data Types</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nominal-n">2.2.1. Nominal (N)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ordinal-o">2.2.2. Ordinal (O)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantitative-q">2.2.3. Quantitative (Q)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#temporal-t">2.2.4. Temporal (T)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">2.2.5. Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#global-development-data">1.14.1. Global Development Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-types">1.14.2. Data Types</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nominal-n">1.14.2.1. Nominal (N)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ordinal-o">1.14.2.2. Ordinal (O)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantitative-q">1.14.2.3. Quantitative (Q)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#temporal-t">1.14.2.4. Temporal (T)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">1.14.2.5. Summary</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encoding-channels">2.3. Encoding Channels</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#x">2.3.1. X</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#y">2.3.2. Y</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#size">2.3.3. Size</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#color-and-opacity">2.3.4. Color and Opacity</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shape">2.3.5. Shape</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tooltips-ordering">2.3.6. Tooltips &amp; Ordering</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#column-and-row-facets">2.3.7. Column and Row Facets</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-peek-ahead-interactive-filtering">2.3.8. A Peek Ahead: Interactive Filtering</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#encoding-channels">1.14.3. Encoding Channels</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#x">1.14.3.1. X</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#y">1.14.3.2. Y</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#size">1.14.3.3. Size</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#color-and-opacity">1.14.3.4. Color and Opacity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#shape">1.14.3.5. Shape</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tooltips-ordering">1.14.3.6. Tooltips &amp; Ordering</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#column-and-row-facets">1.14.3.7. Column and Row Facets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-peek-ahead-interactive-filtering">1.14.3.8. A Peek Ahead: Interactive Filtering</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graphical-marks">2.4. Graphical Marks</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#point-marks">2.4.1. Point Marks</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circle-marks">2.4.2. Circle Marks</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#square-marks">2.4.3. Square Marks</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tick-marks">2.4.4. Tick Marks</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bar-marks">2.4.5. Bar Marks</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#line-marks">2.4.6. Line Marks</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#area-marks">2.4.7. Area Marks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graphical-marks">1.14.4. Graphical Marks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#point-marks">1.14.4.1. Point Marks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#circle-marks">1.14.4.2. Circle Marks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#square-marks">1.14.4.3. Square Marks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tick-marks">1.14.4.4. Tick Marks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bar-marks">1.14.4.5. Bar Marks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#line-marks">1.14.4.6. Line Marks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#area-marks">1.14.4.7. Area Marks</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2.5. Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1.14.5. Summary</a></li>
 </ul>
   </nav></div>
 

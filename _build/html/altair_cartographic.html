@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>7. Cartographic Visualization &#8212; AI with Data analysis</title>
+    <title>4. Cartographic Visualization &#8212; AI with Data analysis</title>
   
   
   
@@ -61,8 +61,8 @@
     <link rel="canonical" href="/ai-analysis/altair_cartographic.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Altair Debugging Guide" href="altair_debugging.html" />
-    <link rel="prev" title="6. Interaction" href="altair_interaction.html" />
+    <link rel="next" title="5. Pre-Lesson Exercise: Organize Your Workspace Space Kick-Off" href="introduction-to-prompting-for-llm-reasoning-and-planning.html" />
+    <link rel="prev" title="3. Interaction" href="altair_interaction.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -181,14 +181,18 @@
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Curriculum</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="altair_introduction.html">1. Introduction to Altair</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Curriculum1</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="altair_introduction.html">1. Introduction to Altair</a></li>
-<li class="toctree-l1"><a class="reference internal" href="altair_marks_encoding.html">2. Data Types, Graphical Marks, and Visual Encoding Channels</a></li>
-<li class="toctree-l1"><a class="reference internal" href="altair_data_transformation.html">3. Data Transformation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="altair_scales_axes_legends.html">4. Scales, Axes, and Legends</a></li>
-<li class="toctree-l1"><a class="reference internal" href="altair_view_composition.html">5. Multi-View Composition</a></li>
-<li class="toctree-l1"><a class="reference internal" href="altair_interaction.html">6. Interaction</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">7. Cartographic Visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="altair_view_composition.html">2. Multi-View Composition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="altair_interaction.html">3. Interaction</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">4. Cartographic Visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction-to-prompting-for-llm-reasoning-and-planning.html">5. Pre-Lesson Exercise: Organize Your Workspace Space Kick-Off</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model-selection.html">6. Organize Your Workspace Space</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Support</span></p>
 <ul class="nav bd-sidenav">
@@ -419,17 +423,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geographic-data-geojson-and-topojson">7.1. Geographic Data: GeoJSON and TopoJSON</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geoshape-marks">7.2. Geoshape Marks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#point-maps">7.3. Point Maps</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#symbol-maps">7.4. Symbol Maps</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choropleth-maps">7.5. Choropleth Maps</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cartographic-projections">7.6. Cartographic Projections</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-tour-of-specific-projection-types">7.6.1. A Tour of Specific Projection Types</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geographic-data-geojson-and-topojson">4.1. Geographic Data: GeoJSON and TopoJSON</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geoshape-marks">4.2. Geoshape Marks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#point-maps">4.3. Point Maps</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#symbol-maps">4.4. Symbol Maps</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choropleth-maps">4.5. Choropleth Maps</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cartographic-projections">4.6. Cartographic Projections</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-tour-of-specific-projection-types">4.6.1. A Tour of Specific Projection Types</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coda-wrangling-geographic-data">7.7. Coda: Wrangling Geographic Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">7.8. Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coda-wrangling-geographic-data">4.7. Coda: Wrangling Geographic Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">4.8. Summary</a></li>
 </ul>
             </nav>
         </div>
@@ -442,7 +446,7 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="cartographic-visualization">
-<h1><span class="section-number">7. </span>Cartographic Visualization<a class="headerlink" href="#cartographic-visualization" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">4. </span>Cartographic Visualization<a class="headerlink" href="#cartographic-visualization" title="Link to this heading">#</a></h1>
 <p><em>“The making of maps is one of humanity’s longest established intellectual endeavors and also one of its most complex, with scientific theory, graphical representation, geographical facts, and practical considerations blended together in an unending variety of ways.”</em> — <a class="reference external" href="https://books.google.com/books?id=cVy1Ms43fFYC">H. J. Steward</a></p>
 <p>Cartography – the study and practice of map-making – has a rich history spanning centuries of discovery and design. Cartographic visualization leverages mapping techniques to convey data containing spatial information, such as locations, routes, or trajectories on the surface of the Earth.</p>
 <div style="float: right; margin-left: 1em; margin-top: 1em;"><img width="300px" src="https://gist.githubusercontent.com/jheer/c90d582ef5322582cf4960ec7689f6f6/raw/8dc92382a837ccc34c076f4ce7dd864e7893324a/latlon.png" /></div>
@@ -465,7 +469,7 @@ document.write(`
 </div>
 </div>
 <section id="geographic-data-geojson-and-topojson">
-<h2><span class="section-number">7.1. </span>Geographic Data: GeoJSON and TopoJSON<a class="headerlink" href="#geographic-data-geojson-and-topojson" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">4.1. </span>Geographic Data: GeoJSON and TopoJSON<a class="headerlink" href="#geographic-data-geojson-and-topojson" title="Link to this heading">#</a></h2>
 <p>Up to this point, we have worked with JSON and CSV formatted datasets that correspond to data tables made up of rows (records) and columns (fields). In order to represent geographic regions (countries, states, <em>etc.</em>) and trajectories (flight paths, subway lines, <em>etc.</em>), we need to expand our repertoire with additional formats designed to support rich geometries.</p>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/GeoJSON">GeoJSON</a> models geographic features within a specialized JSON format. A GeoJSON <code class="docutils literal notranslate"><span class="pre">feature</span></code> can include geometric data – such as <code class="docutils literal notranslate"><span class="pre">longitude</span></code>, <code class="docutils literal notranslate"><span class="pre">latitude</span></code> coordinates that make up a country boundary – as well as additional data attributes.</p>
 <p>Here is a GeoJSON <code class="docutils literal notranslate"><span class="pre">feature</span></code> object for the boundary of the U.S. state of Colorado:</p>
@@ -558,7 +562,7 @@ document.write(`
 <p>Now that we can load geographic data, we’re ready to start making maps!</p>
 </section>
 <section id="geoshape-marks">
-<h2><span class="section-number">7.2. </span>Geoshape Marks<a class="headerlink" href="#geoshape-marks" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">4.2. </span>Geoshape Marks<a class="headerlink" href="#geoshape-marks" title="Link to this heading">#</a></h2>
 <p>To visualize geographic data, Altair provides the <code class="docutils literal notranslate"><span class="pre">geoshape</span></code> mark type. To create a basic map, we can create a <code class="docutils literal notranslate"><span class="pre">geoshape</span></code> mark and pass it our TopoJSON data, which is then unpacked into GeoJSON features, one for each country of the world:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -569,23 +573,23 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-b78495000d4e490d8a428b0a51a6548d.vega-embed {
+  #altair-viz-8e605e062bf0463393d0e4bd71ba8f24.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-b78495000d4e490d8a428b0a51a6548d.vega-embed details,
-  #altair-viz-b78495000d4e490d8a428b0a51a6548d.vega-embed details summary {
+  #altair-viz-8e605e062bf0463393d0e4bd71ba8f24.vega-embed details,
+  #altair-viz-8e605e062bf0463393d0e4bd71ba8f24.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-b78495000d4e490d8a428b0a51a6548d"></div>
+<div id="altair-viz-8e605e062bf0463393d0e4bd71ba8f24"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-b78495000d4e490d8a428b0a51a6548d") {
-      outputDiv = document.getElementById("altair-viz-b78495000d4e490d8a428b0a51a6548d");
+    if (outputDiv.id !== "altair-viz-8e605e062bf0463393d0e4bd71ba8f24") {
+      outputDiv = document.getElementById("altair-viz-8e605e062bf0463393d0e4bd71ba8f24");
     }
 
     const paths = {
@@ -650,23 +654,23 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-ad014508d00d40248113341bbc7dbac7.vega-embed {
+  #altair-viz-05f16d1e418f42d58da7959cc2a7afe8.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-ad014508d00d40248113341bbc7dbac7.vega-embed details,
-  #altair-viz-ad014508d00d40248113341bbc7dbac7.vega-embed details summary {
+  #altair-viz-05f16d1e418f42d58da7959cc2a7afe8.vega-embed details,
+  #altair-viz-05f16d1e418f42d58da7959cc2a7afe8.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-ad014508d00d40248113341bbc7dbac7"></div>
+<div id="altair-viz-05f16d1e418f42d58da7959cc2a7afe8"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-ad014508d00d40248113341bbc7dbac7") {
-      outputDiv = document.getElementById("altair-viz-ad014508d00d40248113341bbc7dbac7");
+    if (outputDiv.id !== "altair-viz-05f16d1e418f42d58da7959cc2a7afe8") {
+      outputDiv = document.getElementById("altair-viz-05f16d1e418f42d58da7959cc2a7afe8");
     }
 
     const paths = {
@@ -731,23 +735,23 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-137afe10a80348c1be4788fe5b0aa965.vega-embed {
+  #altair-viz-e6ad7b7957a34326b56ae16d5e21122e.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-137afe10a80348c1be4788fe5b0aa965.vega-embed details,
-  #altair-viz-137afe10a80348c1be4788fe5b0aa965.vega-embed details summary {
+  #altair-viz-e6ad7b7957a34326b56ae16d5e21122e.vega-embed details,
+  #altair-viz-e6ad7b7957a34326b56ae16d5e21122e.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-137afe10a80348c1be4788fe5b0aa965"></div>
+<div id="altair-viz-e6ad7b7957a34326b56ae16d5e21122e"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-137afe10a80348c1be4788fe5b0aa965") {
-      outputDiv = document.getElementById("altair-viz-137afe10a80348c1be4788fe5b0aa965");
+    if (outputDiv.id !== "altair-viz-e6ad7b7957a34326b56ae16d5e21122e") {
+      outputDiv = document.getElementById("altair-viz-e6ad7b7957a34326b56ae16d5e21122e");
     }
 
     const paths = {
@@ -840,23 +844,23 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-6b0e2439099a4b0fad20e880a6a0c739.vega-embed {
+  #altair-viz-1f84500de8cd4ac4a9f7f1740333bb8f.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-6b0e2439099a4b0fad20e880a6a0c739.vega-embed details,
-  #altair-viz-6b0e2439099a4b0fad20e880a6a0c739.vega-embed details summary {
+  #altair-viz-1f84500de8cd4ac4a9f7f1740333bb8f.vega-embed details,
+  #altair-viz-1f84500de8cd4ac4a9f7f1740333bb8f.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-6b0e2439099a4b0fad20e880a6a0c739"></div>
+<div id="altair-viz-1f84500de8cd4ac4a9f7f1740333bb8f"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-6b0e2439099a4b0fad20e880a6a0c739") {
-      outputDiv = document.getElementById("altair-viz-6b0e2439099a4b0fad20e880a6a0c739");
+    if (outputDiv.id !== "altair-viz-1f84500de8cd4ac4a9f7f1740333bb8f") {
+      outputDiv = document.getElementById("altair-viz-1f84500de8cd4ac4a9f7f1740333bb8f");
     }
 
     const paths = {
@@ -909,7 +913,7 @@ document.write(`
 </div>
 </section>
 <section id="point-maps">
-<h2><span class="section-number">7.3. </span>Point Maps<a class="headerlink" href="#point-maps" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">4.3. </span>Point Maps<a class="headerlink" href="#point-maps" title="Link to this heading">#</a></h2>
 <p>In addition to the <em>geometric</em> data provided by GeoJSON or TopoJSON files, many tabular datasets include geographic information in the form of fields for <code class="docutils literal notranslate"><span class="pre">longitude</span></code> and <code class="docutils literal notranslate"><span class="pre">latitude</span></code> coordinates, or references to geographic regions such as country names, state names, postal codes, <em>etc.</em>, which can be mapped to coordinates using a <a class="reference external" href="https://en.wikipedia.org/wiki/Geocoding">geocoding service</a>. In some cases, location data is rich enough that we can see meaningful patterns by projecting the data points alone — no base map required!</p>
 <p>Let’s look at a dataset of 5-digit zip codes in the United States, including <code class="docutils literal notranslate"><span class="pre">longitude</span></code>, <code class="docutils literal notranslate"><span class="pre">latitude</span></code> coordinates for each post office in addition to a <code class="docutils literal notranslate"><span class="pre">zip_code</span></code> field.</p>
 <div class="cell docutils container">
@@ -948,23 +952,23 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-4c777cd09a0647d481efb45ac50dd9c4.vega-embed {
+  #altair-viz-ef2b9948204646f9a1550901bb503f68.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-4c777cd09a0647d481efb45ac50dd9c4.vega-embed details,
-  #altair-viz-4c777cd09a0647d481efb45ac50dd9c4.vega-embed details summary {
+  #altair-viz-ef2b9948204646f9a1550901bb503f68.vega-embed details,
+  #altair-viz-ef2b9948204646f9a1550901bb503f68.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-4c777cd09a0647d481efb45ac50dd9c4"></div>
+<div id="altair-viz-ef2b9948204646f9a1550901bb503f68"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-4c777cd09a0647d481efb45ac50dd9c4") {
-      outputDiv = document.getElementById("altair-viz-4c777cd09a0647d481efb45ac50dd9c4");
+    if (outputDiv.id !== "altair-viz-ef2b9948204646f9a1550901bb503f68") {
+      outputDiv = document.getElementById("altair-viz-ef2b9948204646f9a1550901bb503f68");
     }
 
     const paths = {
@@ -1042,23 +1046,23 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-36b5f4d388d548f29b4437e7f4311e4b.vega-embed {
+  #altair-viz-667294b65a3441bca52b502ddfa66250.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-36b5f4d388d548f29b4437e7f4311e4b.vega-embed details,
-  #altair-viz-36b5f4d388d548f29b4437e7f4311e4b.vega-embed details summary {
+  #altair-viz-667294b65a3441bca52b502ddfa66250.vega-embed details,
+  #altair-viz-667294b65a3441bca52b502ddfa66250.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-36b5f4d388d548f29b4437e7f4311e4b"></div>
+<div id="altair-viz-667294b65a3441bca52b502ddfa66250"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-36b5f4d388d548f29b4437e7f4311e4b") {
-      outputDiv = document.getElementById("altair-viz-36b5f4d388d548f29b4437e7f4311e4b");
+    if (outputDiv.id !== "altair-viz-667294b65a3441bca52b502ddfa66250") {
+      outputDiv = document.getElementById("altair-viz-667294b65a3441bca52b502ddfa66250");
     }
 
     const paths = {
@@ -1139,23 +1143,23 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-3c68c2218da247e8b208848e1ef7b0a8.vega-embed {
+  #altair-viz-01a0cb7ac38d4dda9cfe0e8392634018.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-3c68c2218da247e8b208848e1ef7b0a8.vega-embed details,
-  #altair-viz-3c68c2218da247e8b208848e1ef7b0a8.vega-embed details summary {
+  #altair-viz-01a0cb7ac38d4dda9cfe0e8392634018.vega-embed details,
+  #altair-viz-01a0cb7ac38d4dda9cfe0e8392634018.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-3c68c2218da247e8b208848e1ef7b0a8"></div>
+<div id="altair-viz-01a0cb7ac38d4dda9cfe0e8392634018"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-3c68c2218da247e8b208848e1ef7b0a8") {
-      outputDiv = document.getElementById("altair-viz-3c68c2218da247e8b208848e1ef7b0a8");
+    if (outputDiv.id !== "altair-viz-01a0cb7ac38d4dda9cfe0e8392634018") {
+      outputDiv = document.getElementById("altair-viz-01a0cb7ac38d4dda9cfe0e8392634018");
     }
 
     const paths = {
@@ -1211,7 +1215,7 @@ document.write(`
 <p><em>Remove the filter above to see what happens!</em></p>
 </section>
 <section id="symbol-maps">
-<h2><span class="section-number">7.4. </span>Symbol Maps<a class="headerlink" href="#symbol-maps" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">4.4. </span>Symbol Maps<a class="headerlink" href="#symbol-maps" title="Link to this heading">#</a></h2>
 <p>Now let’s combine a base map and plotted data as separate layers. We’ll examine the U.S. commercial flight network, considering both airports and flight routes. To do so, we’ll need three datasets.
 For our base map, we’ll use a TopoJSON file for the United States at 10m resolution, containing features for <code class="docutils literal notranslate"><span class="pre">states</span></code> or <code class="docutils literal notranslate"><span class="pre">counties</span></code>:</p>
 <div class="cell docutils container">
@@ -1281,23 +1285,23 @@ For our base map, we’ll use a TopoJSON file for the United States at 10m resol
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-c67ea41f28e545a5b31de709fd4dcac8.vega-embed {
+  #altair-viz-a9890ac0bf024b68ab321c0346c2e79c.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-c67ea41f28e545a5b31de709fd4dcac8.vega-embed details,
-  #altair-viz-c67ea41f28e545a5b31de709fd4dcac8.vega-embed details summary {
+  #altair-viz-a9890ac0bf024b68ab321c0346c2e79c.vega-embed details,
+  #altair-viz-a9890ac0bf024b68ab321c0346c2e79c.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-c67ea41f28e545a5b31de709fd4dcac8"></div>
+<div id="altair-viz-a9890ac0bf024b68ab321c0346c2e79c"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-c67ea41f28e545a5b31de709fd4dcac8") {
-      outputDiv = document.getElementById("altair-viz-c67ea41f28e545a5b31de709fd4dcac8");
+    if (outputDiv.id !== "altair-viz-a9890ac0bf024b68ab321c0346c2e79c") {
+      outputDiv = document.getElementById("altair-viz-a9890ac0bf024b68ab321c0346c2e79c");
     }
 
     const paths = {
@@ -1389,23 +1393,23 @@ For our base map, we’ll use a TopoJSON file for the United States at 10m resol
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-97bba94649fa4062b20f022a0ce53731.vega-embed {
+  #altair-viz-99ac9f6f021a415a9b8c227f452320de.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-97bba94649fa4062b20f022a0ce53731.vega-embed details,
-  #altair-viz-97bba94649fa4062b20f022a0ce53731.vega-embed details summary {
+  #altair-viz-99ac9f6f021a415a9b8c227f452320de.vega-embed details,
+  #altair-viz-99ac9f6f021a415a9b8c227f452320de.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-97bba94649fa4062b20f022a0ce53731"></div>
+<div id="altair-viz-99ac9f6f021a415a9b8c227f452320de"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-97bba94649fa4062b20f022a0ce53731") {
-      outputDiv = document.getElementById("altair-viz-97bba94649fa4062b20f022a0ce53731");
+    if (outputDiv.id !== "altair-viz-99ac9f6f021a415a9b8c227f452320de") {
+      outputDiv = document.getElementById("altair-viz-99ac9f6f021a415a9b8c227f452320de");
     }
 
     const paths = {
@@ -1526,33 +1530,33 @@ For our base map, we’ll use a TopoJSON file for the United States at 10m resol
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_97153/940681676.py:3: AltairDeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_52859/940681676.py:3: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   origin = alt.selection_single(
-/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_97153/940681676.py:45: AltairDeprecationWarning: 
+/var/folders/9g/mssvsk8d2ssbmyf5fg4v2ssh0000gq/T/ipykernel_52859/940681676.py:45: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use add_params instead.
   ).add_selection(
 </pre></div>
 </div>
 <div class="output text_html">
 <style>
-  #altair-viz-877d61057e414290a96345fb6ce8bd7b.vega-embed {
+  #altair-viz-2b1749c9825d4932bb6bb4992537f587.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-877d61057e414290a96345fb6ce8bd7b.vega-embed details,
-  #altair-viz-877d61057e414290a96345fb6ce8bd7b.vega-embed details summary {
+  #altair-viz-2b1749c9825d4932bb6bb4992537f587.vega-embed details,
+  #altair-viz-2b1749c9825d4932bb6bb4992537f587.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-877d61057e414290a96345fb6ce8bd7b"></div>
+<div id="altair-viz-2b1749c9825d4932bb6bb4992537f587"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-877d61057e414290a96345fb6ce8bd7b") {
-      outputDiv = document.getElementById("altair-viz-877d61057e414290a96345fb6ce8bd7b");
+    if (outputDiv.id !== "altair-viz-2b1749c9825d4932bb6bb4992537f587") {
+      outputDiv = document.getElementById("altair-viz-2b1749c9825d4932bb6bb4992537f587");
     }
 
     const paths = {
@@ -1606,7 +1610,7 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 <p><em>Mouseover the map to probe the flight network!</em></p>
 </section>
 <section id="choropleth-maps">
-<h2><span class="section-number">7.5. </span>Choropleth Maps<a class="headerlink" href="#choropleth-maps" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">4.5. </span>Choropleth Maps<a class="headerlink" href="#choropleth-maps" title="Link to this heading">#</a></h2>
 <p>A <a class="reference external" href="https://en.wikipedia.org/wiki/Choropleth_map">choropleth map</a> uses shaded or textured regions to visualize data values. Sized symbol maps are often more accurate to read, as people tend to be better at estimating proportional differences between the area of circles than between color shades. Nevertheless, choropleth maps are popular in practice and particularly useful when too many symbols become perceptually overwhelming.</p>
 <p>For example, while the United States only has 50 states, it has thousands of counties within those states. Let’s build a choropleth map of the unemployment rate per county, back in the recession year of 2008. In some cases, input GeoJSON or TopoJSON files might include statistical data that we can directly visualize. In this case, however, we have two files: our TopoJSON file that includes county boundary features (<code class="docutils literal notranslate"><span class="pre">usa</span></code>), and a separate text file that contains unemployment statistics:</p>
 <div class="cell docutils container">
@@ -1648,23 +1652,23 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-42ee184e419a4199813835f1eee921ac.vega-embed {
+  #altair-viz-d58cb04ea44543289d4b5bc0216516d3.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-42ee184e419a4199813835f1eee921ac.vega-embed details,
-  #altair-viz-42ee184e419a4199813835f1eee921ac.vega-embed details summary {
+  #altair-viz-d58cb04ea44543289d4b5bc0216516d3.vega-embed details,
+  #altair-viz-d58cb04ea44543289d4b5bc0216516d3.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-42ee184e419a4199813835f1eee921ac"></div>
+<div id="altair-viz-d58cb04ea44543289d4b5bc0216516d3"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-42ee184e419a4199813835f1eee921ac") {
-      outputDiv = document.getElementById("altair-viz-42ee184e419a4199813835f1eee921ac");
+    if (outputDiv.id !== "altair-viz-d58cb04ea44543289d4b5bc0216516d3") {
+      outputDiv = document.getElementById("altair-viz-d58cb04ea44543289d4b5bc0216516d3");
     }
 
     const paths = {
@@ -1741,23 +1745,23 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-994a05fe88f943e09c4a3d8f423967ef.vega-embed {
+  #altair-viz-9723d552626340f59bce1af1120de5ab.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-994a05fe88f943e09c4a3d8f423967ef.vega-embed details,
-  #altair-viz-994a05fe88f943e09c4a3d8f423967ef.vega-embed details summary {
+  #altair-viz-9723d552626340f59bce1af1120de5ab.vega-embed details,
+  #altair-viz-9723d552626340f59bce1af1120de5ab.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-994a05fe88f943e09c4a3d8f423967ef"></div>
+<div id="altair-viz-9723d552626340f59bce1af1120de5ab"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-994a05fe88f943e09c4a3d8f423967ef") {
-      outputDiv = document.getElementById("altair-viz-994a05fe88f943e09c4a3d8f423967ef");
+    if (outputDiv.id !== "altair-viz-9723d552626340f59bce1af1120de5ab") {
+      outputDiv = document.getElementById("altair-viz-9723d552626340f59bce1af1120de5ab");
     }
 
     const paths = {
@@ -1811,7 +1815,7 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 <p><em>Which color schemes do you find to be more effective? Why might that be? Modify the maps above to use other available schemes, as described in the <a class="reference external" href="https://vega.github.io/vega/docs/schemes/">Vega Color Schemes documentation</a>.</em></p>
 </section>
 <section id="cartographic-projections">
-<h2><span class="section-number">7.6. </span>Cartographic Projections<a class="headerlink" href="#cartographic-projections" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">4.6. </span>Cartographic Projections<a class="headerlink" href="#cartographic-projections" title="Link to this heading">#</a></h2>
 <p>Now that we have some experience creating maps, let’s take a closer look at cartographic projections. As explained by <a class="reference external" href="https://en.wikipedia.org/wiki/Map_projection">Wikipedia</a>,</p>
 <blockquote>
 <div><p><em>All map projections necessarily distort the surface in some fashion. Depending on the purpose of the map, some distortions are acceptable and others are not; therefore, different map projections exist in order to preserve some properties of the sphere-like body at the expense of other properties.</em></p>
@@ -1827,7 +1831,7 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 <p>We can also characterize projections in terms of the <em>projection surface</em>. Cylindrical projections, for example, project surface points of the sphere onto a surrounding cylinder; the “unrolled” cylinder then provides our map. As we further describe below, we might alternatively project onto the surface of a cone (conic projections) or directly onto a flat plane (azimuthal projections).</p>
 <p><em>Let’s first build up our intuition by interacting with a variety of projections! <strong><a class="reference external" href="https://observablehq.com/&#64;vega/vega-lite-cartographic-projections">Open the online Vega-Lite Cartographic Projections notebook</a>.</strong> Use the controls on that page to select a projection and explore projection parameters, such as the <code class="docutils literal notranslate"><span class="pre">scale</span></code> (zooming) and x/y translation (panning). The rotation (<a class="reference external" href="https://en.wikipedia.org/wiki/Aircraft_principal_axes">yaw, pitch, roll</a>) controls determine the orientation of the globe relative to the surface being projected upon.</em></p>
 <section id="a-tour-of-specific-projection-types">
-<h3><span class="section-number">7.6.1. </span>A Tour of Specific Projection Types<a class="headerlink" href="#a-tour-of-specific-projection-types" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">4.6.1. </span>A Tour of Specific Projection Types<a class="headerlink" href="#a-tour-of-specific-projection-types" title="Link to this heading">#</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Map_projection#Cylindrical"><strong>Cylindrical projections</strong></a> map the sphere onto a surrounding cylinder, then unroll the cylinder. If the major axis of the cylinder is oriented north-south, meridians are mapped to straight lines. <a class="reference external" href="https://en.wikipedia.org/wiki/Map_projection#Pseudocylindrical">Pseudo-cylindrical</a> projections represent a central meridian as a straight line, with other meridians “bending” away from the center.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1844,23 +1848,23 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-7969bbed836d462eb4254f77bd4fb678.vega-embed {
+  #altair-viz-87bdfbfd61f64686bcafa7a27252ca09.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-7969bbed836d462eb4254f77bd4fb678.vega-embed details,
-  #altair-viz-7969bbed836d462eb4254f77bd4fb678.vega-embed details summary {
+  #altair-viz-87bdfbfd61f64686bcafa7a27252ca09.vega-embed details,
+  #altair-viz-87bdfbfd61f64686bcafa7a27252ca09.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-7969bbed836d462eb4254f77bd4fb678"></div>
+<div id="altair-viz-87bdfbfd61f64686bcafa7a27252ca09"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-7969bbed836d462eb4254f77bd4fb678") {
-      outputDiv = document.getElementById("altair-viz-7969bbed836d462eb4254f77bd4fb678");
+    if (outputDiv.id !== "altair-viz-87bdfbfd61f64686bcafa7a27252ca09") {
+      outputDiv = document.getElementById("altair-viz-87bdfbfd61f64686bcafa7a27252ca09");
     }
 
     const paths = {
@@ -1935,23 +1939,23 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-1d977beec7f04a8aa47092674aa9d0ea.vega-embed {
+  #altair-viz-67503ebcac4246d18411c5b54bab62fe.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-1d977beec7f04a8aa47092674aa9d0ea.vega-embed details,
-  #altair-viz-1d977beec7f04a8aa47092674aa9d0ea.vega-embed details summary {
+  #altair-viz-67503ebcac4246d18411c5b54bab62fe.vega-embed details,
+  #altair-viz-67503ebcac4246d18411c5b54bab62fe.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-1d977beec7f04a8aa47092674aa9d0ea"></div>
+<div id="altair-viz-67503ebcac4246d18411c5b54bab62fe"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-1d977beec7f04a8aa47092674aa9d0ea") {
-      outputDiv = document.getElementById("altair-viz-1d977beec7f04a8aa47092674aa9d0ea");
+    if (outputDiv.id !== "altair-viz-67503ebcac4246d18411c5b54bab62fe") {
+      outputDiv = document.getElementById("altair-viz-67503ebcac4246d18411c5b54bab62fe");
     }
 
     const paths = {
@@ -2027,23 +2031,23 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-1f54f814ccb6447b86a3364b213093a5.vega-embed {
+  #altair-viz-7ff2d5adf4ef4470ae01eb37b4e4bac6.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-1f54f814ccb6447b86a3364b213093a5.vega-embed details,
-  #altair-viz-1f54f814ccb6447b86a3364b213093a5.vega-embed details summary {
+  #altair-viz-7ff2d5adf4ef4470ae01eb37b4e4bac6.vega-embed details,
+  #altair-viz-7ff2d5adf4ef4470ae01eb37b4e4bac6.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-1f54f814ccb6447b86a3364b213093a5"></div>
+<div id="altair-viz-7ff2d5adf4ef4470ae01eb37b4e4bac6"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-1f54f814ccb6447b86a3364b213093a5") {
-      outputDiv = document.getElementById("altair-viz-1f54f814ccb6447b86a3364b213093a5");
+    if (outputDiv.id !== "altair-viz-7ff2d5adf4ef4470ae01eb37b4e4bac6") {
+      outputDiv = document.getElementById("altair-viz-7ff2d5adf4ef4470ae01eb37b4e4bac6");
     }
 
     const paths = {
@@ -2105,7 +2109,7 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 </section>
 </section>
 <section id="coda-wrangling-geographic-data">
-<h2><span class="section-number">7.7. </span>Coda: Wrangling Geographic Data<a class="headerlink" href="#coda-wrangling-geographic-data" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">4.7. </span>Coda: Wrangling Geographic Data<a class="headerlink" href="#coda-wrangling-geographic-data" title="Link to this heading">#</a></h2>
 <p>The examples above all draw from the vega-datasets collection, including geometric (TopoJSON) and tabular (airports, unemployment rates) data. A common challenge to getting starting with geographic visualization is collecting the necessary data for your task. A number of data providers abound, including services such as the <a class="reference external" href="https://www.usgs.gov/products/data/all-data">United States Geological Survey</a> and <a class="reference external" href="https://www.census.gov/data/datasets.html">U.S. Census Bureau</a>.</p>
 <p>In many cases you may have existing data with a geographic component, but require additional measures or geometry. To help you get started, here is one workflow:</p>
 <ol class="arabic simple">
@@ -2116,7 +2120,7 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 <p>Of course, many other tools – both open-source and proprietary – exist for working with geographic data. For more about geo-data wrangling and map creation, see Mike Bostock’s tutorial series on <a class="reference external" href="https://medium.com/&#64;mbostock/command-line-cartography-part-1-897aa8f8ca2c">Command-Line Cartography</a>.</p>
 </section>
 <section id="summary">
-<h2><span class="section-number">7.8. </span>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">4.8. </span>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
 <p>At this point, we’ve only dipped our toes into the waters of map-making. <em>(You didn’t expect a single notebook to impart centuries of learning, did you?)</em> For example, we left untouched topics such as <a class="reference external" href="https://en.wikipedia.org/wiki/Cartogram"><em>cartograms</em></a> and conveying <a class="reference external" href="https://en.wikipedia.org/wiki/Topography"><em>topography</em></a> — as in Imhof’s illuminating book <a class="reference external" href="https://books.google.com/books?id=cVy1Ms43fFYC"><em>Cartographic Relief Presentation</em></a>. Nevertheless, you should now be well-equipped to create a rich array of geo-visualizations. For more, MacEachren’s book <a class="reference external" href="https://books.google.com/books?id=xhAvN3B0CkUC"><em>How Maps Work: Representation, Visualization, and Design</em></a> provides a valuable overview of map-making from the perspective of data visualization.</p>
 </section>
 </section>
@@ -2157,15 +2161,15 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">6. </span>Interaction</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Interaction</p>
       </div>
     </a>
     <a class="right-next"
-       href="altair_debugging.html"
+       href="introduction-to-prompting-for-llm-reasoning-and-planning.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Altair Debugging Guide</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>Pre-Lesson Exercise: Organize Your Workspace Space Kick-Off</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -2185,17 +2189,17 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geographic-data-geojson-and-topojson">7.1. Geographic Data: GeoJSON and TopoJSON</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geoshape-marks">7.2. Geoshape Marks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#point-maps">7.3. Point Maps</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#symbol-maps">7.4. Symbol Maps</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choropleth-maps">7.5. Choropleth Maps</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cartographic-projections">7.6. Cartographic Projections</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-tour-of-specific-projection-types">7.6.1. A Tour of Specific Projection Types</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geographic-data-geojson-and-topojson">4.1. Geographic Data: GeoJSON and TopoJSON</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geoshape-marks">4.2. Geoshape Marks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#point-maps">4.3. Point Maps</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#symbol-maps">4.4. Symbol Maps</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choropleth-maps">4.5. Choropleth Maps</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cartographic-projections">4.6. Cartographic Projections</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-tour-of-specific-projection-types">4.6.1. A Tour of Specific Projection Types</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coda-wrangling-geographic-data">7.7. Coda: Wrangling Geographic Data</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">7.8. Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coda-wrangling-geographic-data">4.7. Coda: Wrangling Geographic Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">4.8. Summary</a></li>
 </ul>
   </nav></div>
 

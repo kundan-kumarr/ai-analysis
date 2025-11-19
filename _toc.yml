@@ -1,21 +1,25 @@
 format: jb-book
 root: intro
+
 parts:
-- caption: Curriculum
-  numbered: true
-  chapters:
-  - file: altair_introduction
-  - file: altair_marks_encoding
-  - file: altair_data_transformation
-  - file: altair_scales_axes_legends
-  parts:
-  - caption: Curriculum1
+  - caption: Curriculum
+    numbered: true
     chapters:
-    - file: altair_view_composition
-    - file: altair_interaction
-    - file: altair_cartographic
-    - file: introduction-to-prompting-for-llm-reasoning-and-planning
-    - file: model-selection
-- caption: Support
-  chapters:
-  - file: altair_debugging
+      - file: altair_introduction
+        sections:
+          - file: altair_marks_encoding
+          - file: altair_data_transformation
+          - file: altair_scales_axes_legends
+
+  - caption: Curriculum1
+    numbered: true
+    chapters:
+      - file: altair_view_composition
+      - file: altair_interaction
+      - file: altair_cartographic
+      - file: introduction-to-prompting-for-llm-reasoning-and-planning
+      - file: model-selection
+
+  - caption: Support
+    chapters:
+      - file: altair_debugging
