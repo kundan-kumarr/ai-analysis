@@ -2,7 +2,7 @@ format: jb-book
 root: intro
 
 parts:
-  - caption: Curriculum
+  - caption: Introduction of Machine Learning
     numbered: true
     chapters:
       - file: altair_introduction
@@ -11,7 +11,7 @@ parts:
           - file: altair_data_transformation
           - file: altair_scales_axes_legends
 
-  - caption: Curriculum1
+  - caption: Introduction of Deep Learning
     numbered: true
     chapters:
       - file: altair_view_composition
@@ -20,6 +20,6 @@ parts:
       - file: introduction-to-prompting-for-llm-reasoning-and-planning
       - file: model-selection
 
-  - caption: Support
+  - caption: Introduction of Reinforcement Learning
     chapters:
       - file: altair_debugging
