@@ -1,0 +1,985 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>10.8. Organize Your Workspace Space &#8212; AI with Data analysis</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'cv_inception';</script>
+    <link rel="canonical" href="/ai-analysis/cv_inception.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="10.9. Organize Your Workspace Space" href="cv_efficientnet.html" />
+    <link rel="prev" title="10.7. Organize Your Workspace Space" href="cv_resnet.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/altair-hist.png" class="logo__image only-light" alt="AI with Data analysis - Home"/>
+    <script>document.write(`<img src="_static/altair-hist.png" class="logo__image only-dark" alt="AI with Data analysis - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Introduction
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Foundations of Machine Learning &amp; Data Science</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="ds_introduction.html">1. Cartographic Visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ds_data_wrangling.html">2. Data Transformation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ds_data_visualization.html">3. Altair Debugging Guide</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="ml_basics.html">4. Organize Your Workspace Space</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="ml_supervised_learning.html">4.7. Multi-View Composition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ml_unsupervised_learning.html">4.8. Data Types, Graphical Marks, and Visual Encoding Channels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ml_feature_engineering.html">4.9. Scales, Axes, and Legends</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Deep Learning Foundations</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="dl_neural_networks.html">5. Introduction to Altair</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dl_training_procedures.html">6. Interaction</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="dl_advanced_models.html">7. Pre-Lesson Exercise: Organize Your Workspace Space Kick-Off</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="dl_regularization.html">7.7. Organize Your Workspace Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dl_optimization.html">7.8. Organize Your Workspace Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="model_selection_best_practices.html">7.9. Organize Your Workspace Space</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Computer Vision</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="cv_introduction.html">8. Organize Your Workspace Space</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cv_cnn_fundamentals.html">9. Organize Your Workspace Space</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="cv_advanced_architectures.html">10. Organize Your Workspace Space</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="cv_resnet.html">10.7. Organize Your Workspace Space</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">10.8. Organize Your Workspace Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cv_efficientnet.html">10.9. Organize Your Workspace Space</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Natural Language Processing (NLP &amp; LLMs)</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="nlp_introduction.html">11. Organize Your Workspace Space</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nlp_text_processing.html">12. Organize Your Workspace Space</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="nlp_classical_models.html">13. Organize Your Workspace Space</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/kundan-kumarr/ai-analysis/blob/main/cv_inception.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Colab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Colab logo" src="_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/kundan-kumarr/ai-analysis" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/kundan-kumarr/ai-analysis/issues/new?title=Issue%20on%20page%20%2Fcv_inception.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/cv_inception.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Organize Your Workspace Space</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outline">10.8.1. Outline</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generic-prompt">10.8.2. 1. Generic Prompt</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-professional-role">10.8.3. 2. Add a Professional Role</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-constraints">10.8.4. 3. Add Constraints</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-apply-what-you-ve-learned">10.8.5. Bonus: Apply what you’ve learned</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">10.8.6. Summary</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="organize-your-workspace-space">
+<h1><span class="section-number">10.8. </span>Organize Your Workspace Space<a class="headerlink" href="#organize-your-workspace-space" title="Link to this heading">#</a></h1>
+<p>Before we get started on our course, let’s take some time to set up and tidy our workspace. As an agentic twist on the matter, we will guide a Large Language Model (LLM) through a series of prompt refinements to create a practical plan to organize your personal work area.</p>
+<section id="outline">
+<h2><span class="section-number">10.8.1. </span>Outline<a class="headerlink" href="#outline" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Start with a generic prompt</p></li>
+<li><p>Add a professional role</p></li>
+<li><p>Introduce concrete constraints</p></li>
+<li><p>Bonus: Apply what you’ve learned</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import necessary libraries</span>
+<span class="c1"># No changes needed in this cell</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">openai</span><span class="w"> </span><span class="kn">import</span> <span class="n">OpenAI</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">Markdown</span><span class="p">,</span> <span class="n">display</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Import necessary libraries</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># No changes needed in this cell</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="kn">from</span><span class="w"> </span><span class="nn">openai</span><span class="w"> </span><span class="kn">import</span> <span class="n">OpenAI</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">Markdown</span><span class="p">,</span> <span class="n">display</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;openai&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># If using the Vocareum API endpoint</span>
+<span class="c1"># TODO: Fill in the missing parts marked with **********</span>
+
+<span class="n">client</span> <span class="o">=</span> <span class="n">OpenAI</span><span class="p">(</span>
+    <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;https://openai.vocareum.com/v1&quot;</span><span class="p">,</span>
+    <span class="c1"># Uncomment one of the following</span>
+    <span class="c1"># api_key=&quot;**********&quot;,  # &lt;--- TODO: Fill in your Vocareum API key here</span>
+    <span class="c1"># api_key=os.getenv(</span>
+    <span class="c1">#     &quot;OPENAI_API_KEY&quot;</span>
+    <span class="c1"># ),  # &lt;-- Alternately, set as an environment variable</span>
+<span class="p">)</span>
+
+<span class="c1"># If using OpenAI&#39;s API endpoint</span>
+<span class="c1"># client = OpenAI()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">4</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># If using the Vocareum API endpoint</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># TODO: Fill in the missing parts marked with **********</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="n">client</span> <span class="o">=</span> <span class="n">OpenAI</span><span class="p">(</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;https://openai.vocareum.com/v1&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span>     <span class="c1"># Uncomment one of the following</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span>     <span class="c1"># api_key=&quot;**********&quot;,  # &lt;--- TODO: Fill in your Vocareum API key here</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span>     <span class="c1"># api_key=os.getenv(</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span>     <span class="c1">#     &quot;OPENAI_API_KEY&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span>     <span class="c1"># ),  # &lt;-- Alternately, set as an environment variable</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="p">)</span>
+
+<span class="ne">NameError</span>: name &#39;OpenAI&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">enum</span><span class="w"> </span><span class="kn">import</span> <span class="n">Enum</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">OpenAIModels</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">Enum</span><span class="p">):</span>
+    <span class="n">GPT_4O_MINI</span> <span class="o">=</span> <span class="s2">&quot;gpt-4o-mini&quot;</span>
+    <span class="n">GPT_41_MINI</span> <span class="o">=</span> <span class="s2">&quot;gpt-4.1-mini&quot;</span>
+    <span class="n">GPT_41_NANO</span> <span class="o">=</span> <span class="s2">&quot;gpt-4.1-nano&quot;</span>
+
+<span class="c1"># Choose a different model to see different results</span>
+<span class="n">MODEL</span> <span class="o">=</span> <span class="n">OpenAIModels</span><span class="o">.</span><span class="n">GPT_41_NANO</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">get_completion</span><span class="p">(</span><span class="n">system_prompt</span><span class="p">,</span> <span class="n">user_prompt</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="n">MODEL</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Function to get a completion from the OpenAI API.</span>
+<span class="sd">    Args:</span>
+<span class="sd">        system_prompt: The system prompt</span>
+<span class="sd">        user_prompt: The user prompt</span>
+<span class="sd">        model: The model to use (default is gpt-4.1-mini. change to gpt-4o-mini or gpt-4.1-nano for different results)</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        The completion text</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">messages</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">{</span><span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="n">user_prompt</span><span class="p">},</span>
+    <span class="p">]</span>
+    <span class="k">if</span> <span class="n">system_prompt</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">messages</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="p">{</span><span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;system&quot;</span><span class="p">,</span> <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="n">system_prompt</span><span class="p">},</span>
+            <span class="o">*</span><span class="n">messages</span><span class="p">,</span>
+        <span class="p">]</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+            <span class="n">model</span><span class="o">=</span><span class="n">model</span><span class="p">,</span>
+            <span class="n">messages</span><span class="o">=</span><span class="n">messages</span><span class="p">,</span>
+            <span class="n">temperature</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">content</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;An error occurred: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">display_responses</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Helper function to display responses as Markdown, horizontally.&quot;&quot;&quot;</span>
+    <span class="n">markdown_string</span> <span class="o">=</span> <span class="s2">&quot;&lt;table&gt;&lt;tr&gt;&quot;</span>
+    <span class="c1"># Headers</span>
+    <span class="k">for</span> <span class="n">arg</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
+        <span class="n">markdown_string</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;&lt;th&gt;System Prompt:&lt;br /&gt;</span><span class="si">{</span><span class="n">arg</span><span class="p">[</span><span class="s1">&#39;system_prompt&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&lt;br /&gt;&lt;br /&gt;&quot;</span>
+        <span class="n">markdown_string</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;User Prompt:&lt;br /&gt;</span><span class="si">{</span><span class="n">arg</span><span class="p">[</span><span class="s1">&#39;user_prompt&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&lt;/th&gt;&quot;</span>
+    <span class="n">markdown_string</span> <span class="o">+=</span> <span class="s2">&quot;&lt;/tr&gt;&quot;</span>
+    <span class="c1"># Rows</span>
+    <span class="n">markdown_string</span> <span class="o">+=</span> <span class="s2">&quot;&lt;tr&gt;&quot;</span>
+    <span class="k">for</span> <span class="n">arg</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
+        <span class="n">markdown_string</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;&lt;td&gt;Response:&lt;br /&gt;</span><span class="si">{</span><span class="n">arg</span><span class="p">[</span><span class="s1">&#39;response&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&lt;/td&gt;&quot;</span>
+    <span class="n">markdown_string</span> <span class="o">+=</span> <span class="s2">&quot;&lt;/tr&gt;&lt;/table&gt;&quot;</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="n">markdown_string</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="generic-prompt">
+<h2><span class="section-number">10.8.2. </span>1. Generic Prompt<a class="headerlink" href="#generic-prompt" title="Link to this heading">#</a></h2>
+<p>First, let’s see what the model produces with a basic prompt.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># No changes needed in this cell</span>
+<span class="n">plain_system_prompt</span> <span class="o">=</span> <span class="s2">&quot;You are a helpful assistant.&quot;</span>  <span class="c1"># A generic system prompt</span>
+<span class="n">user_prompt</span> <span class="o">=</span> <span class="s2">&quot;Give me a simple plan to declutter and organize my workspace.&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Sending prompt to </span><span class="si">{</span><span class="n">MODEL</span><span class="si">}</span><span class="s2"> model...&quot;</span><span class="p">)</span>
+<span class="n">baseline_response</span> <span class="o">=</span> <span class="n">get_completion</span><span class="p">(</span><span class="n">plain_system_prompt</span><span class="p">,</span> <span class="n">user_prompt</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Response received!</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">display_responses</span><span class="p">(</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;system_prompt&quot;</span><span class="p">:</span> <span class="n">plain_system_prompt</span><span class="p">,</span>
+        <span class="s2">&quot;user_prompt&quot;</span><span class="p">:</span> <span class="n">user_prompt</span><span class="p">,</span>
+        <span class="s2">&quot;response&quot;</span><span class="p">:</span> <span class="n">baseline_response</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Sending prompt to OpenAIModels.GPT_41_NANO model...
+Response received!
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="n">line</span> <span class="mi">9</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">baseline_response</span> <span class="o">=</span> <span class="n">get_completion</span><span class="p">(</span><span class="n">plain_system_prompt</span><span class="p">,</span> <span class="n">user_prompt</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Response received!</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="ne">----&gt; </span><span class="mi">9</span> <span class="n">display_responses</span><span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span>     <span class="p">{</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span>         <span class="s2">&quot;system_prompt&quot;</span><span class="p">:</span> <span class="n">plain_system_prompt</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">12</span>         <span class="s2">&quot;user_prompt&quot;</span><span class="p">:</span> <span class="n">user_prompt</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">13</span>         <span class="s2">&quot;response&quot;</span><span class="p">:</span> <span class="n">baseline_response</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">14</span>     <span class="p">}</span>
+<span class="g g-Whitespace">     </span><span class="mi">15</span> <span class="p">)</span>
+
+<span class="nn">Cell In[3], line 54,</span> in <span class="ni">display_responses</span><span class="nt">(*args)</span>
+<span class="g g-Whitespace">     </span><span class="mi">52</span>     <span class="n">markdown_string</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;&lt;td&gt;Response:&lt;br /&gt;</span><span class="si">{</span><span class="n">arg</span><span class="p">[</span><span class="s1">&#39;response&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&lt;/td&gt;&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">53</span> <span class="n">markdown_string</span> <span class="o">+=</span> <span class="s2">&quot;&lt;/tr&gt;&lt;/table&gt;&quot;</span>
+<span class="ne">---&gt; </span><span class="mi">54</span> <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="n">markdown_string</span><span class="p">))</span>
+
+<span class="ne">NameError</span>: name &#39;Markdown&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="add-a-professional-role">
+<h2><span class="section-number">10.8.3. </span>2. Add a Professional Role<a class="headerlink" href="#add-a-professional-role" title="Link to this heading">#</a></h2>
+<p>Now, let’s add a professional role to see how it affects the response.</p>
+<div style="color: red">NOTE: We will use the same user prompt for these examples. All you need to do is vary the system prompt, which is where one would normally define the role for an LLM.</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Write a system prompt starting with &quot;You are...&quot; replacing the ***********</span>
+<span class="n">role_system_prompt</span> <span class="o">=</span> <span class="s2">&quot;You are a certified professional organizer.&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sending prompt with professional role...&quot;</span><span class="p">)</span>
+<span class="n">role_response</span> <span class="o">=</span> <span class="n">get_completion</span><span class="p">(</span><span class="n">role_system_prompt</span><span class="p">,</span> <span class="n">user_prompt</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Response received!</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Show last two prompts and responses</span>
+<span class="n">display_responses</span><span class="p">(</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;system_prompt&quot;</span><span class="p">:</span> <span class="n">plain_system_prompt</span><span class="p">,</span>
+        <span class="s2">&quot;user_prompt&quot;</span><span class="p">:</span> <span class="n">user_prompt</span><span class="p">,</span>
+        <span class="s2">&quot;response&quot;</span><span class="p">:</span> <span class="n">baseline_response</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;system_prompt&quot;</span><span class="p">:</span> <span class="n">role_system_prompt</span><span class="p">,</span>
+        <span class="s2">&quot;user_prompt&quot;</span><span class="p">:</span> <span class="n">user_prompt</span><span class="p">,</span>
+        <span class="s2">&quot;response&quot;</span><span class="p">:</span> <span class="n">role_response</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Sending prompt with professional role...
+Response received!
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="n">line</span> <span class="mi">9</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Response received!</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="c1"># Show last two prompts and responses</span>
+<span class="ne">----&gt; </span><span class="mi">9</span> <span class="n">display_responses</span><span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span>     <span class="p">{</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span>         <span class="s2">&quot;system_prompt&quot;</span><span class="p">:</span> <span class="n">plain_system_prompt</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">12</span>         <span class="s2">&quot;user_prompt&quot;</span><span class="p">:</span> <span class="n">user_prompt</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">13</span>         <span class="s2">&quot;response&quot;</span><span class="p">:</span> <span class="n">baseline_response</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">14</span>     <span class="p">},</span>
+<span class="g g-Whitespace">     </span><span class="mi">15</span>     <span class="p">{</span>
+<span class="g g-Whitespace">     </span><span class="mi">16</span>         <span class="s2">&quot;system_prompt&quot;</span><span class="p">:</span> <span class="n">role_system_prompt</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">17</span>         <span class="s2">&quot;user_prompt&quot;</span><span class="p">:</span> <span class="n">user_prompt</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">18</span>         <span class="s2">&quot;response&quot;</span><span class="p">:</span> <span class="n">role_response</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">19</span>     <span class="p">},</span>
+<span class="g g-Whitespace">     </span><span class="mi">20</span> <span class="p">)</span>
+
+<span class="nn">Cell In[3], line 54,</span> in <span class="ni">display_responses</span><span class="nt">(*args)</span>
+<span class="g g-Whitespace">     </span><span class="mi">52</span>     <span class="n">markdown_string</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;&lt;td&gt;Response:&lt;br /&gt;</span><span class="si">{</span><span class="n">arg</span><span class="p">[</span><span class="s1">&#39;response&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&lt;/td&gt;&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">53</span> <span class="n">markdown_string</span> <span class="o">+=</span> <span class="s2">&quot;&lt;/tr&gt;&lt;/table&gt;&quot;</span>
+<span class="ne">---&gt; </span><span class="mi">54</span> <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="n">markdown_string</span><span class="p">))</span>
+
+<span class="ne">NameError</span>: name &#39;Markdown&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="add-constraints">
+<h2><span class="section-number">10.8.4. </span>3. Add Constraints<a class="headerlink" href="#add-constraints" title="Link to this heading">#</a></h2>
+<p>Let’s add specific constraints to see how the model prioritizes tasks. Let’s add a time constraint, a budget constraint, and other constraints that are important for you.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO: Write a constraints system prompt replacing the ***********</span>
+<span class="n">constraints_system_prompt</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot; </span><span class="si">{</span><span class="n">role_system_prompt</span><span class="si">}</span><span class="s2">. I have only 15 minutes, a $20 budget, and limited floor space;</span>
+<span class="s2">I want to keep sentimental items but maximize desk surface.&quot;&quot;&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sending prompt with constraints...&quot;</span><span class="p">)</span>
+<span class="n">constraints_response</span> <span class="o">=</span> <span class="n">get_completion</span><span class="p">(</span><span class="n">constraints_system_prompt</span><span class="p">,</span> <span class="n">user_prompt</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Response received!</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Show last two prompts and responses</span>
+<span class="n">display_responses</span><span class="p">(</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;system_prompt&quot;</span><span class="p">:</span> <span class="n">role_system_prompt</span><span class="p">,</span>
+        <span class="s2">&quot;user_prompt&quot;</span><span class="p">:</span> <span class="n">user_prompt</span><span class="p">,</span>
+        <span class="s2">&quot;response&quot;</span><span class="p">:</span> <span class="n">role_response</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;system_prompt&quot;</span><span class="p">:</span> <span class="n">constraints_system_prompt</span><span class="p">,</span>
+        <span class="s2">&quot;user_prompt&quot;</span><span class="p">:</span> <span class="n">user_prompt</span><span class="p">,</span>
+        <span class="s2">&quot;response&quot;</span><span class="p">:</span> <span class="n">constraints_response</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Sending prompt with constraints...
+Response received!
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span> <span class="n">line</span> <span class="mi">10</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Response received!</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="c1"># Show last two prompts and responses</span>
+<span class="ne">---&gt; </span><span class="mi">10</span> <span class="n">display_responses</span><span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span>     <span class="p">{</span>
+<span class="g g-Whitespace">     </span><span class="mi">12</span>         <span class="s2">&quot;system_prompt&quot;</span><span class="p">:</span> <span class="n">role_system_prompt</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">13</span>         <span class="s2">&quot;user_prompt&quot;</span><span class="p">:</span> <span class="n">user_prompt</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">14</span>         <span class="s2">&quot;response&quot;</span><span class="p">:</span> <span class="n">role_response</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">15</span>     <span class="p">},</span>
+<span class="g g-Whitespace">     </span><span class="mi">16</span>     <span class="p">{</span>
+<span class="g g-Whitespace">     </span><span class="mi">17</span>         <span class="s2">&quot;system_prompt&quot;</span><span class="p">:</span> <span class="n">constraints_system_prompt</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">18</span>         <span class="s2">&quot;user_prompt&quot;</span><span class="p">:</span> <span class="n">user_prompt</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">19</span>         <span class="s2">&quot;response&quot;</span><span class="p">:</span> <span class="n">constraints_response</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">20</span>     <span class="p">},</span>
+<span class="g g-Whitespace">     </span><span class="mi">21</span> <span class="p">)</span>
+
+<span class="nn">Cell In[3], line 54,</span> in <span class="ni">display_responses</span><span class="nt">(*args)</span>
+<span class="g g-Whitespace">     </span><span class="mi">52</span>     <span class="n">markdown_string</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;&lt;td&gt;Response:&lt;br /&gt;</span><span class="si">{</span><span class="n">arg</span><span class="p">[</span><span class="s1">&#39;response&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&lt;/td&gt;&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">53</span> <span class="n">markdown_string</span> <span class="o">+=</span> <span class="s2">&quot;&lt;/tr&gt;&lt;/table&gt;&quot;</span>
+<span class="ne">---&gt; </span><span class="mi">54</span> <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="n">markdown_string</span><span class="p">))</span>
+
+<span class="ne">NameError</span>: name &#39;Markdown&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="bonus-apply-what-you-ve-learned">
+<h2><span class="section-number">10.8.5. </span>Bonus: Apply what you’ve learned<a class="headerlink" href="#bonus-apply-what-you-ve-learned" title="Link to this heading">#</a></h2>
+<p>Try crafting a prompt for one of your own ideas or even a different organization task (e.g., digital file cleanup, closet overhaul)!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create your own prompts here!</span>
+
+<span class="c1"># TODO: Replace the ***********</span>
+<span class="n">custom_system_prompt</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">You are a best-selling writer.</span>
+
+<span class="s2">In general:</span>
+<span class="s2">- You always explain your overall reasoning before providing the answer to a user&#39;s question.</span>
+<span class="s2">- Always conclude with a list of action items when asked for advice.</span>
+<span class="s2">- Do not end with a final question or sentence after this list of action items.</span>
+
+
+<span class="s2">&quot;&quot;&quot;</span>
+<span class="n">user_prompt</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">Please generate a list of 10 ideas for an article about the benefits of meditation</span>
+<span class="s2">that millions of people will read and benefit from. The article is for a technical audience. </span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="c1"># Uncomment the lines below to run your custom prompt</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sending custom prompt...&quot;</span><span class="p">)</span>
+<span class="n">custom_response</span> <span class="o">=</span> <span class="n">get_completion</span><span class="p">(</span><span class="n">custom_system_prompt</span><span class="p">,</span> <span class="n">user_prompt</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Response received!</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">display_responses</span><span class="p">(</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;system_prompt&quot;</span><span class="p">:</span> <span class="n">custom_system_prompt</span><span class="p">,</span>
+        <span class="s2">&quot;user_prompt&quot;</span><span class="p">:</span> <span class="n">user_prompt</span><span class="p">,</span>
+        <span class="s2">&quot;response&quot;</span><span class="p">:</span> <span class="n">custom_response</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Sending custom prompt...
+Response received!
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">7</span><span class="p">],</span> <span class="n">line</span> <span class="mi">24</span>
+<span class="g g-Whitespace">     </span><span class="mi">21</span> <span class="n">custom_response</span> <span class="o">=</span> <span class="n">get_completion</span><span class="p">(</span><span class="n">custom_system_prompt</span><span class="p">,</span> <span class="n">user_prompt</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">22</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Response received!</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="ne">---&gt; </span><span class="mi">24</span> <span class="n">display_responses</span><span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">25</span>     <span class="p">{</span>
+<span class="g g-Whitespace">     </span><span class="mi">26</span>         <span class="s2">&quot;system_prompt&quot;</span><span class="p">:</span> <span class="n">custom_system_prompt</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">27</span>         <span class="s2">&quot;user_prompt&quot;</span><span class="p">:</span> <span class="n">user_prompt</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">28</span>         <span class="s2">&quot;response&quot;</span><span class="p">:</span> <span class="n">custom_response</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">29</span>     <span class="p">}</span>
+<span class="g g-Whitespace">     </span><span class="mi">30</span> <span class="p">)</span>
+
+<span class="nn">Cell In[3], line 54,</span> in <span class="ni">display_responses</span><span class="nt">(*args)</span>
+<span class="g g-Whitespace">     </span><span class="mi">52</span>     <span class="n">markdown_string</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&quot;&lt;td&gt;Response:&lt;br /&gt;</span><span class="si">{</span><span class="n">arg</span><span class="p">[</span><span class="s1">&#39;response&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&lt;/td&gt;&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">53</span> <span class="n">markdown_string</span> <span class="o">+=</span> <span class="s2">&quot;&lt;/tr&gt;&lt;/table&gt;&quot;</span>
+<span class="ne">---&gt; </span><span class="mi">54</span> <span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="n">markdown_string</span><span class="p">))</span>
+
+<span class="ne">NameError</span>: name &#39;Markdown&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="summary">
+<h2><span class="section-number">10.8.6. </span>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
+<p>In this exercise, we explored how different prompt refinements affect the output of an LLM:</p>
+<ol class="arabic simple">
+<li><p><strong>Generic Prompt</strong>: We started with a simple request for a workspace organization plan.</p></li>
+<li><p><strong>Professional Role</strong>: We added a specific role to enhance expertise and authority.</p></li>
+<li><p><strong>Concrete Constraints</strong>: We introduced specific limitations that required prioritization.</p></li>
+<li><p><strong>Step-by-Step Reasoning</strong>: We requested explicit reasoning to understand the model’s thought process.</p></li>
+</ol>
+<p>These techniques demonstrate how prompt engineering can significantly improve the usefulness and relevance of AI-generated content for specific needs.</p>
+<p>Excellent Work! 🚀</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="cv_resnet.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">10.7. </span>Organize Your Workspace Space</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="cv_efficientnet.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">10.9. </span>Organize Your Workspace Space</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outline">10.8.1. Outline</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generic-prompt">10.8.2. 1. Generic Prompt</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-professional-role">10.8.3. 2. Add a Professional Role</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-constraints">10.8.4. 3. Add Constraints</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonus-apply-what-you-ve-learned">10.8.5. Bonus: Apply what you’ve learned</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">10.8.6. Summary</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Kundan Kumar
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

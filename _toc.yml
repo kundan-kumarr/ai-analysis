@@ -2,24 +2,109 @@ format: jb-book
 root: intro
 
 parts:
-  - caption: Introduction of Machine Learning
+
+  - caption: Foundations of Machine Learning & Data Science
     numbered: true
     chapters:
-      - file: altair_introduction
+      - file: ds_introduction
+      - file: ds_data_wrangling
+      - file: ds_data_visualization
+      - file: ml_basics
         sections:
-          - file: altair_marks_encoding
-          - file: altair_data_transformation
-          - file: altair_scales_axes_legends
+          - file: ml_supervised_learning
+          - file: ml_unsupervised_learning
+          - file: ml_feature_engineering
 
-  - caption: Introduction of Deep Learning
+  - caption: Deep Learning Foundations
     numbered: true
     chapters:
-      - file: altair_view_composition
-      - file: altair_interaction
-      - file: altair_cartographic
-      - file: introduction-to-prompting-for-llm-reasoning-and-planning
-      - file: model-selection
+      - file: dl_neural_networks
+      - file: dl_training_procedures
+      - file: dl_advanced_models
+        sections:
+          - file: dl_regularization
+          - file: dl_optimization
+          - file: model_selection_best_practices
 
-  - caption: Introduction of Reinforcement Learning
+  - caption: Computer Vision
+    numbered: true
     chapters:
-      - file: altair_debugging
+      - file: cv_introduction
+      - file: cv_cnn_fundamentals
+      - file: cv_advanced_architectures
+        sections:
+          - file: cv_resnet
+          - file: cv_inception
+          - file: cv_efficientnet
+      - file: cv_object_detection
+        sections:
+          - file: cv_yolo
+          - file: cv_faster_rcnn
+          - file: cv_ssd
+      - file: cv_segmentation
+        sections:
+          - file: cv_unet
+          - file: cv_segformer
+      - file: cv_transformers
+        sections:
+          - file: cv_vit
+          - file: cv_sam
+      - file: cv_applications
+
+  - caption: Natural Language Processing (NLP & LLMs)
+    numbered: true
+    chapters:
+      - file: nlp_introduction
+      - file: nlp_text_processing
+      - file: nlp_classical_models
+        sections:
+          - file: nlp_bow_tfidf
+          - file: nlp_word_embeddings
+      - file: nlp_deep_learning
+        sections:
+          - file: nlp_rnn_lstm
+          - file: nlp_transformers
+      - file: llm_reasoning_prompting
+      - file: llm_fine_tuning
+      - file: nlp_applications
+
+  - caption: Reinforcement Learning
+    numbered: true
+    chapters:
+      - file: rl_basics
+      - file: rl_value_policy_methods
+        sections:
+          - file: rl_function_approximation
+          - file: rl_tabular_methods
+          - file: rl_case_studies
+
+  - caption: Deep Reinforcement Learning
+    numbered: true
+    chapters:
+      - file: rl_with_openai_gym
+      - file: rl_dqn
+      - file: rl_policy_gradients
+      - file: ppo_reinforcement_learning
+      - file: sac_reinforcement_learning
+      - file: rl_for_games
+      - file: rl_for_robotics
+      - file: rl_deployment
+      - file: rl_ethics_society
+      - file: rl_future_trends
+
+  - caption: Multi-Agent Reinforcement Learning (MARL)
+    numbered: true
+    chapters:
+      - file: marl_introduction
+      - file: marl_mdp_and_markov_games
+      - file: marl_cooperation_and_competition
+      - file: marl_value_based_methods
+      - file: marl_policy_gradient_methods
+      - file: marl_communication_and_coordination
+      - file: marl_emergent_behavior
+      - file: marl_applications
+      - file: marl_challenges_future
+
+  - caption: Conclusion
+    chapters:
+      - file: conclusion
