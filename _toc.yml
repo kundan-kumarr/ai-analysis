@@ -8,11 +8,14 @@ parts:
   - file: altair_marks_encoding
   - file: altair_data_transformation
   - file: altair_scales_axes_legends
-  - file: altair_view_composition
-  - file: altair_interaction
-  - file: altair_cartographic
-  - file: introduction-to-prompting-for-llm-reasoning-and-planning
-  - file: model-selection
+  parts:
+  - caption: Curriculum1
+    chapters:
+    - file: altair_view_composition
+    - file: altair_interaction
+    - file: altair_cartographic
+    - file: introduction-to-prompting-for-llm-reasoning-and-planning
+    - file: model-selection
 - caption: Support
   chapters:
   - file: altair_debugging
