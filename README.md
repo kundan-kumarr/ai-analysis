@@ -1,6 +1,19 @@
 # data-analysis
 
 # Data Visualization Curriculum
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+- Run these commands in your terminal to add Homebrew to your PATH:
+    echo >> /Users/kkumar/.zprofile
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv zsh)"' >> /Users/kkumar/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv zsh)"
+- Run brew help to get started
+
+brew install node
+node -v
+npm -v
+
+python3 -m pip install jupyter-book
 
 jupyter-book build .
 cd _build/html
